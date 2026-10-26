@@ -1,0 +1,53 @@
+# Toda ruta, modelo, umbral y prompt vive aquí. Las credenciales van en .env.
+
+paths:
+  audio_dir: data/audio
+  cache_dir: data/cache
+  ground_truth_t1: data/ground_truth/t1_entrevistas.csv
+  ground_truth_t2: data/ground_truth/t2_llamadas.csv
+  results_dir: results
+
+asr:
+  library: faster-whisper
+  models: [small, large-v3]      # al menos dos tamaños
+  default_model: small
+  device: auto                   # auto | cuda | cpu (el dispositivo REAL se lee en runtime)
+  compute_type: float16          # float16 | int8
+  language: es
+  beam_size: 5
+  glossary_mechanism: hotwords   # verificar en la doc de tu versión: hotwords vs initial_prompt
+  glossary_t1: [Python, SQL, Power BI, Docker, Kubernetes, pandas, scikit-learn, Tableau, AWS, Excel]
+
+normalization:
+  lowercase: true
+  strip_punctuation: true
+  strip_accents: false
+  collapse_whitespace: true
+
+extraction:
+  method: rules                  # rules | llm
+  llm_model: claude-sonnet-5-5
+  unverified_label: sin_verificar
+  prompts:
+    t1: |
+      Extrae del texto de la entrevista un JSON con las claves:
+      anios_experiencia, ultimo_puesto, tecnologias, pretension_salarial,
+      disponibilidad, nivel_ingles. Usa SOLO palabras que aparezcan literalmente
+      en el texto. Si un campo no aparece, devuelve null.
+    t2: |
+      Extrae del texto de la llamada un JSON con las claves:
+      items (producto, tamano, cantidad, precio_unitario), promocion,
+      direccion_entrega, metodo_pago, total_dicho. Registra el pedido FINAL
+      si el cliente se corrige. Usa SOLO palabras que aparezcan literalmente.
+
+schemas:
+  t1: [anios_experiencia, ultimo_puesto, tecnologias, pretension_salarial, disponibilidad, nivel_ingles]
+  t2: [items, promocion, direccion_entrega, metodo_pago, total_dicho]
+
+ladder:
+  L1: {codec: libmp3lame, bitrate: 24k, channels: 1}
+  L2: {lowcut_hz: 300, highcut_hz: 3400, sample_rate: 8000}
+  L3: {base: L1, snr_db: 10}     # SNR a justificar y medir; ver README
+
+validation:
+  tolerance_soles: 0.5
