@@ -86,7 +86,7 @@ Lee con naturalidad, a ritmo normal. Si improvisas, corrige el texto en `scripts
 - Orden de campos: salario (al inicio) → disponibilidad → años → puesto → tecnologías → inglés (al final)
 - Trampas: Años con fracción ('tres años y medio'). Distractor 'cinco años' (instituto de inglés) y 'quince minutos'. Disponibilidad inmediata.
 
-**A:** Hola, Marco, bienvenido. Antes de empezar, para alinear expectativas: ¿cuál es tu pretensión salarial?
+**A:** Hola, Alejandra, bienvenido. Antes de empezar, para alinear expectativas: ¿cuál es tu pretensión salarial?
 
 **B:** Hola, gracias. Buscaría algo alrededor de cuatro mil ochocientos soles al mes.
 
