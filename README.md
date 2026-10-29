@@ -21,6 +21,39 @@ streamlit run app.py
 grep -rEn "streamlit|gradio|tkinter|flask" engine/ || echo "OK: el motor no importa ninguna librería de UI"
 ```
 
+## Pruebas
+```bash
+pytest -q        # 36 pruebas: normalización de números, WER/CER/IC, motor, lógica del benchmark (no necesitan GPU ni pesos)
+```
+
+## Motor: una función, dos esquemas
+Toda la transcripción y la extracción viven en `engine/`. La app y los scripts solo llaman a:
+```python
+from engine import process_audio
+r = process_audio("data/audio/t1_01.m4a", schema="t1")   # entrevista
+r = process_audio("data/audio/t2_01.m4a", schema="t2")   # llamada de venta (mismo motor)
+# r = {transcript, fields, verified, device, elapsed_s, error, ...}
+```
+`schema` solo cambia qué campos se extraen (definidos en `config.yaml`); el código de transcripción es el mismo.
+El dispositivo (`device`) se **lee de la librería** (`ctranslate2`), no de la configuración, y pedir `cuda` sin GPU
+da error en vez de caer a CPU en silencio.
+
+## Benchmark de ASR en GPU (Tarea 1, Fase 2)
+Se corre en Google Colab (T4 gratis) con `notebooks/colab_benchmark.ipynb`, que ejecuta:
+```bash
+python scripts/benchmark_asr.py --task t1            # small y large-v3, GPU/CPU, float16/int8, glosario plano/con vocabulario
+python scripts/transcribir_corpus.py --task t2 --model large-v3 --device cuda --compute float16
+```
+Resultados en `results/asr_benchmark_t1.{md,json,csv}`; transcripciones en `data/cache/asr/` (se commitean).
+La VRAM se mide con `nvidia-smi` (CTranslate2 no pasa por el asignador de PyTorch) y se reporta junto al
+dispositivo leído de la librería: eso es lo que prueba que se usó la GPU.
+
+## Regla de normalización (antes de calcular WER/CER)
+Se aplica igual a la referencia y a la hipótesis: minúsculas; moneda y porcentaje a palabras
+(`S/ 6,500` → `6500 soles`); se quitan separadores de miles; dígitos separados de letras (`4B` → `4 b`);
+sin puntuación; números hablados a dígitos (`seis mil quinientos` → `6500`); `primero de` → `1 de`;
+los acentos se conservan. Detalle y tests en `metrics/texto.py`, `metrics/numeros.py` y `tests/`.
+
 ## Pipeline (documento visual)
 - Notion/Miro: _pendiente (tarea #13)_
 

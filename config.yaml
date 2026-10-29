@@ -1,4 +1,4 @@
-# Toda ruta, modelo, umbral y prompt vive aquí. Las credenciales van en .env.
+# Toda ruta, modelo, umbral y prompt vive aquí. Las credenciales van en .env (nunca en el repo).
 
 paths:
   audio_dir: data/audio
@@ -6,25 +6,59 @@ paths:
   ground_truth_t1: data/ground_truth/t1_entrevistas.csv
   ground_truth_t2: data/ground_truth/t2_llamadas.csv
   results_dir: results
+  models_dir: models             # pesos de Whisper (ignorados por git; se descargan solos)
 
 asr:
   library: faster-whisper
-  models: [small, large-v3]      # al menos dos tamaños
-  default_model: small
-  device: auto                   # auto | cuda | cpu (el dispositivo REAL se lee en runtime)
-  compute_type: float16          # float16 | int8
+  default_model: small           # lo cambias según el benchmark (ver results/asr_benchmark_t1.md)
+  device: auto                   # auto | cuda | cpu. "cuda" sin GPU da ERROR (no hay fallback silencioso)
+  compute_type: float16          # float16 | int8 (en CPU float16 se baja a int8 automáticamente)
   language: es
   beam_size: 5
-  glossary_mechanism: hotwords   # verificar en la doc de tu versión: hotwords vs initial_prompt
-  glossary_t1: [Python, SQL, Power BI, Docker, Kubernetes, pandas, scikit-learn, Tableau, AWS, Excel]
+  temperature: 0.0               # determinista: mismo audio -> misma transcripción
+  condition_on_previous_text: false
+  vad_filter: false
+  use_glossary_default: false    # decide con el benchmark (glosario plano vs con vocabulario)
+  glossary_mechanism: hotwords   # hotwords (faster-whisper >= 1.0.3, verificado en 1.2.1) | initial_prompt
+  glossary:
+    t1: [Python, pandas, SQL, Power BI, Docker, Django, PostgreSQL, Git, AWS, Excel,
+         scikit-learn, Tableau, Airflow, dbt, Kubernetes, Looker Studio]
+    t2: [pollo a la brasa, lomo saltado, ceviche clásico, chicha morada, arroz con mariscos,
+         Inca Kola, Marea Norte]
+  # Configuración cuyas transcripciones están en caché y que la app muestra sin re-transcribir
+  cache_corpus: {model: large-v3, device: cuda, compute_type: float16, glossary: false}
 
-normalization:
+normalization:                   # ver metrics/texto.py: se aplica IGUAL a referencia e hipótesis
   lowercase: true
   strip_punctuation: true
   strip_accents: false
   collapse_whitespace: true
+  numbers_to_digits: true
+
+benchmark:                       # T1 Fase 2 (scripts/benchmark_asr.py). Corre en Colab con GPU.
+  bootstrap_n: 2000
+  bootstrap_seed: 0
+  vram_minima_mb: 300            # por debajo de esto NO se considera probado que se usó la GPU
+  experimentos:
+    - {id: small_gpu_fp16,      model: small,    device: cuda, compute_type: float16}
+    - {id: small_gpu_int8,      model: small,    device: cuda, compute_type: int8}
+    - {id: small_cpu_int8,      model: small,    device: cpu,  compute_type: int8, max_clips: 2}
+    - {id: large_gpu_fp16,      model: large-v3, device: cuda, compute_type: float16}
+    - {id: large_gpu_int8,      model: large-v3, device: cuda, compute_type: int8}
+    - {id: small_gpu_fp16_glos, model: small,    device: cuda, compute_type: float16, glosario: true}
+    - {id: large_gpu_fp16_glos, model: large-v3, device: cuda, compute_type: float16, glosario: true}
+  comparaciones:                 # pares [A, B]; se reporta A frente a B sobre los mismos clips
+    precision:   [[small_gpu_fp16, small_gpu_int8], [large_gpu_fp16, large_gpu_int8]]
+    dispositivo: [[small_gpu_int8, small_cpu_int8]]
+    glosario:    [[small_gpu_fp16, small_gpu_fp16_glos], [large_gpu_fp16, large_gpu_fp16_glos]]
+    tamano:      [[small_gpu_fp16, large_gpu_fp16]]
 
 extraction:
+  reference_date: "2026-11-02"   # fecha ficticia de las entrevistas: resuelve disponibilidad relativa
+  english_synonyms:              # mapa de sinónimos para nivel_ingles
+    basico: [básico, basico, principiante]
+    intermedio: [intermedio, medio]
+    avanzado: [avanzado, fluido, c1, c2, nativo]
   method: rules                  # rules | llm
   llm_model: claude-sonnet-5-5
   unverified_label: sin_verificar

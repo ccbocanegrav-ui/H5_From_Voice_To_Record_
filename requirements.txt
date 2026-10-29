@@ -1,14 +1,15 @@
-# Versiones fijadas. VERIFICAR en tu entorno con `pip freeze` antes de entregar
-# (estas son las versiones objetivo; ajusta a las que realmente pruebes en Colab).
-faster-whisper==1.1.1
-jiwer==3.0.5
-streamlit==1.41.1
-pyyaml==6.0.2
-python-dotenv==1.0.1
-pandas==2.2.3
-numpy==2.1.3
-scipy==1.14.1
-soundfile==0.12.1
+# Versiones fijadas y verificadas (pip index, 2026-10-29).
+# Instalación conjunta probada: faster-whisper, ctranslate2, jiwer, pyyaml, python-dotenv, numpy, pytest.
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+jiwer==4.0.0
+streamlit==1.66.1
+pyyaml==6.0.3
+python-dotenv==1.2.4
+pandas==3.1.0
+numpy==2.5.4
+scipy==1.18.1
+soundfile==0.14.0
 pydub==0.25.1
-anthropic==0.40.0
-pytest==8.3.4
+anthropic==2.3.0
+pytest==9.2.0
