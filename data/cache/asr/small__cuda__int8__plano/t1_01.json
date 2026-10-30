@@ -1,0 +1,227 @@
+{
+  "clip": "t1_01",
+  "audio": "t1_01.m4a",
+  "texto": "Buenos días Lucía, gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas. Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima. ¿Y cuánto tiempo llevo trabajando en análisis de datos? En total llevo 5 años, empecé haciendo reportes de ventas y poco a poco pasea modelos predictivos. Interesante, ¿qué herramientas y tecnologías usas en tu día a día? Uso Payton con pandas para limpiar y analizar datos, se cuelen para consultar las bases y pagar V.I. para los tableros. Últimamente también he trabajado con Docker para empaquetar mis proyectos. Muy bien. ¿Cómo describirías tu nivel de inglés? Intermedio. Puedo la documentación técnica sin problema, pero todavía me cuesta hablar con fluidez en reuniones largas. Entendido. Cuéntame un proyecto a el que te sientas orgullosa. Claro, rediseñé el reporte semanal de de ventas de un cliente de retail, hasta tardaba tres días en armarse a mano y ahora se genera en cuatro horas. Trabajé con un equipo de ocho personas y presentamos los resultados a la gerencia. Excelente. ¿Y cómo manejas los plazos ajustados? Divido el trabajo en entregas pequeñas y aviso con anticipación si algo se complica. Prefiero avisarte en prano que llegar tarde con una sorpresa. Cuéntame cómo es un día normal en tu trabajo. Empiezo revisando que los procesos de la noche hayan terminado bien, después atiendo los pedidos de información de las otras áreas y dejo las tardes más libres para los análisis largos que necesitan concentración. ¿Y cómo priorices cuando varias personas te piden a lo al mismo tiempo? Pregunto para qué lo necesitan y cuándo lo vamos a usar, muchas veces algo que parece urgente puede esperar y otras cosas que parecen pequeñas son las que más pesan en la decisión de alguien. ¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado? Sí, y lo resolvimos sentándonos con los datos adelante. Probamos las dos formas, mismos cuales respondía mejor a la pregunta del cliente y terminamos usando una mezcla de ambas. ¿Por qué quieres cambiar de empleo? Busco más responsabilidad y trabajar en problemas de mayor escala. Siento que ya aprendí lo que podía en mi puesto actual. Hablimos de condiciones. ¿Cuándo podrías incorporarte? Tendría que dar un previo aviso en mi trabajo, así que estaría disponible en 15 días. Perfecto. ¿Y cuál es tu pretensión salarial? Mi pretensión es 6.500 soles mensuales. Gracias, Lucía. ¿Tienes alguna pregunta para nosotros? Sí, me gustaría saber cómo está conformado el equipo y qué proyecto se priorizarían en los primeros meses. Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo. Gracias a ustedes.",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 5.6,
+      "texto": "Buenos días Lucía, gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas."
+    },
+    {
+      "inicio": 5.6,
+      "fin": 12.6,
+      "texto": "Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima."
+    },
+    {
+      "inicio": 12.6,
+      "fin": 15.4,
+      "texto": "¿Y cuánto tiempo llevo trabajando en análisis de datos?"
+    },
+    {
+      "inicio": 15.4,
+      "fin": 21.1,
+      "texto": "En total llevo 5 años, empecé haciendo reportes de ventas y poco a poco pasea modelos predictivos."
+    },
+    {
+      "inicio": 21.1,
+      "fin": 25.0,
+      "texto": "Interesante, ¿qué herramientas y tecnologías usas en tu día a día?"
+    },
+    {
+      "inicio": 25.0,
+      "fin": 29.88,
+      "texto": "Uso Payton con pandas para limpiar y analizar datos, se cuelen para consultar las bases y"
+    },
+    {
+      "inicio": 29.88,
+      "fin": 35.12,
+      "texto": "pagar V.I. para los tableros. Últimamente también he trabajado con Docker para empaquetar mis proyectos."
+    },
+    {
+      "inicio": 35.12,
+      "fin": 38.0,
+      "texto": "Muy bien. ¿Cómo describirías tu nivel de inglés?"
+    },
+    {
+      "inicio": 38.0,
+      "fin": 42.72,
+      "texto": "Intermedio. Puedo la documentación técnica sin problema, pero todavía me cuesta hablar"
+    },
+    {
+      "inicio": 42.72,
+      "fin": 46.96,
+      "texto": "con fluidez en reuniones largas. Entendido. Cuéntame un proyecto a"
+    },
+    {
+      "inicio": 46.96,
+      "fin": 50.72,
+      "texto": "el que te sientas orgullosa. Claro, rediseñé el reporte semanal de"
+    },
+    {
+      "inicio": 50.72,
+      "fin": 56.2,
+      "texto": "de ventas de un cliente de retail, hasta tardaba tres días en armarse a mano y ahora se genera"
+    },
+    {
+      "inicio": 56.2,
+      "fin": 60.32,
+      "texto": "en cuatro horas. Trabajé con un equipo de ocho personas y presentamos los resultados"
+    },
+    {
+      "inicio": 60.32,
+      "fin": 61.32,
+      "texto": "a la gerencia."
+    },
+    {
+      "inicio": 61.32,
+      "fin": 64.6,
+      "texto": "Excelente. ¿Y cómo manejas los plazos ajustados?"
+    },
+    {
+      "inicio": 64.6,
+      "fin": 69.36,
+      "texto": "Divido el trabajo en entregas pequeñas y aviso con anticipación si algo se complica. Prefiero"
+    },
+    {
+      "inicio": 69.36,
+      "fin": 72.44,
+      "texto": "avisarte en prano que llegar tarde con una sorpresa."
+    },
+    {
+      "inicio": 72.44,
+      "fin": 75.12,
+      "texto": "Cuéntame cómo es un día normal en tu trabajo."
+    },
+    {
+      "inicio": 75.12,
+      "fin": 78.48,
+      "texto": "Empiezo revisando que los procesos de la noche hayan terminado bien, después"
+    },
+    {
+      "inicio": 78.48,
+      "fin": 82.4,
+      "texto": "atiendo los pedidos de información de las otras áreas y dejo las tardes más libres"
+    },
+    {
+      "inicio": 82.4,
+      "fin": 85.48,
+      "texto": "para los análisis largos que necesitan concentración."
+    },
+    {
+      "inicio": 85.48,
+      "fin": 89.56,
+      "texto": "¿Y cómo priorices cuando varias personas te piden a lo al mismo tiempo?"
+    },
+    {
+      "inicio": 89.56,
+      "fin": 93.32,
+      "texto": "Pregunto para qué lo necesitan y cuándo lo vamos a usar, muchas veces algo que parece"
+    },
+    {
+      "inicio": 93.32,
+      "fin": 98.04,
+      "texto": "urgente puede esperar y otras cosas que parecen pequeñas son las que más pesan en la decisión"
+    },
+    {
+      "inicio": 98.04,
+      "fin": 99.04,
+      "texto": "de alguien."
+    },
+    {
+      "inicio": 99.04,
+      "fin": 103.52,
+      "texto": "¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado?"
+    },
+    {
+      "inicio": 103.52,
+      "fin": 106.52,
+      "texto": "Sí, y lo resolvimos sentándonos con los datos adelante."
+    },
+    {
+      "inicio": 106.52,
+      "fin": 108.26,
+      "texto": "Probamos las dos formas,"
+    },
+    {
+      "inicio": 108.26,
+      "fin": 111.12,
+      "texto": "mismos cuales respondía mejor a la pregunta del cliente"
+    },
+    {
+      "inicio": 111.12,
+      "fin": 113.62,
+      "texto": "y terminamos usando una mezcla de ambas."
+    },
+    {
+      "inicio": 113.62,
+      "fin": 115.52,
+      "texto": "¿Por qué quieres cambiar de empleo?"
+    },
+    {
+      "inicio": 115.52,
+      "fin": 118.92,
+      "texto": "Busco más responsabilidad y trabajar en problemas de mayor escala."
+    },
+    {
+      "inicio": 118.92,
+      "fin": 122.32,
+      "texto": "Siento que ya aprendí lo que podía en mi puesto actual."
+    },
+    {
+      "inicio": 122.32,
+      "fin": 125.62,
+      "texto": "Hablimos de condiciones. ¿Cuándo podrías incorporarte?"
+    },
+    {
+      "inicio": 125.62,
+      "fin": 127.62,
+      "texto": "Tendría que dar un previo aviso en mi trabajo,"
+    },
+    {
+      "inicio": 127.62,
+      "fin": 130.02,
+      "texto": "así que estaría disponible en 15 días."
+    },
+    {
+      "inicio": 130.02,
+      "fin": 132.82,
+      "texto": "Perfecto. ¿Y cuál es tu pretensión salarial?"
+    },
+    {
+      "inicio": 132.82,
+      "fin": 135.82,
+      "texto": "Mi pretensión es 6.500 soles mensuales."
+    },
+    {
+      "inicio": 135.82,
+      "fin": 138.82,
+      "texto": "Gracias, Lucía. ¿Tienes alguna pregunta para nosotros?"
+    },
+    {
+      "inicio": 138.82,
+      "fin": 143.82,
+      "texto": "Sí, me gustaría saber cómo está conformado el equipo y qué proyecto se priorizarían en los primeros meses."
+    },
+    {
+      "inicio": 143.82,
+      "fin": 147.82,
+      "texto": "Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo."
+    },
+    {
+      "inicio": 147.82,
+      "fin": 148.82,
+      "texto": "Gracias a ustedes."
+    }
+  ],
+  "duracion_audio_s": 153.728,
+  "tiempo_transcripcion_s": 5.004,
+  "modelo": "small",
+  "device_leido": "cuda",
+  "compute_leido": "int8_float16",
+  "compute_pedido": "int8",
+  "glosario": false,
+  "mecanismo_glosario": null,
+  "experimento": "small_gpu_int8",
+  "fecha": "2026-10-30T04:59:12+00:00"
+}

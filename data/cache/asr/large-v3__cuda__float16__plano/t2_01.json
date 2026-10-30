@@ -1,0 +1,236 @@
+{
+  "clip": "t2_01",
+  "audio": "t2_01.m4a",
+  "texto": "Cevichería María Norte, buenas tardes, ¿en qué le puedo ayudar? Buenas tardes, quisiera hacer un pedido para delivery. Claro, dígame qué desea. Quiero medio pollo a la brasa, un lomo saltado y una jarra de chicha morada. Perfecto, medio pollo a la brasa, 40 soles, lomo saltado, 30 soles, y la jarra de chicha morada, 16 soles. ¿Algo más? No, eso es todo por ahora. Una pregunta, ¿el lomo viene con papas y arroz? Sí, con papas fritas y arroz blanco El pollo viene con papas y ensalada fresca Y con sus cremas, ají, mayonesa y ketchup Perfecto, ¿y la chicha es casera? Sí, la preparamos todos los días con maíz morado, piña y canela ¡Qué rico! ¿Aceptan pedidos con anticipación? Me gustaría programar uno para el domingo Sí, pero tendría que llamarnos ese día Los fines de semana los pedidos los tomamos desde las 10 de la mañana Entendido, lo tendré en cuenta ¿Tienen postres? Sí, tenemos suspiro a la limeña y flan de la casa No, gracias. Así está bien. Si lo desea, puede dejar una indicación para el repartidor. Por ejemplo, cómo reconocer su casa. Sí, gracias. El portón es de color gris y hay un árbol grande en la entrada. Si no encuentra el número, que llame al celular que les dejé. Perfecto. Lo noto en la hoja del pedido. El repartidor es de la zona y conoce bien las calles. Qué bien, porque la última vez que pedí a otro lugar, el repartidor se perdió y la comida llegó fría. Lamentamos que le haya pasado. Nosotros usamos bolsas térmicas y revisamos todo el pedido antes de que salga del local. Eso me tranquiliza mucho, gracias por explicármelo con tanta paciencia Le comento también que tenemos una promoción, descuento de 10 soles en pedidos de 80 soles, y su pedido califica ¡Qué bien, gracias! ¿Me indica su dirección de entrega? Avenida Los Pinos 245, en San Miguel, a una cuadra del parque Avenida Los Pinos 245, San Miguel, ¿y cómo va a pagar? Efectivo, por favor, ¿cuánto sería en total? La suma es 86 soles, menos 10 de descuento, son 76 soles en total 76 soles, entendido Paré con billete de 100 ¿El repartidor ya ha vuelto? Sí, el repartidor ya habrá vuelto Repito su pedido Medio pollo, un lomo saltado y una jarra de chicha morada Por 76 soles Perfecto, ¿cuánto demora? Aproximadamente 45 minutos Está bien, gracias A usted, que lo disfrute",
+  "segmentos": [
+    {
+      "inicio": 0.44,
+      "fin": 3.0,
+      "texto": "Cevichería María Norte, buenas tardes, ¿en qué le puedo ayudar?"
+    },
+    {
+      "inicio": 3.76,
+      "fin": 6.04,
+      "texto": "Buenas tardes, quisiera hacer un pedido para delivery."
+    },
+    {
+      "inicio": 6.3,
+      "fin": 7.56,
+      "texto": "Claro, dígame qué desea."
+    },
+    {
+      "inicio": 8.42,
+      "fin": 12.46,
+      "texto": "Quiero medio pollo a la brasa, un lomo saltado y una jarra de chicha morada."
+    },
+    {
+      "inicio": 13.0,
+      "fin": 19.78,
+      "texto": "Perfecto, medio pollo a la brasa, 40 soles, lomo saltado, 30 soles, y la jarra de chicha morada, 16 soles. ¿Algo más?"
+    },
+    {
+      "inicio": 20.56,
+      "fin": 24.04,
+      "texto": "No, eso es todo por ahora. Una pregunta, ¿el lomo viene con papas y arroz?"
+    },
+    {
+      "inicio": 24.04,
+      "fin": 26.54,
+      "texto": "Sí, con papas fritas y arroz blanco"
+    },
+    {
+      "inicio": 26.54,
+      "fin": 29.02,
+      "texto": "El pollo viene con papas y ensalada fresca"
+    },
+    {
+      "inicio": 29.02,
+      "fin": 31.12,
+      "texto": "Y con sus cremas, ají, mayonesa y ketchup"
+    },
+    {
+      "inicio": 31.12,
+      "fin": 33.76,
+      "texto": "Perfecto, ¿y la chicha es casera?"
+    },
+    {
+      "inicio": 34.22,
+      "fin": 37.1,
+      "texto": "Sí, la preparamos todos los días con maíz morado, piña y canela"
+    },
+    {
+      "inicio": 37.1,
+      "fin": 40.42,
+      "texto": "¡Qué rico! ¿Aceptan pedidos con anticipación?"
+    },
+    {
+      "inicio": 40.6,
+      "fin": 42.3,
+      "texto": "Me gustaría programar uno para el domingo"
+    },
+    {
+      "inicio": 42.3,
+      "fin": 44.28,
+      "texto": "Sí, pero tendría que llamarnos ese día"
+    },
+    {
+      "inicio": 44.28,
+      "fin": 47.64,
+      "texto": "Los fines de semana los pedidos los tomamos desde las 10 de la mañana"
+    },
+    {
+      "inicio": 47.64,
+      "fin": 49.98,
+      "texto": "Entendido, lo tendré en cuenta"
+    },
+    {
+      "inicio": 49.98,
+      "fin": 50.86,
+      "texto": "¿Tienen postres?"
+    },
+    {
+      "inicio": 51.08,
+      "fin": 53.5,
+      "texto": "Sí, tenemos suspiro a la limeña y flan de la casa"
+    },
+    {
+      "inicio": 54.08,
+      "fin": 55.2,
+      "texto": "No, gracias. Así está bien."
+    },
+    {
+      "inicio": 55.58,
+      "fin": 59.76,
+      "texto": "Si lo desea, puede dejar una indicación para el repartidor. Por ejemplo, cómo reconocer su casa."
+    },
+    {
+      "inicio": 60.26,
+      "fin": 63.7,
+      "texto": "Sí, gracias. El portón es de color gris y hay un árbol grande en la entrada."
+    },
+    {
+      "inicio": 64.08,
+      "fin": 66.82,
+      "texto": "Si no encuentra el número, que llame al celular que les dejé."
+    },
+    {
+      "inicio": 67.08,
+      "fin": 70.54,
+      "texto": "Perfecto. Lo noto en la hoja del pedido. El repartidor es de la zona y conoce bien las calles."
+    },
+    {
+      "inicio": 71.1,
+      "fin": 76.28,
+      "texto": "Qué bien, porque la última vez que pedí a otro lugar, el repartidor se perdió y la comida llegó fría."
+    },
+    {
+      "inicio": 76.58,
+      "fin": 81.4,
+      "texto": "Lamentamos que le haya pasado. Nosotros usamos bolsas térmicas y revisamos todo el pedido antes de que salga del local."
+    },
+    {
+      "inicio": 81.4,
+      "fin": 85.56,
+      "texto": "Eso me tranquiliza mucho, gracias por explicármelo con tanta paciencia"
+    },
+    {
+      "inicio": 85.56,
+      "fin": 91.76,
+      "texto": "Le comento también que tenemos una promoción, descuento de 10 soles en pedidos de 80 soles, y su pedido califica"
+    },
+    {
+      "inicio": 91.76,
+      "fin": 93.0,
+      "texto": "¡Qué bien, gracias!"
+    },
+    {
+      "inicio": 93.5,
+      "fin": 94.84,
+      "texto": "¿Me indica su dirección de entrega?"
+    },
+    {
+      "inicio": 95.26,
+      "fin": 99.6,
+      "texto": "Avenida Los Pinos 245, en San Miguel, a una cuadra del parque"
+    },
+    {
+      "inicio": 99.6,
+      "fin": 103.62,
+      "texto": "Avenida Los Pinos 245, San Miguel, ¿y cómo va a pagar?"
+    },
+    {
+      "inicio": 104.28,
+      "fin": 106.14,
+      "texto": "Efectivo, por favor, ¿cuánto sería en total?"
+    },
+    {
+      "inicio": 106.42,
+      "fin": 110.98,
+      "texto": "La suma es 86 soles, menos 10 de descuento, son 76 soles en total"
+    },
+    {
+      "inicio": 110.98,
+      "fin": 113.06,
+      "texto": "76 soles, entendido"
+    },
+    {
+      "inicio": 113.06,
+      "fin": 114.32,
+      "texto": "Paré con billete de 100"
+    },
+    {
+      "inicio": 114.32,
+      "fin": 115.66,
+      "texto": "¿El repartidor ya ha vuelto?"
+    },
+    {
+      "inicio": 115.88,
+      "fin": 117.38,
+      "texto": "Sí, el repartidor ya habrá vuelto"
+    },
+    {
+      "inicio": 117.38,
+      "fin": 118.34,
+      "texto": "Repito su pedido"
+    },
+    {
+      "inicio": 118.34,
+      "fin": 120.86,
+      "texto": "Medio pollo, un lomo saltado y una jarra de chicha morada"
+    },
+    {
+      "inicio": 120.86,
+      "fin": 123.38,
+      "texto": "Por 76 soles"
+    },
+    {
+      "inicio": 123.38,
+      "fin": 125.12,
+      "texto": "Perfecto, ¿cuánto demora?"
+    },
+    {
+      "inicio": 125.8,
+      "fin": 127.3,
+      "texto": "Aproximadamente 45 minutos"
+    },
+    {
+      "inicio": 127.3,
+      "fin": 128.28,
+      "texto": "Está bien, gracias"
+    },
+    {
+      "inicio": 128.28,
+      "fin": 130.06,
+      "texto": "A usted, que lo disfrute"
+    }
+  ],
+  "duracion_audio_s": 130.6666875,
+  "tiempo_transcripcion_s": 14.74,
+  "modelo": "large-v3",
+  "device_leido": "cuda",
+  "compute_leido": "float16",
+  "compute_pedido": "float16",
+  "glosario": false,
+  "mecanismo_glosario": null,
+  "fecha": "2026-10-30T05:12:47+00:00"
+}

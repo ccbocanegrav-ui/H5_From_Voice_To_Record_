@@ -1,0 +1,222 @@
+{
+  "clip": "t1_02",
+  "audio": "t1_02.m4a",
+  "texto": "Hola Alejandra, bienvenida. Antes de empezar, para linear expectativas. ¿Cuál es tu pretensión salarial? Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes. Ha notado. ¿Y desde cuándo podrías empezar? De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata. Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llevas en desarrollo? Tres años y medio. Comencé como practicante y luego me contrataron de forma fija. ¿Cuál fue tu último puesto? Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea ¿Con qué tecnologías trabajabas? Principalmente Python con Django y PostgreSQL para el servidor También usaba Docker y Git todos los días y algo de AWS para el despliegue ¿Y cómo es tu nivel de inglés? Avanzado, estudié 5 años en un instituto y mantengo reuniones con clientes de otros países sin problema ¡Muy bien! Cuéntame cómo manejas un error en producción. Lo primero, revisar los registros y reproducir el problema en un ambiente de prueba. Si es crítico, aviso el equipo y se hace una corrección rápida y después escribimos un informe para que no se respita. ¿Me parece un buen enfoque? ¿Cómo trabajas en equipo? Me gusta revisar el código de mis compañeros y que revisen el mío. Mi papa digital hacía morrenes cortas todas las mañanas de 15 minutos para corregir las tareas. ¿Y prefieres trabajo remoto o presencial? Me da igual, puedo ir a oficina o trabajar desde casa, siempre que haya buena comunicación. ¿Qué esperas aprender de esta posición? Quiero conocer mejor cómo se diseña sistemas que tiene a muchos usuarios a la vez. En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen. ¿Tienes alguna duda sobre el proceso? Solo seguí una prueba técnica antes de la decisión final. Sí, sería una prueba corta, de un par de horas, la próxima semana. Perfecto, me parece bien. Antes de cerrar, cuéntame cómo recibes los comentarios sobre tu trabajo. Los escucho con calma y trato de no defenderme de inmediato. Si alguien me señala algo en mi código, primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar. Y cuando tú tienes que dar un comentario difícil, un compañero. Lo hablo en privado y empiezo por lo que está bien. Después explico el problema con un ejemplo concreto y propongo una alternativa para que no suene como una crítica a la persona. ¿Qué haces cuando sientes que un plazo no es realista? Lo digo cuanto antes y con razones, prefiero proponer una entrega más pequeña y a tiempo que comprometar todo y llegar con algo a medias, casi siempre el equipo lo agradece. Gracias Alejandra, ya tenemos información, te contactaremos pronto. Muchas gracias.",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 7.0,
+      "texto": "Hola Alejandra, bienvenida. Antes de empezar, para linear expectativas. ¿Cuál es tu pretensión salarial?"
+    },
+    {
+      "inicio": 7.0,
+      "fin": 11.0,
+      "texto": "Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes."
+    },
+    {
+      "inicio": 11.0,
+      "fin": 14.0,
+      "texto": "Ha notado. ¿Y desde cuándo podrías empezar?"
+    },
+    {
+      "inicio": 14.0,
+      "fin": 20.0,
+      "texto": "De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata."
+    },
+    {
+      "inicio": 20.0,
+      "fin": 24.0,
+      "texto": "Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llevas en desarrollo?"
+    },
+    {
+      "inicio": 24.0,
+      "fin": 29.0,
+      "texto": "Tres años y medio. Comencé como practicante y luego me contrataron de forma fija."
+    },
+    {
+      "inicio": 29.0,
+      "fin": 31.0,
+      "texto": "¿Cuál fue tu último puesto?"
+    },
+    {
+      "inicio": 31.0,
+      "fin": 36.0,
+      "texto": "Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea"
+    },
+    {
+      "inicio": 36.0,
+      "fin": 38.0,
+      "texto": "¿Con qué tecnologías trabajabas?"
+    },
+    {
+      "inicio": 38.0,
+      "fin": 43.0,
+      "texto": "Principalmente Python con Django y PostgreSQL para el servidor"
+    },
+    {
+      "inicio": 43.0,
+      "fin": 50.0,
+      "texto": "También usaba Docker y Git todos los días y algo de AWS para el despliegue"
+    },
+    {
+      "inicio": 50.0,
+      "fin": 52.0,
+      "texto": "¿Y cómo es tu nivel de inglés?"
+    },
+    {
+      "inicio": 52.0,
+      "fin": 57.0,
+      "texto": "Avanzado, estudié 5 años en un instituto y mantengo reuniones con clientes de otros países sin problema"
+    },
+    {
+      "inicio": 57.0,
+      "fin": 60.5,
+      "texto": "¡Muy bien! Cuéntame cómo manejas un error en producción."
+    },
+    {
+      "inicio": 60.5,
+      "fin": 64.5,
+      "texto": "Lo primero, revisar los registros y reproducir el problema en un ambiente de prueba."
+    },
+    {
+      "inicio": 64.5,
+      "fin": 67.5,
+      "texto": "Si es crítico, aviso el equipo y se hace una corrección rápida"
+    },
+    {
+      "inicio": 67.5,
+      "fin": 70.5,
+      "texto": "y después escribimos un informe para que no se respita."
+    },
+    {
+      "inicio": 70.5,
+      "fin": 73.5,
+      "texto": "¿Me parece un buen enfoque? ¿Cómo trabajas en equipo?"
+    },
+    {
+      "inicio": 73.5,
+      "fin": 77.0,
+      "texto": "Me gusta revisar el código de mis compañeros y que revisen el mío."
+    },
+    {
+      "inicio": 77.0,
+      "fin": 82.5,
+      "texto": "Mi papa digital hacía morrenes cortas todas las mañanas de 15 minutos para corregir las tareas."
+    },
+    {
+      "inicio": 82.5,
+      "fin": 85.0,
+      "texto": "¿Y prefieres trabajo remoto o presencial?"
+    },
+    {
+      "inicio": 85.0,
+      "fin": 90.0,
+      "texto": "Me da igual, puedo ir a oficina o trabajar desde casa, siempre que haya buena comunicación."
+    },
+    {
+      "inicio": 90.0,
+      "fin": 92.0,
+      "texto": "¿Qué esperas aprender de esta posición?"
+    },
+    {
+      "inicio": 92.0,
+      "fin": 96.0,
+      "texto": "Quiero conocer mejor cómo se diseña sistemas que tiene a muchos usuarios a la vez."
+    },
+    {
+      "inicio": 96.0,
+      "fin": 101.0,
+      "texto": "En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen."
+    },
+    {
+      "inicio": 101.0,
+      "fin": 103.0,
+      "texto": "¿Tienes alguna duda sobre el proceso?"
+    },
+    {
+      "inicio": 103.0,
+      "fin": 107.0,
+      "texto": "Solo seguí una prueba técnica antes de la decisión final."
+    },
+    {
+      "inicio": 107.0,
+      "fin": 111.0,
+      "texto": "Sí, sería una prueba corta, de un par de horas, la próxima semana."
+    },
+    {
+      "inicio": 111.0,
+      "fin": 113.0,
+      "texto": "Perfecto, me parece bien."
+    },
+    {
+      "inicio": 113.0,
+      "fin": 116.5,
+      "texto": "Antes de cerrar, cuéntame cómo recibes los comentarios sobre tu trabajo."
+    },
+    {
+      "inicio": 116.5,
+      "fin": 120.2,
+      "texto": "Los escucho con calma y trato de no defenderme de inmediato."
+    },
+    {
+      "inicio": 120.2,
+      "fin": 122.4,
+      "texto": "Si alguien me señala algo en mi código,"
+    },
+    {
+      "inicio": 122.4,
+      "fin": 127.1,
+      "texto": "primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar."
+    },
+    {
+      "inicio": 127.1,
+      "fin": 130.1,
+      "texto": "Y cuando tú tienes que dar un comentario difícil, un compañero."
+    },
+    {
+      "inicio": 130.1,
+      "fin": 132.4,
+      "texto": "Lo hablo en privado y empiezo por lo que está bien."
+    },
+    {
+      "inicio": 132.4,
+      "fin": 137.0,
+      "texto": "Después explico el problema con un ejemplo concreto y propongo una alternativa"
+    },
+    {
+      "inicio": 137.0,
+      "fin": 139.6,
+      "texto": "para que no suene como una crítica a la persona."
+    },
+    {
+      "inicio": 139.6,
+      "fin": 142.3,
+      "texto": "¿Qué haces cuando sientes que un plazo no es realista?"
+    },
+    {
+      "inicio": 142.3,
+      "fin": 151.3,
+      "texto": "Lo digo cuanto antes y con razones, prefiero proponer una entrega más pequeña y a tiempo que comprometar todo y llegar con algo a medias, casi siempre el equipo lo agradece."
+    },
+    {
+      "inicio": 151.3,
+      "fin": 155.3,
+      "texto": "Gracias Alejandra, ya tenemos información, te contactaremos pronto."
+    },
+    {
+      "inicio": 155.3,
+      "fin": 157.3,
+      "texto": "Muchas gracias."
+    }
+  ],
+  "duracion_audio_s": 159.4026875,
+  "tiempo_transcripcion_s": 5.202,
+  "modelo": "small",
+  "device_leido": "cuda",
+  "compute_leido": "float16",
+  "compute_pedido": "float16",
+  "glosario": true,
+  "mecanismo_glosario": "hotwords",
+  "experimento": "small_gpu_fp16_glos",
+  "fecha": "2026-10-30T05:05:18+00:00"
+}

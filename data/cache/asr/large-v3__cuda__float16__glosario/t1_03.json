@@ -1,0 +1,197 @@
+{
+  "clip": "t1_03",
+  "audio": "t1_03.m4a",
+  "texto": "Hola Valeria, gracias por venir. Para empezar, ¿cuánta experiencia tienes? Buenas tardes, tengo un año y medio de experiencia, todo en prácticas y en un par de proyectos de la universidad. ¿Qué haces en tu último puesto? Soy practicante de ciencias de datos en Mercado Sur, una cadena de supermercados, ayuda a preparar bases de datos y a probar modelos sencillos de predicción de demanda. Perfecto, ¿qué herramientas manejas? Excel para casi todo, luego Python y la librería Scikit-learn para los modelos. Para las visualizaciones usé Tableau. Una consulta, ¿cómo calificarías tu nivel en inglés? Básico, entiendo algunas frases escritas, pero hablar todavía me cuesta mucho. Estoy llevando un curso los sábados para mejorar. Está bien, es una buena iniciativa. ¿Cuándo podrías empezar a trabajar? Termino mis exámenes finales en noviembre, así que podría empezar a partir del 1 de diciembre. Entendido. Cuéntame una dificultad que hayas enfrentado. En mi práctica, los datos de las tiendas llegaban con muchos errores, como precios en blanco y fechas mal escritas. Aprendí a validar los datos antes de usarlos y armé una lista de revisión para el equipo de 12 puntos. ¿Y qué fue lo que más disfrutaste de tu práctica? Ver que lo que hacía servía. Un día el jefe de compras usó una de mis tablas para decidir cuándo pedir de un producto y después me contó que se evitó un faltante. Eso me motivó muchísimo a seguir en esta tarea. ¿Cómo te organizas entre la universidad y el trabajo? Tengo un calendario semanal y reservo bloques fijos para estudiar y para trabajar. Los fines de semana descanso para no cansarme demasiado. Cuéntame cómo aprendes cosas nuevas cuando no conoces el tema. Primero busco ejemplos sencillos, los copio para entender cómo funcionan y luego intento hacer algo parecido por mi cuenta sin mirar y si me atasco regreso a revisar. Así lo que aprendo se me queda. ¿Qué haces cuando un compañero te explica algo? Se lo digo con sinceridad y le pido un ejemplo. Antes me daba vergüenza, pero ahora sé que preguntar a tiempo me ahorra errores y me hace aprender más rápido. ¿Cómo te gustaría que fueran tus primeros días en un trabajo nuevo? Me gustaría conocer al equipo, entender para qué sirve lo que hago y tener a alguien a quien preguntar sin miedo. Con eso me siento segura y empiezo a aportar antes. ¡Qué bien! ¿Y qué esperas ganar mensualmente? Estaba pensando en $1,800 dólares al mes. Anotado. ¿Tienes alguna pregunta? Sí. ¿Habría capacitación durante los primeros meses? Sí. Tenemos un programa de inducción de cuatro semanas. Muchas gracias, Valeria. Gracias a ustedes.",
+  "segmentos": [
+    {
+      "inicio": 0.96,
+      "fin": 5.36,
+      "texto": "Hola Valeria, gracias por venir. Para empezar, ¿cuánta experiencia tienes?"
+    },
+    {
+      "inicio": 5.84,
+      "fin": 11.04,
+      "texto": "Buenas tardes, tengo un año y medio de experiencia, todo en prácticas y en un par de proyectos de la universidad."
+    },
+    {
+      "inicio": 11.4,
+      "fin": 12.48,
+      "texto": "¿Qué haces en tu último puesto?"
+    },
+    {
+      "inicio": 13.16,
+      "fin": 17.26,
+      "texto": "Soy practicante de ciencias de datos en Mercado Sur, una cadena de supermercados,"
+    },
+    {
+      "inicio": 17.44,
+      "fin": 21.0,
+      "texto": "ayuda a preparar bases de datos y a probar modelos sencillos de predicción de demanda."
+    },
+    {
+      "inicio": 21.84,
+      "fin": 23.72,
+      "texto": "Perfecto, ¿qué herramientas manejas?"
+    },
+    {
+      "inicio": 24.02,
+      "fin": 29.52,
+      "texto": "Excel para casi todo, luego Python y la librería Scikit-learn para los modelos."
+    },
+    {
+      "inicio": 29.52,
+      "fin": 31.76,
+      "texto": "Para las visualizaciones usé Tableau."
+    },
+    {
+      "inicio": 32.24,
+      "fin": 35.3,
+      "texto": "Una consulta, ¿cómo calificarías tu nivel en inglés?"
+    },
+    {
+      "inicio": 36.28,
+      "fin": 42.3,
+      "texto": "Básico, entiendo algunas frases escritas, pero hablar todavía me cuesta mucho. Estoy llevando un curso los sábados para mejorar."
+    },
+    {
+      "inicio": 42.98,
+      "fin": 46.38,
+      "texto": "Está bien, es una buena iniciativa. ¿Cuándo podrías empezar a trabajar?"
+    },
+    {
+      "inicio": 47.16,
+      "fin": 51.84,
+      "texto": "Termino mis exámenes finales en noviembre, así que podría empezar a partir del 1 de diciembre."
+    },
+    {
+      "inicio": 52.52,
+      "fin": 55.72,
+      "texto": "Entendido. Cuéntame una dificultad que hayas enfrentado."
+    },
+    {
+      "inicio": 55.72,
+      "fin": 62.16,
+      "texto": "En mi práctica, los datos de las tiendas llegaban con muchos errores, como precios en blanco y fechas mal escritas."
+    },
+    {
+      "inicio": 62.34,
+      "fin": 67.36,
+      "texto": "Aprendí a validar los datos antes de usarlos y armé una lista de revisión para el equipo de 12 puntos."
+    },
+    {
+      "inicio": 68.3,
+      "fin": 71.08,
+      "texto": "¿Y qué fue lo que más disfrutaste de tu práctica?"
+    },
+    {
+      "inicio": 72.12,
+      "fin": 73.74,
+      "texto": "Ver que lo que hacía servía."
+    },
+    {
+      "inicio": 74.02,
+      "fin": 80.9,
+      "texto": "Un día el jefe de compras usó una de mis tablas para decidir cuándo pedir de un producto y después me contó que se evitó un faltante."
+    },
+    {
+      "inicio": 81.26,
+      "fin": 83.2,
+      "texto": "Eso me motivó muchísimo a seguir en esta tarea."
+    },
+    {
+      "inicio": 83.2,
+      "fin": 87.0,
+      "texto": "¿Cómo te organizas entre la universidad y el trabajo?"
+    },
+    {
+      "inicio": 87.7,
+      "fin": 91.52,
+      "texto": "Tengo un calendario semanal y reservo bloques fijos para estudiar y para trabajar."
+    },
+    {
+      "inicio": 91.68,
+      "fin": 95.18,
+      "texto": "Los fines de semana descanso para no cansarme demasiado."
+    },
+    {
+      "inicio": 96.16,
+      "fin": 98.82,
+      "texto": "Cuéntame cómo aprendes cosas nuevas cuando no conoces el tema."
+    },
+    {
+      "inicio": 99.62,
+      "fin": 103.48,
+      "texto": "Primero busco ejemplos sencillos, los copio para entender cómo funcionan"
+    },
+    {
+      "inicio": 103.48,
+      "fin": 108.54,
+      "texto": "y luego intento hacer algo parecido por mi cuenta sin mirar y si me atasco regreso a revisar."
+    },
+    {
+      "inicio": 108.54,
+      "fin": 110.36,
+      "texto": "Así lo que aprendo se me queda."
+    },
+    {
+      "inicio": 110.72,
+      "fin": 113.16,
+      "texto": "¿Qué haces cuando un compañero te explica algo?"
+    },
+    {
+      "inicio": 113.2,
+      "fin": 124.66,
+      "texto": "Se lo digo con sinceridad y le pido un ejemplo. Antes me daba vergüenza, pero ahora sé que preguntar a tiempo me ahorra errores y me hace aprender más rápido."
+    },
+    {
+      "inicio": 125.18,
+      "fin": 127.8,
+      "texto": "¿Cómo te gustaría que fueran tus primeros días en un trabajo nuevo?"
+    },
+    {
+      "inicio": 128.4,
+      "fin": 136.52,
+      "texto": "Me gustaría conocer al equipo, entender para qué sirve lo que hago y tener a alguien a quien preguntar sin miedo. Con eso me siento segura y empiezo a aportar antes."
+    },
+    {
+      "inicio": 136.72,
+      "fin": 139.04,
+      "texto": "¡Qué bien! ¿Y qué esperas ganar mensualmente?"
+    },
+    {
+      "inicio": 139.52,
+      "fin": 142.14,
+      "texto": "Estaba pensando en $1,800 dólares al mes."
+    },
+    {
+      "inicio": 142.84,
+      "fin": 144.7,
+      "texto": "Anotado. ¿Tienes alguna pregunta?"
+    },
+    {
+      "inicio": 145.02,
+      "fin": 148.76,
+      "texto": "Sí. ¿Habría capacitación durante los primeros meses?"
+    },
+    {
+      "inicio": 149.26,
+      "fin": 153.16,
+      "texto": "Sí. Tenemos un programa de inducción de cuatro semanas. Muchas gracias, Valeria."
+    },
+    {
+      "inicio": 153.6,
+      "fin": 154.34,
+      "texto": "Gracias a ustedes."
+    }
+  ],
+  "duracion_audio_s": 156.672,
+  "tiempo_transcripcion_s": 16.226,
+  "modelo": "large-v3",
+  "device_leido": "cuda",
+  "compute_leido": "float16",
+  "compute_pedido": "float16",
+  "glosario": true,
+  "mecanismo_glosario": "hotwords",
+  "experimento": "large_gpu_fp16_glos",
+  "fecha": "2026-10-30T05:06:43+00:00"
+}

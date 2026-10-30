@@ -1,0 +1,834 @@
+{
+  "entorno": {
+    "fecha_utc": "2026-10-30T04:58:20+00:00",
+    "python": "3.13.15",
+    "faster_whisper": "1.2.1",
+    "ctranslate2": "4.8.4",
+    "jiwer": "4.0.0",
+    "gpu": "Tesla T4",
+    "driver": "580.178.04",
+    "memoria_total_mb": 15360
+  },
+  "experimentos": [
+    {
+      "id": "small_gpu_fp16",
+      "modelo": "small",
+      "precision": "float16",
+      "glosario": false,
+      "device_pedido": "cuda",
+      "device_leido": "cuda",
+      "n_clips": 5,
+      "fallback_silencioso": false,
+      "carga_s": 6.11,
+      "wer": 0.07576428887904298,
+      "wer_ic95": [
+        0.06368863334807608,
+        0.09332153914197258
+      ],
+      "cer": 0.03284868066774367,
+      "cer_ic95": [
+        0.021714285714285714,
+        0.04877100186683261
+      ],
+      "seg_por_min_audio": 1.8810407405407676,
+      "glosario_recall": 0.76,
+      "vram_base_mb": 3,
+      "vram_pico_mb": 887,
+      "vram_delta_mb": 884,
+      "gpu_verificada": true,
+      "filas": [
+        {
+          "clip": "t1_01",
+          "texto": "Buenos días Lucía, gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas. Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima. ¿Y cuánto tiempo llevo trabajando en análisis de datos? En total llevo 5 años, empecé haciendo reportes de ventas y poco a poco pasea modelos predictivos. Interesante, ¿qué herramientas y tecnologías usas en tu día a día? Uso Payton con pandas para limpiar y analizar datos, se cuele para consultar las bases y pagar V.I. para los tableros. Últimamente también he trabajado con Docker para empaquetar mis proyectos. Muy bien, ¿cómo describirías tu nivel de inglés? Intermedio, puedo dar documentación técnica sin problema, pero todavía me cuesta hablar con fluidez en reuniones largas. Entendido, cuentan un proyecto al que te sientas orgullosa. Claro, redesigné el reporte semanal de ventas de un cliente de Retail, antes tardaba tres días en armarse a mano y ahora se genera en cuatro horas. Trabajé con un equipo de ocho personas y presentamos los resultados a la gerencia. Excelente. ¿Y cómo manejas los plazos ajustados? Divido el trabajo en entregas pequeñas y aviso con anticipación si algo se complica. Prefiero avisarte en prano que llegar tarde con una sorpresa. Cuéntame cómo es un día normal en tu trabajo. Empiezo revisando que los procesos de la noche hayan terminado bien, después atiendo los pedidos de información de las otras áreas y dejo las tardes más libres para los análisis largos que necesitan concentración. ¿Y cómo priorices cuando varias personas te piden a lo al mismo tiempo? Pregunto para qué lo necesitan y cuándo lo vamos a usar. Muchas veces algo que parece urgente puede esperar y otras cosas que parecen pequeñas son las que más pesan en la decisión de alguien. ¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado? Sí, y lo resolvimos sentándonos con los datos adelante. Probamos las dos formas, mismas cuales respondía mejor a la pregunta del cliente y terminamos usando una mezcla de ambas. ¿Por qué quieres cambiar de empleo? Busco más responsabilidad y trabajar en problemas de mayor escala, siento que ya aprendí lo que podía en mi puesto actual. Hablemos de condiciones, ¿cuándo podrías incorporarte? Tendría que dar un previo aviso en mi trabajo, así que estaría disponible en 15 días. Perfecto. ¿Y cuál es tu pretensión salarial? Mi pretensión es 6.500 soles mensuales. Gracias, Lucía. ¿Tienes alguna pregunta para nosotros? Sí, me gustaría saber cómo está conformado el equipo y qué proyecto se priorizarían en los primeros meses. Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo. Gracias a ustedes.",
+          "dur_s": 153.728,
+          "t_s": 4.853,
+          "glos_hits": 2,
+          "glos_total": 5,
+          "w_err": 28,
+          "w_ref": 439,
+          "c_err": 57,
+          "c_ref": 2588,
+          "wer": 0.06378132118451026,
+          "cer": 0.022024729520865535
+        },
+        {
+          "clip": "t1_02",
+          "texto": "Hola Alejandra, bienvenida. Antes de empezar, para linear expectativas. ¿Cuál es tu pretensión salarial? Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes. Ha notado. ¿Y desde cuándo podrías empezar? De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata. Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llegas en desarrollo? Tres años y medio. Comencé como practicante y luego me contrataron de forma fija. ¿Cuál fue tu último puesto? Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea. ¿Con qué tecnologías trabajabas? Principalmente Python con Django y Postgre, SQL para el servidor. También usaba Docker y Git todos los días y algo de AWS para el despliegue. ¿Y cómo es tu nivel de inglés? ¡Avanzado! Estudié cinco años en un instituto y mantengo reuniones con clientes de otros países sin problema. Muy bien. Cuéntame cómo manejas un error en producción. Lo primero es revisar los registros y reproducir el problema en un ambiente de prueba. Si es crítico, aviso el equipo y se hace una corrección rápida y después escribimos un informe para que no se respita. Me parece un buen enfoque. ¿Cómo trabajas en equipo? Me gusta revisar el código de mis compañeros y que revisen el mío. Mi papa digital hacía morrónienes cortas todas las mañanas de 15 minutos para coordinar las tareas. ¿Prefieres trabajo remoto o presencial? Me da igual, puedo ir a oficina o trabajar desde casa siempre que haya buena comunicación. ¿Qué esperas aprender de esta posición? Quiero conocer mejor cómo se diseña sistemas que tiene a muchos usuarios a la vez. En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen. ¿Tienes alguna duda sobre el proceso? Sólo seguí una prueba técnica antes de la decisión final. Sí, sería una prueba corta de un par de horas la próxima semana. Perfecto, me parece bien. Antes de cerrar, cuéntame cómo recibías los comentarios sobre tu trabajo. Los escucho con calma y trato de no defenderme de inmediato. Si alguien me señala algo en mi código, primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar. Y cuando tú tienes que dar un comentario difícil a un compañero. Lo hablo en privado y empiezo por lo que está bien. Después explico el problema con un ejemplo concreto y propongo una alternativa para que no suene como una crítica a la persona. ¿Qué haces cuando sientes que un plazo no es realista? Lo digo cuanto antes y con razones. Prefiero proponer una entrega más pequeña y a tiempo que comprometar todo y llegar con algo a medias. Casi siempre el equipo lo agradece. Gracias Alejandra, ya tenemos información. Te contactaremos pronto. Muchas gracias.",
+          "dur_s": 159.4026875,
+          "t_s": 4.941,
+          "glos_hits": 5,
+          "glos_total": 6,
+          "w_err": 28,
+          "w_ref": 460,
+          "c_err": 61,
+          "c_ref": 2625,
+          "wer": 0.06086956521739131,
+          "cer": 0.023238095238095238
+        },
+        {
+          "clip": "t1_03",
+          "texto": "Hola, Valeria, gracias por venir. Para empezar, ¿cuánta experiencia tienes? Buenas tardes. Tengo un año y medio de experiencia todo en prácticas y en un par de proyectos de la universidad. ¿Quién es tu último puesto? Puy practicante de ciencias de datos en mercados sur, una cadena de supermercados, ayuda a preparar base de datos y a probar modelos sencillos de predicción de demanda. Perfecto. ¿Qué herramientas manejas? para casi todo, luego Python y la librería scikit-learn para los modelos. Para la visualización es usted tablobo. Una consulta. ¿Cómo calificarías tu nivel de inglés? Básico. Entiendo algunas frases escritas, pero hablar todavía me cuesta mucho. Estoy llevando un curso losados para mejorar. Está bien, es una buena iniciativa. ¿Cuándo podrías empezar a trabajar? Termino mis examenes finales en noviembre, así que podría empezar a partir del 1º de diciembre. En mi práctica los datos de las tiendas llegaban con muchos errores como precios en blanco y fechas mal escritas, aprendí a validar los datos antes de usarlos y armenar una lista de revisión para el equipo de 12 puntos. ¿Y qué fue lo que más disfrutaste de tu práctica? Ver qué lo que hacía servía. Un día el jefe de compras usó una de mis tablas para decidir cuándo pedir de un producto y después me contó que se evitó un faltante. Eso me motivó muchísimo a seguir en esta tarea. ¿Cómo te organizas entre la universidad y el trabajo? Tengo un calendario semanal y reservo bloques fijos para estudiar y para trabajar. Los fines de semana descansan para no cansarme demasiado. Cuéntame cómo aprendes cosas nuevas cuando no conoces el tema. Primero busco ejemplos sencillos, los copio para entender cómo funcionan y luego intento hacer algo parecido por mi cuenta sin mirar y sin metasco, regreso a revisar. Así lo que aprendo se me queda. ¿Qué es eso cuando un compañero te explica algo y no lo entiendes del todo? Se lo digo con sinceridad y le pido un ejemplo. Antes me daba vergüenza, pero ahora sé que preguntar a tiempo me ahorra errores y me hace aprender más rápido. ¿Cómo te gustaría que fueran tus primeros días en un trabajo nuevo? Me gustaría conocer al equipo, entender para qué sirve lo que hago y tener a alguien a quien preguntar sin miedo. Con eso me siento segura y empiezo a aportar antes. Qué bien. ¿Y qué esperas a andar mensualmente? Estaba pensando en mil ochocientos dólares al mes. ¿Ha notado? ¿Tienes alguna pregunta? Sí, habría capacidad, capacitación durante los primeros meses. Sí, tenemos un programa de inducción de cuatro semanas. Muchas gracias Valeria. Gracias a ustedes.",
+          "dur_s": 156.672,
+          "t_s": 4.583,
+          "glos_hits": 2,
+          "glos_total": 4,
+          "w_err": 49,
+          "w_ref": 445,
+          "c_err": 159,
+          "c_ref": 2535,
+          "wer": 0.1101123595505618,
+          "cer": 0.06272189349112427
+        },
+        {
+          "clip": "t1_04",
+          "texto": "Buenos días, Rocío. Hablame de ti y tu trayectoria. Buenos días. Tengo ocho años de experiencia en datos. Mi último puesto fue en ingeniería de datos en Andes Logística, donde construía y mantenía los flujos de información de toda la empresa. ¿Con qué tecnologías trabajabas? Mucho Python, Airflow para programas, los procesos, DBT para transformar las datos, y todo corría en AWS con Kubernetes. ¿Y cuántas personas habían en tu equipo? Eramos 14 divididos en 3 tareas, ingestión, transformación y publicación. ¿Por qué dejaste Anderlogística? La empresa se reestructuró y el área de datos se rebojo a la mitad. Fue una decisión de ellos, no mía, pero me dejó con ganas de buscar un proyecto más estable. Entendido. ¿Y cómo es inglés? Fluido, tengo certificación C1, escribo la documentación técnica en inglés y he dado presentaciones a clientes de Chile y México. Muy bien. ¿Cuándo podrías incorporarte? Me gustaría tomarme un tiempo para descansar, así que estaría lista en un mes. Perfecto. Ahora, ¿qué pretensión salar el telnes? 7.500 soles mensuales. ¿Es negociable? Un poco, depende de los beneficios y el esquema de trabajo remoto. ¿Qué esquema prefieres? Remoto, presencial o mixto. Me acomodo un esquema híbrido dos días en la oficina y tres desde casa. Cuéntame un rato técnico que hayas resuelto. Teníamos un proceso nocturno que tardaba mucho y a veces fallaba a mitad de camino. Lo viví en etapas más pequeñas, agregué reintentos automáticos y avisos cuando algo fallaba. Como es el proceso de juego de romperse y el equipo pudo dormir tranquilo. ¿Cómo mides que un proceso está funcionando bien? Reviso que los datos lleguen completos y a tiempo y que los totales cuadren con la fuente original si algo no coincide lo investigo antes de que alguien más lo note. ¿Has liderado equipos antes? ¿Cómo repartes el trabajo cuando alguien está sobrecargado? Primero, hablo con la persona para entender qué la está gobeando. A veces el problema es la cantidad de tareas y otra veces es que le tocó algo para lo que no se sentía preparada. Según el caso, redistribuyo o acompaño. ¿Qué haces cuando un integrante nuevo no rinde como esperabas? Reviso primero si le expliqué bien lo que esperaba de su trabajo porque muchas veces el problema es de comunicación. Después acordamos metas pequeñas y nos vemos con frecuencia para ver cómo va. ¿Cómo celebras los logros del equipo? Me gusta reconocer en público lo que cada persona hizo bien con detalles, decir gracias por el trabajo del equipo suena bonito, pero mencionar que hizo cada uno es lo que realmente motiva. Está bien, algo más que quieras agregar, que me motiva liderar a otras personas y compartir lo que he aprendido. Quisiera creer ser hacia un rol de jefatura técnica. Muchas gracias, Rocío. A ustedes.",
+          "dur_s": 162.816,
+          "t_s": 5.14,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 32,
+          "w_ref": 463,
+          "c_err": 55,
+          "c_ref": 2662,
+          "wer": 0.06911447084233262,
+          "cer": 0.02066115702479339
+        },
+        {
+          "clip": "t1_05",
+          "texto": "Buenas, Amira. Gracias por venir. Cuéntame cómo llegaste este rubro. Buenas. Estudio de administración en la universidad me gustaron los números. Hace dos años entré a trabajar como analista de inteligencia comercial en Blizzard Retail. O sea que se ha fue tu último puesto? Sí, analista de inteligencia comercial y sigo ahí hasta fin de año. ¿Y qué herramientas usas? Básicamente, SQL para la información, Excel para los cálculos rápidos, Power BI, y también Looker Studio para los tableros que ven en los gerentes. ¿Cuál es tu nivel de inglés? Intermedio, más o menos, entiendo bien cuando escucho, pero al escribir, cometo errores. OK, hablemos de la parte económica. ¿Cuánto pretendes ganar? Pretendo 5,000, perdón, 5,350 soles al mes. ¿Y cuándo podrías empezar? Mi contrato termina en diciembre, entonces podría incorporarme el 15 de enero. Entiendo. Cuéntame cómo explicas un resultado a personas que no son técnicas. Trato de empezar por la conclusión y usar un gráfico simple. Por ejemplo, el mes pasado mostré que el 10% de los productos generaba la mayor parte de las ventas y comenzó en el área comercial cambió su plan de promociones. Muy bien, ¿y qué esperas del equipo al que te incorpores? Que haya espacio para preguntar y aprender y que se revisen los análisis entre todos antes de presentarlos. Cuéntame un error que has cometido en el análisis. Una vez presenté un promedio sin ver que había datos duplicados, un compañero lo notó antes de la reunión y pudimos corregirlo. Desde entonces, revisó los duplicados y los valores raros antes de calcular cualquier cosa. ¿Qué te gusta hacer fuera del trabajo? Me gusta correr la fina de semana y cocinar, a veces preparo cena para mis amigos y tratamos de probar recetas nuevas. Cuéntame cómo te preparas cuando tienes que presentar resultados a gerencia. Primero imagino qué preguntas me harían y preparo respuestas cortas, después ensayo la presentación en voz alta con un compañero que me ayuda a ver en dónde me arredo y qué parte sobra. ¿Y si alguien cuestionó tus conclusiones en plena reunión? la objeción completa antes de responder. Si tienes razón, lo reconozco y me comprometo a revisar, si no explico con calma de dónde sale el resultado y a fresco señala los datos después. ¿Qué es lo que más valora es de un buen jefe o jefa? Que confíe en mí, pero que también esté cerca cuando lo necesito. Me gusta que me den libertad para organizarme, siempre que sepa claramente qué resultados esperan. ¿Y te interesa aprender más de programación? Sí, de hecho, estoy aprendiendo Python por mi cuenta, aunque todavía no lo uso en el trabajo. Gracias Samira, te viseremos pronto. Gracias, un gusto.",
+          "dur_s": 148.736,
+          "t_s": 4.979,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 34,
+          "w_ref": 450,
+          "c_err": 95,
+          "c_ref": 2589,
+          "wer": 0.07555555555555556,
+          "cer": 0.036693704132869834
+        }
+      ]
+    },
+    {
+      "id": "small_gpu_int8",
+      "modelo": "small",
+      "precision": "int8_float16",
+      "glosario": false,
+      "device_pedido": "cuda",
+      "device_leido": "cuda",
+      "n_clips": 5,
+      "fallback_silencioso": false,
+      "carga_s": 0.978,
+      "wer": 0.07842268498006202,
+      "wer_ic95": [
+        0.06678460858027421,
+        0.0935412026726058
+      ],
+      "cer": 0.033925686591276254,
+      "cer_ic95": [
+        0.023085714285714286,
+        0.0499377722464219
+      ],
+      "seg_por_min_audio": 1.9491532134693952,
+      "glosario_recall": 0.76,
+      "vram_base_mb": 109,
+      "vram_pico_mb": 535,
+      "vram_delta_mb": 426,
+      "gpu_verificada": true,
+      "filas": [
+        {
+          "clip": "t1_01",
+          "texto": "Buenos días Lucía, gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas. Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima. ¿Y cuánto tiempo llevo trabajando en análisis de datos? En total llevo 5 años, empecé haciendo reportes de ventas y poco a poco pasea modelos predictivos. Interesante, ¿qué herramientas y tecnologías usas en tu día a día? Uso Payton con pandas para limpiar y analizar datos, se cuelen para consultar las bases y pagar V.I. para los tableros. Últimamente también he trabajado con Docker para empaquetar mis proyectos. Muy bien. ¿Cómo describirías tu nivel de inglés? Intermedio. Puedo la documentación técnica sin problema, pero todavía me cuesta hablar con fluidez en reuniones largas. Entendido. Cuéntame un proyecto a el que te sientas orgullosa. Claro, rediseñé el reporte semanal de de ventas de un cliente de retail, hasta tardaba tres días en armarse a mano y ahora se genera en cuatro horas. Trabajé con un equipo de ocho personas y presentamos los resultados a la gerencia. Excelente. ¿Y cómo manejas los plazos ajustados? Divido el trabajo en entregas pequeñas y aviso con anticipación si algo se complica. Prefiero avisarte en prano que llegar tarde con una sorpresa. Cuéntame cómo es un día normal en tu trabajo. Empiezo revisando que los procesos de la noche hayan terminado bien, después atiendo los pedidos de información de las otras áreas y dejo las tardes más libres para los análisis largos que necesitan concentración. ¿Y cómo priorices cuando varias personas te piden a lo al mismo tiempo? Pregunto para qué lo necesitan y cuándo lo vamos a usar, muchas veces algo que parece urgente puede esperar y otras cosas que parecen pequeñas son las que más pesan en la decisión de alguien. ¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado? Sí, y lo resolvimos sentándonos con los datos adelante. Probamos las dos formas, mismos cuales respondía mejor a la pregunta del cliente y terminamos usando una mezcla de ambas. ¿Por qué quieres cambiar de empleo? Busco más responsabilidad y trabajar en problemas de mayor escala. Siento que ya aprendí lo que podía en mi puesto actual. Hablimos de condiciones. ¿Cuándo podrías incorporarte? Tendría que dar un previo aviso en mi trabajo, así que estaría disponible en 15 días. Perfecto. ¿Y cuál es tu pretensión salarial? Mi pretensión es 6.500 soles mensuales. Gracias, Lucía. ¿Tienes alguna pregunta para nosotros? Sí, me gustaría saber cómo está conformado el equipo y qué proyecto se priorizarían en los primeros meses. Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo. Gracias a ustedes.",
+          "dur_s": 153.728,
+          "t_s": 5.004,
+          "glos_hits": 2,
+          "glos_total": 5,
+          "w_err": 30,
+          "w_ref": 439,
+          "c_err": 58,
+          "c_ref": 2588,
+          "wer": 0.0683371298405467,
+          "cer": 0.02241112828438949
+        },
+        {
+          "clip": "t1_02",
+          "texto": "Hola Alejandra, bienvenida. Antes de empezar, para linear expectativas. ¿Cuál es tu pretensión salarial? Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes. Ha notado. ¿Y desde cuándo podrías empezar? De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata. Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llegas en desarrollo? Tres años y medio. Comencé como practicante y luego me contrataron de forma fija. ¿Cuál fue tu último puesto? Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea. ¿Con qué tecnologías trabajabas? Principalmente Python con Django y Postgre, SQL para el servidor. También usaba Docker y Git todos los días y algo de AWS para el despliegue. ¿Y cómo es tu nivel de inglés? ¡Avanzado! Estudié 5 años en un instituto y mantengo reuniones con clientes de otros países sin problema. Muy bien. Cuéntame cómo manejas un error en producción. Lo primero es revisar los registros y reproducir el problema en un ambiente de prueba. Si es crítico aviso el equipo y se hace una corrección rápida y después escribimos un informe para que no se respita. Me parece un buen enfoque. ¿Cómo trabajas en equipo? Me gusta revisar el código de mis compañeros y que revisen el mío. Mi papa digital hacía morrónienes cortas todas las mañanas de 15 minutos para coordinar las tareas. ¿Prefieres trabajo remoto o presencial? Me da igual, puedo ir a oficina o trabajar desde casa siempre que haya buena comunicación. ¿Qué esperas aprender de esta posición? Quiero conocer mejor cómo se diseñan sistemas que tiene a muchos usuarios a la vez. En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen. ¿Tienes alguna duda sobre el proceso? Sólo seguí una prueba técnica antes de la decisión final. Sí, sería una prueba corta de un par de horas la próxima semana. Perfecto, me parece bien. Antes de cerrar, cuéntame cómo recibías los comentarios sobre tu trabajo. Los escucho con calma y trato de no defenderme de inmediato. Si alguien me señala algo en mi código, primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar. Y cuando tú tienes que dar un comentario difícil, un compañero. Lo hablo en privado y empiezo por lo que está bien. Después se explico el problema con un ejemplo concreto y propongo una alternativa para que no suene como una crítica a la persona. ¿Qué haces cuando sientes que un plazo no es realista? Lo digo cuanto antes y con razones. Prefiero proponer una entrega más pequeña y a tiempo que comprometar todo y llegar con algo a medias. Casi siempre el equipo lo agradece. Gracias Alejandra, ya tenemos información. Te contactaremos pronto. Muchas gracias.",
+          "dur_s": 159.4026875,
+          "t_s": 5.092,
+          "glos_hits": 5,
+          "glos_total": 6,
+          "w_err": 29,
+          "w_ref": 460,
+          "c_err": 65,
+          "c_ref": 2625,
+          "wer": 0.06304347826086956,
+          "cer": 0.024761904761904763
+        },
+        {
+          "clip": "t1_03",
+          "texto": "Hola, Valeria. Gracias por venir. Para empezar, ¿cuánta experiencia tienes? Buenas tardes. Tengo un año y medio de experiencia todo en prácticas y en un par de proyectos de la universidad. ¿Quién es tu último puesto? Puy practicante de ciencias de datos en mercados sur, una cadena de supermercados, ayuda a preparar base de datos y a probar modelos sencillos de predicción de demanda. Perfecto. ¿Qué herramientas manejas? para casi todo, luego Python y la librería scikit-learn para los modelos. Para la visualización es usted tablobo. Una consulta. ¿Cómo calificarías tu nivel de inglés? Básico. Entiendo algunas frases escritas, pero hablar todavía me cuesta mucho. Estoy llevando un curso losados para mejorar. Está bien, es una buena iniciativa. ¿Cuándo podrías empezar a trabajar? Termino mis exámenes finales en noviembre, así que podría empezar a partir del 1 de diciembre. En mi práctica los datos de las tiendas llegaban con muchos errores, como precios de en blanco y fechas mal escritas, aprendí a validar los datos antes de usarlos y armé una lista de revisión para el equipo de 12 puntos. ¿Y qué fue lo que más disfrutaste de tu práctica? Ver qué lo que hacía Servía. Un día el jefe de compras usó una de mis tablas para decidir cuándo pedir de un producto y después me contó que se evitó un faltante. Eso me motivó muchísimo a seguir en esta tarea. ¿Cómo te organizas entre la universidad y el trabajo? Tengo un calendario semanal y reservo bloques fijos para estudiar y para trabajar. Los fines de semana descanso para no cansarme demasiado. Cuéntame cómo aprendes cosas nuevas cuando no conoces el tema. Primero busco ejemplos sencillos, los copio para entender cómo funcionan y luego intento hacer algo parecido por mi cuenta sin mirar y sin metasco regreso a revisar. Así lo que aprendo se me queda. ¿Qué es eso cuando un compañero te explica algo y no lo entiendes del todo? Se lo digo con sinceridad y le pido un ejemplo, antes me daba vergüenza pero ahora sé que preguntar a tiempo me ahorra errores y me hace aprender más rápido. ¿Cómo te gustaría que fueran tus primeros días en un trabajo nuevo? Me gustaría conocer al equipo, entender para qué sirve lo que hago y tener a alguien a quien preguntar sin miedo, con eso me siento segura y empiezo a aportar antes. ¿Qué bien? ¿Y qué esperas a andar mensualmente? pensando en mil ochocientos dólares al mes. ¿Ha notado? ¿Tienes alguna pregunta? Sí, habría capacidad, capacitación durante los primeros meses. Sí, tenemos un programa de inducción de cuatro semanas. Muchas gracias, Valeria. Gracias a ustedes.",
+          "dur_s": 156.672,
+          "t_s": 5.019,
+          "glos_hits": 2,
+          "glos_total": 4,
+          "w_err": 48,
+          "w_ref": 445,
+          "c_err": 162,
+          "c_ref": 2535,
+          "wer": 0.10786516853932585,
+          "cer": 0.06390532544378698
+        },
+        {
+          "clip": "t1_04",
+          "texto": "Buenos días, Rocío. Hablame de ti y tu trayectoria. Buenos días. Tengo ocho años de experiencia en datos. Mi último puesto fue en ingeniería de datos en Andes Logística, donde construía y mantenía los flujos de información de toda la empresa. ¿Con qué tecnologías trabajabas? Mucho Python, Airflow para programas, los procesos dbt para transformar las datos y todo corría en AWS con Kubernetes. ¿Y cuántas personas sabían en tu equipo? Eramos 14 divididos en 3 tareas, ingestión, transformación y publicación. ¿Por qué dejaste andes logística? La empresa se reestructuró y el área de datos se arrojo a la mitad. Fue una decisión de ellos, no mía, pero me dejó con ganas de buscar un proyecto más estable. ¿Entendido? ¿Y cómo es inglés? Fluido, tengo certificación C1. Escribo la documentación técnica en inglés y he dado presentaciones a clientes de Chile y México. Muy bien. ¿Cuándo podrías incorporarte? Me gustaría tomarme un tiempo para descansar, así que estaría lista en un mes. Perfecto. Ahora, ¿qué pretensión salar el telnes? 7.500 soles mensuales. ¿Es negociable? Un poco, depende de los beneficios y el esquema de trabajo remoto. ¿Qué esquema prefieres? Remoto, presencial o mixto. Me acomodo un esquema híbrido dos días en la oficina y tres desde casa. Cuéntame un rato técnico que hayas resuelto. Teníamos un proceso nocturno que tardaba mucho y a veces fallaba a mitad de camino, lo viví en etapas más pequeñas, agregué reintentos automáticos y avisos cuando algo fallaba, como es el proceso de juego de romperse y el equipo pudo dormir tranquilo. ¿Cómo mides que un proceso está funcionando bien? Reviso que los datos lleguen completos y a tiempo y que los totales cuadren con la fuente original, si algo no coincide lo investigo antes de que alguien más lo note. ¿Has liderado equipos antes? ¿Cómo repartes el trabajo cuando alguien está sobrecargado? Primero, hablo con la persona para entender qué la está gobeando. A veces el problema es la cantidad de tareas y otra veces es que le tocó algo para lo que no se sentía preparada, según el caso, redistribuye o acompañe. ¿Qué haces cuando un integrante nuevo no rinde como esperabas? Reviso primero si le expliqué bien lo que esperaba de su trabajo porque muchas veces el problema es de comunicación. Después acordamos metas pequeñas y nos vemos con frecuencia para ver cómo va. ¿Cómo celebras los logros del equipo? me gusta reconocer en público lo que cada persona hizo bien con detalles decir gracias por el trabajo del equipo suena bonito pero mencionar qué hizo cada uno es lo que realmente motiva está bien algo más que quieras agregar que me motiva liderar a otras personas y compartir lo que ha aprendido quisiera creer ser hacia un rol de jefatura técnica muchas gracias recibo a ustedes",
+          "dur_s": 162.816,
+          "t_s": 5.199,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 33,
+          "w_ref": 463,
+          "c_err": 61,
+          "c_ref": 2662,
+          "wer": 0.07127429805615551,
+          "cer": 0.02291510142749812
+        },
+        {
+          "clip": "t1_05",
+          "texto": "Buenas, Amira. Gracias por venir. Cuéntame cómo llegaste este rubro. Buenas. Estudio de administración en la universidad me gustaron los números. Hace dos años entré a trabajar como analista de inteligencia comercial en Blizzard Retail. O sea que se ha fue tu último puesto. Sí, analista de inteligencia comercial y sigo ahí hasta fin de año. ¿Y qué herramientas úsidos? Básicamente, SQL para la información, Excel para los cálculos rápidos, Power BI y también Looker Studio para los tableros que ven los gerentes. ¿Cuál es tu nivel de inglés? Intermedio, más o menos, entiendo bien cuando escucho, pero al escribir, cometo horrores. Ok, hablemos de la parte económica. ¿Cuánto pretendes ganar? Pretendo cinco mil, perdón, cinco mil trescientos cincuenta soles al mes. ¿Y cuándo podrías empezar? Mi contrato termina en diciembre, entonces podría incorporarme el quince de enero. Entiendo. Cuéntame cómo explicas un resultado a personas que no son técnicas. Trata de empezar por la conclusión y usar un gráfico simple. Por ejemplo, el mes pasado mostré que el 10% de los productos generaba la mayor parte de las ventas y comenzó en el área comercial cambios su plan de promociones. Muy bien. ¿Y qué esperas del equipo al que te incorpores? Que hay espacio para preguntar y aprender y que se revisen los análisis entre todos antes de presentarlos. Cuéntame un error que hayas cometido en análisis. Una vez presenté un promedio sin ver que había datos duplicados, un compañero lo notó antes de la reunión y pudimos corregirlo. Desde entonces, revisó los duplicados y los valores raros antes de calcular cualquier cosa. ¿Qué te gusta hacer fuera del trabajo? Me gusta correr la fina de semana y cocinar. A veces preparo cena para mis amigos y tratamos de probar recetas nuevas. Cuéntame cómo te preparas cuando tienes que presentar resultados a gerencia. Primero imagino qué preguntas me harían y preparo respuestas cortas. Después ensayo la presentación en voz alta con un compañero que me ayuda a ver en dónde me arredo y qué parte sobra. ¿Y si alguien cuestionó tus conclusiones en plena reunión? Escucho la objeción completa antes de responder. Si tienes razón, lo reconozco y me comprometo a revisar. Si no, explico con calma de dónde sale el resultado y a fresco señalar los datos después. ¿Qué es lo que más valora es de un buen jefe o jefa? Que confíe en mí, pero que también esté cerca cuando lo necesito. Me gusta que me den libertad para organizarme, siempre que sepa claramente qué resultados esperan. ¿Y te interesa aprender más de programación? Sí, de hecho, sí, aprendiendo Python por mi cuenta, aunque todavía no lo uso en el trabajo. Gracias Samira, te viseremos pronto. Gracias, un gusto.",
+          "dur_s": 148.736,
+          "t_s": 5.069,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 37,
+          "w_ref": 450,
+          "c_err": 95,
+          "c_ref": 2589,
+          "wer": 0.08222222222222222,
+          "cer": 0.036693704132869834
+        }
+      ]
+    },
+    {
+      "id": "small_cpu_int8",
+      "modelo": "small",
+      "precision": "int8_float32",
+      "glosario": false,
+      "device_pedido": "cpu",
+      "device_leido": "cpu",
+      "n_clips": 2,
+      "fallback_silencioso": false,
+      "carga_s": 1.144,
+      "wer": 0.06229143492769744,
+      "wer_ic95": [
+        0.06150341685649203,
+        0.06304347826086956
+      ],
+      "cer": 0.02474582773834644,
+      "cer_ic95": [
+        0.02241112828438949,
+        0.027047619047619046
+      ],
+      "seg_por_min_audio": 22.624930365536272,
+      "glosario_recall": 0.6363636363636364,
+      "vram_base_mb": 109,
+      "vram_pico_mb": 109,
+      "vram_delta_mb": 0,
+      "gpu_verificada": false,
+      "filas": [
+        {
+          "clip": "t1_01",
+          "texto": "Buenos días Lucía, gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas. Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima. ¿Y cuánto tiempo llevo trabajando en análisis de datos? En total llevo 5 años, empecé haciendo reportes de ventas y poco a poco pasea modelos predictivos. Interesante, ¿qué herramientas y tecnologías usas en tu día a día? Uso Payton con pandas para limpiar y analizar datos, secuelen para consultar las bases y pagar V.I. para los tableros. Últimamente también he trabajado con Docker para empaquetar mis proyectos. Muy bien. ¿Cómo describirías tu nivel de inglés? Intermedio. Puedo la documentación técnica sin problema, pero todavía me cuesta hablar con fluidez en reuniones largas. Entendido. Cuéntame un proyecto al que te sientas orgullosa. Claro. Re-desenéal reporte semanal de ventas de un cliente de retail, Antes tardaba tres días en armarse a mano y ahora se genera en cuatro horas. Trabajé con un equipo de ocho personas y presentamos los resultados a la gerencia. Excelente. ¿Y cómo manejas los plazos ajustados? Divido el trabajo en entregas pequeñas y aviso con anticipación si algo se complica. Prefiero avisarte en prano que llegar tarde con una sorpresa. Cuéntame cómo es un día normal en tu trabajo. Empiezo revisando que los procesos de la noche hayan terminado bien, después atiendo los pedidos de información de las otras áreas y dejo las tardes más libres para los análisis largos que necesitan concentración. ¿Y cómo priorices cuando varias personas te piden a lo mismo tiempo? Pregunto para qué lo necesitan y cuándo lo vamos a usar. Muchas veces algo que parece urgente puede esperar y otras cosas que parecen pequeñas son las que más pesan en la decisión de alguien. ¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado? Sí, y lo resolvimos sentándonos con los datos adelante. Probamos las dos formas, mismas cuales respondía mejor a la pregunta del cliente y terminamos usando una mezcla de ambas. ¿Por qué quieres cambiar de empleo? Busco más responsabilidad y trabajar en problemas de mayor escala. Siento que ya aprendí lo que podía en mi puesto actual. Hablemos de condiciones. ¿Cuándo podrías incorporarte? Tendría que dar un previo aviso en mi trabajo, así que estaría disponible en 15 días. Perfecto. ¿Y cuál es tu pretensión salarial? Mi pretensión es 6.500 soles mensuales. Gracias Lucía. ¿Tienes alguna pregunta para nosotros? Sí, me gustaría saber cómo está conformado el equipo y qué proyecto se priorizarían en los primeros meses. Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo. Gracias a ustedes.",
+          "dur_s": 153.728,
+          "t_s": 58.828,
+          "glos_hits": 2,
+          "glos_total": 5,
+          "w_err": 27,
+          "w_ref": 439,
+          "c_err": 58,
+          "c_ref": 2588,
+          "wer": 0.06150341685649203,
+          "cer": 0.02241112828438949
+        },
+        {
+          "clip": "t1_02",
+          "texto": "Hola Alejandra, bienvenida. Antes de empezar, para linear expectativas. ¿Cuál es tu pretensión salarial? Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes. Ha notado. ¿Y desde cuándo podrías empezar? De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata. Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llevas en desarrollo? Tres años y medio. Comencé como practicante y luego me contrataron de forma fija. ¿Cuál fue tu último puesto? Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea. ¿Con qué tecnologías trabajabas? Principalmente Python con Django y Postgre, SQL para el servidor. También usaba Docker y Git todos los días y algo de AWS para el despliegue. ¿Y cómo es tu nivel de inglés? Avanzado, estudié 5 años en un instituto y mantengo reuniones con clientes de otros países sin problema. Muy bien, cuéntame cómo manejas un error en producción. Lo primero es revisar los registros y reproducir el problema en un ambiente de prueba. Si es crítico, aviso el equipo y se hace una corrección rápida y después escribimos un informe para que no se respita. Me parece un buen enfoque. ¿Cómo trabajas en equipo? Me gusta revisar el código de mis compañeros y que revisen el mío. el mío. Mi papá digital hacía morrónenes cortas todas las mañanas de 15 minutos para corriendar las tareas. ¿Prefieres trabajo remoto o presencial? Me da igual, puedo ir a oficina o trabajar desde casa siempre que haya buena comunicación. ¿Qué esperas aprender de esta posición? Quiero conocer mejor cómo se diseñan sistemas que tienen a muchos usuarios a la vez. En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen. ¿Tienes alguna duda sobre el proceso? Solo seguí una prueba técnica antes de la decisión final. Sí, sería una prueba corta, de un par de horas, la próxima semana. Perfecto, me parece bien. Antes de cerrar, cuéntame cómo recibes los comentarios sobre tu trabajo. Los escucho con calma y trato de no defenderme de inmediato. Si alguien me señala algo en mi código, primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar. Y cuando tú tienes que dar un comentario difícil, un compañero. Lo hablo en privado y empiezo por lo que está bien. Después se explico el problema con un ejemplo concreto y propongo una alternativa para que no suene como una crítica a la persona. ¿Qué haces cuando sientes que un plazo no es realista? Lo digo cuanto antes y con razones. Prefiero proponer una entrega más pequeña y a tiempo que comprometar todo y llegar con algo a medias. Casi siempre el equipo lo agradece. Gracias Alejandra, ya tenemos información. Te contactaremos pronto. Muchas gracias.",
+          "dur_s": 159.4026875,
+          "t_s": 59.248,
+          "glos_hits": 5,
+          "glos_total": 6,
+          "w_err": 29,
+          "w_ref": 460,
+          "c_err": 71,
+          "c_ref": 2625,
+          "wer": 0.06304347826086956,
+          "cer": 0.027047619047619046
+        }
+      ]
+    },
+    {
+      "id": "large_gpu_fp16",
+      "modelo": "large-v3",
+      "precision": "float16",
+      "glosario": false,
+      "device_pedido": "cuda",
+      "device_leido": "cuda",
+      "n_clips": 5,
+      "fallback_silencioso": false,
+      "carga_s": 8.958,
+      "wer": 0.03145768719539211,
+      "wer_ic95": [
+        0.019891500904159132,
+        0.04233958969882148
+      ],
+      "cer": 0.014770366951303947,
+      "cer_ic95": [
+        0.009066461774875145,
+        0.019391870927707104
+      ],
+      "seg_por_min_audio": 6.098101254431906,
+      "glosario_recall": 0.96,
+      "vram_base_mb": 109,
+      "vram_pico_mb": 4119,
+      "vram_delta_mb": 4010,
+      "gpu_verificada": true,
+      "filas": [
+        {
+          "clip": "t1_01",
+          "texto": "Buenos días, Lucía. Gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas. Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima. ¿Y cuánto tiempo llevas trabajando en análisis de datos? En total llevo 5 años. Empecé haciendo reportes de ventas y poco a poco pasé a modelos predictivos. Interesante. ¿Qué herramientas y tecnologías usas en tu día a día? Uso Python con pandas para limpiar y analizar datos, SQL para consultar las bases y Power BI para los tableros. Últimamente también he trabajado con Docker para empaquetar mis proyectos. Muy bien, ¿cómo describirías tu nivel de inglés? Intermedio. Puedo hablar documentación técnica sin problema, pero todavía me cuesta hablar con fluidez en reuniones largas. Entendido. Cuéntame un proyecto del que te sientas orgullosa. Claro, rediseñé el reporte semanal de ventas de un cliente de retail. Antes tardaba tres días en armarse a mano y ahora se genera en cuatro horas. Trabajé con un equipo de ocho personas y presentamos los resultados a la gerencia. Excelente. ¿Y cómo manejas los plazos ajustados? Divido el trabajo en entregas pequeñas y aviso con anticipación si algo se complica. Prefiero avisar temprano que llegar tarde con una sorpresa. Cuéntame cómo es un día normal en tu trabajo. Empiezo revisando que los procesos de la noche hayan terminado bien Después atiendo los pedidos de información de las otras áreas Y dejo las tardes más libres para los análisis largos que necesitan concentración ¿Y cómo priorizas cuando varias personas te piden algo al mismo tiempo? Pregunto para qué lo necesitan y cuándo lo van a usar Muchas veces algo que parece urgente puede esperar Y otras cosas que parecen pequeñas son las que más pesan en la decisión de alguien ¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado? Sí, y lo resolvimos sentándonos con los datos adelante. Probamos las dos formas, vimos cuál respondía mejor a la pregunta del cliente y terminamos usando una mezcla de ambas. ¿Por qué quieres cambiar de empleo? Busco más responsabilidad y trabajar en problemas de mayor escala. Siento que ya aprendí lo que podía en mi puesto actual. Hablemos de condiciones. ¿Cuándo podrías incorporarte? Tendría que dar un previo aviso en mi trabajo, así que estaría disponible en 15 días. Perfecto. ¿Y cuál es tu pretensión salarial? Mi pretensión es de 6.500 soles mensuales. Gracias, Lucía. ¿Tienes alguna pregunta para nosotros? Sí, me gustaría saber cómo está conformado el equipo y qué proyectos se priorizarían en los primeros meses. Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo. Gracias a ustedes.",
+          "dur_s": 153.728,
+          "t_s": 15.234,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 5,
+          "w_ref": 439,
+          "c_err": 11,
+          "c_ref": 2588,
+          "wer": 0.011389521640091117,
+          "cer": 0.004250386398763524
+        },
+        {
+          "clip": "t1_02",
+          "texto": "Hola Alejandra, bienvenida. Antes de empezar, para alinear expectativas, ¿cuál es tu pretensión salarial? Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes. Anotado. ¿Y desde cuándo podrías empezar? De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata. Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llevas en desarrollo? Tres años y medio. Comencé como practicante y luego me contrataron de forma fija. ¿Cuál fue tu último puesto? Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea. ¿Con qué tecnologías trabajabas? Principalmente Python con Django y PostgreSQL para el servidor. También usaba Docker y JIT todos los días y algo de AWS para el despliegue. ¿Y cómo es tu nivel de inglés? Avanzado. Estudié 5 años en un instituto y mantengo reuniones con clientes de otros países sin problema. Muy bien. Cuéntame cómo manejas un error en producción. Lo primero es revisar los registros y reproducir el problema en un ambiente de pruebas. Si es crítico, aviso al equipo y se hace una corrección rápida y después escribimos un informe para que no se respita. Me parece un buen enfoque. ¿Cómo trabajas en equipo? Me gusta revisar el código de mis compañeros y que revisen el mío. En Papa Digital hacíamos reuniones cortas todas las mañanas de 15 minutos para coordinar las tareas. ¿Prefieres trabajo remoto o presencial? Me da igual, puedo ir a oficina o trabajar desde casa, siempre que haya buena comunicación. ¿Qué esperas aprender de esta posición? Quiero conocer mejor cómo se diseñan sistemas que atienden a muchos usuarios a la vez. En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen. ¿Tienes alguna duda sobre el proceso? Solo seguí una prueba técnica antes de la decisión final. Sí, sería una prueba corta, de un par de horas, la próxima semana. Perfecto, me parece bien. Antes de cerrar, cuéntame cómo recibes los comentarios sobre tu trabajo Los escucho con calma y trato de no defenderme de inmediato Si alguien me señala algo en mi código, primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar ¿Y cuando tú tienes que dar un comentario difícil a un compañero? Lo hablo en privado y empiezo por lo que está bien Después explico el problema con un ejemplo concreto y propongo una alternativa para que no suene como una crítica a la persona ¿Qué haces cuando sientes que un plazo no es realista? Lo digo cuanto antes y con razones. Prefiero proponer una entrega más pequeña y a tiempo que comprometer todo y llegar con algo a medias. Casi siempre el equipo lo agradece. Gracias, Alejandra. Ya tenemos información. Te contactaremos pronto. Muchas gracias.",
+          "dur_s": 159.4026875,
+          "t_s": 15.934,
+          "glos_hits": 5,
+          "glos_total": 6,
+          "w_err": 14,
+          "w_ref": 460,
+          "c_err": 39,
+          "c_ref": 2625,
+          "wer": 0.030434782608695653,
+          "cer": 0.014857142857142857
+        },
+        {
+          "clip": "t1_03",
+          "texto": "Hola, Valeria. Gracias por venir. Para empezar, ¿cuánta experiencia tienes? Buenas tardes. Tengo un año y medio de experiencia, todo en prácticas y en un par de proyectos de la universidad. ¿Qué haces en tu último puesto? Soy practicante de ciencias de datos en Mercado Sur, una cadena de supermercados, ayuda a preparar bases de datos y a probar modelos sencillos de predicción de demanda. Perfecto. ¿Qué herramientas manejas? Excel para casi todo, luego Python y la librería Scikit Learn para los modelos. Para las visualizaciones, usé Tableau. Una consulta. ¿Cómo calificarías tu nivel en inglés? Básico. Entiendo algunas frases escritas, pero hablar todavía me cuesta mucho. Estoy llevando un curso los sábados para mejorar. Está bien. Es una buena iniciativa. ¿Cuándo podrías empezar a trabajar? Termino mis exámenes finales en noviembre, así que podría empezar a partir del 1 de diciembre. Entendido. Cuéntame una dificultad que hayas enfrentado. En mi práctica, los datos de las tiendas llegaban con muchos errores, como precios en blanco y fechas mal escritas. Aprendí a validar los datos antes de usarlos y armé una lista de revisión para el equipo de 12 puntos. ¿Y qué fue lo que más disfrutaste de tu práctica? Ver que lo que hacía servía. Un día el jefe de compras usó una de mis tablas para decidir cuándo pedir de un producto y después me contó que se evitó un faltante. Eso me motivó muchísimo a seguir en esta tarea. ¿Cómo te organizas entre la universidad y el trabajo? Tengo un calendario semanal y reservo bloques fijos para estudiar y para trabajar Los fines de semana descanso para no cansarme demasiado Cuéntame cómo aprendes cosas nuevas cuando no conoces el tema Primero busco ejemplos sencillos, los copio para entender cómo funcionan Y luego intento hacer algo parecido por mi cuenta sin mirar Y si me atasco, regreso a revisar Así lo que aprendo se me queda ¿Qué haces cuando un compañero te explica algo? y no lo entiendes del todo. Se lo digo con sinceridad y le pido un ejemplo. Antes me daba vergüenza, pero ahora sé que preguntar a tiempo me ahorra errores y me hace aprender más rápido. ¿Cómo te gustaría que fueran tus primeros días en un trabajo nuevo? Me gustaría conocer al equipo, entender para qué sirve lo que hago y tener a alguien a quien preguntar sin miedo. Con eso me siento segura y empiezo a aportar antes. ¡Qué bien! ¿Y qué esperas ganar mensualmente? Estaba pensando en $1,800 dólares al mes. Anotado, ¿tienes alguna pregunta? Sí, ¿habría capacitación durante los primeros meses? Sí, tenemos un programa de inducción de cuatro semanas Muchas gracias Valeria Gracias a ustedes",
+          "dur_s": 156.672,
+          "t_s": 16.029,
+          "glos_hits": 4,
+          "glos_total": 4,
+          "w_err": 17,
+          "w_ref": 445,
+          "c_err": 57,
+          "c_ref": 2535,
+          "wer": 0.038202247191011236,
+          "cer": 0.022485207100591716
+        },
+        {
+          "clip": "t1_04",
+          "texto": "Buenos días, Rocío. Háblame de ti y tu trayectoria. Buenos días. Tengo ocho años de experiencias en datos. Mi último puesto fue ingeniería de datos en Andes Logística, donde construía y mantenía los flujos de información de toda la empresa. ¿Con qué tecnologías trabajabas? Mucho Python, Airflow para programas, los procesos, DBT para transformar los datos, y todo corría en AWS con Kubernetes. ¿Y cuántas personas habían en tu equipo? Éramos 14 divididos en 3 tareas, ingestión, transformación y publicación. ¿Por qué dejaste ANDA en logística? La empresa se reestructuró y el área de datos se redujo a la mitad. Fue una decisión de ellos, no mía, pero me dejó con ganas de buscar un proyecto más estable. Entendido. ¿Y cómo es inglés? Fluido. Tengo certificación C1, escribo la documentación técnica en inglés y he dado presentaciones a clientes de Chile y México. Muy bien. ¿Cuándo podrías incorporarte? Me gustaría tomarme un tiempo para descansar, así que estaría lista en un mes. Perfecto. Ahora, ¿qué pretensión salarial tienes? 7.500 soles mensuales. ¿Es negociable? Un poco. Depende de los beneficios y del esquema de trabajo remoto. ¿Qué esquema prefieres? ¿Remoto, presencial o mixto? Me acomodo a un esquema híbrido, dos días en la oficina y tres días de casa. Cuéntame un rato técnico que hayas resuelto. Teníamos un proceso nocturno que tardaba mucho y a veces fallaba a mitad de camino Lo dividí en etapas más pequeñas, agregué reintentos automáticos y avisos cuando algo fallaba Como es el proceso dejó de romperse y el equipo pudo dormir tranquilo ¿Cómo mides que un proceso está funcionando bien? Reviso que los datos lleguen completos y a tiempo Y que los totales cuadren con la fuente original Si algo no coincide lo investigo antes de que alguien más lo note Has liderado equipos antes, ¿cómo reempartes el trabajo cuando alguien está sobrecargado? Primero hablo con la persona para entender qué la está agobiando. A veces el problema es la cantidad de tareas y otras veces es que le tocó algo para lo que no se sentía preparada. Según el caso, redistribuyo o acompaño. ¿Qué haces cuando un integrante nuevo no rinde como esperabas? Reviso primero si le expliqué bien lo que esperaba de su trabajo porque muchas veces el problema es de comunicación. Después acordamos metas pequeñas y nos vemos con frecuencia para ver cómo va. ¿Cómo celebras los logros del equipo? Me gusta reconocer en público lo que cada persona hizo bien con detalles. Decir gracias por el trabajo del equipo suena bonito, pero mencionar qué hizo cada uno es lo que realmente motiva. Está bien. ¿Algo más que quieras agregar? Que me motiva a liderar a otras personas y compartir lo que he aprendido. Quisiera creer ser hacia un rol de jefatura técnica. Muchas gracias, Rocío. A ustedes.",
+          "dur_s": 162.816,
+          "t_s": 16.681,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 23,
+          "w_ref": 463,
+          "c_err": 40,
+          "c_ref": 2662,
+          "wer": 0.04967602591792657,
+          "cer": 0.015026296018031555
+        },
+        {
+          "clip": "t1_05",
+          "texto": "Buenas, Amira. Gracias por venir. Cuéntame cómo llegaste a este rubro. Buenas. Estudié Administración y en la universidad me gustaron los números. Hace dos años entré a trabajar como Análisa de Inteligencia Comercial en Brisa Retail. ¿O sea que ese fue tu último puesto? Sí, Análisa de Inteligencia Comercial, y sigo ahí hasta fin de año. ¿Y qué herramientas usas? Básicamente, SQL para la información, Excel para los cálculos rápidos, Power BI, y también Looker Studio para los tableros que ven los gerentes. ¿Cuál es tu nivel de inglés? Intermedio, más o menos. Entiendo bien cuando escucho, pero al escribir cometo errores. Ok. Hablemos de la parte económica. ¿Cuánto pretendes ganar? Pretendo 5.000, perdón, 5.350 soles al mes. ¿Y cuándo podrías empezar? Mi contrato termina en diciembre, entonces podría incorporarme el 15 de enero. Entiendo. Cuéntame cómo explicas un resultado a personas que no son técnicas. Trato de empezar por la conclusión y usar un gráfico simple. Por ejemplo, el mes pasado mostré que el 10% de los productos generaba la mayor parte de las ventas y con eso el área comercial cambió su plan de promociones. Muy bien, ¿y qué esperas del equipo al que te incorpores? Que haya espacio para preguntar y aprender y que se revisen los análisis entre todos antes de presentarlos. Cuéntame un error que hayas cometido en un análisis. Una vez presenté un promedio sin ver que había datos duplicados, un compañero lo notó antes de la reunión y pudimos corregirlo. Desde entonces reviso los duplicados y los valores raros antes de calcular cualquier cosa ¿Qué te gusta hacer fuera del trabajo? Me gusta correr los fines de semana y cocinar A veces preparo cena para mis amigos y tratamos de probar recetas nuevas Cuéntame cómo te preparas cuando tienes que presentar resultados a gerencia Primero imagino qué preguntas me harían y preparo respuestas cortas Después ensayo la presentación en voz alta con un compañero que me ayuda a ver en dónde me enredo y qué parte sobra ¿Y si alguien cuestiona tus conclusiones en plena reunión? Escucho la objeción completa antes de responder Si tiene razón, lo reconozco y me comprometo a revisar Si no, explico con calma de dónde sale el resultado y ofrezco señalar los datos después ¿Qué es lo que más valoras de un buen jefe o jefa? Que confíe en mí, pero que también esté cerca cuando lo necesito Me gusta que me den libertad para organizarme siempre que sepa claramente qué resultados esperan ¿Y te interesa aprender más de programación? Sí, de hecho estoy aprendiendo Python por mi cuenta, aunque todavía no lo uso en el trabajo Gracias Samira, te avisaremos pronto Gracias, un gusto",
+          "dur_s": 148.736,
+          "t_s": 15.535,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 12,
+          "w_ref": 450,
+          "c_err": 45,
+          "c_ref": 2589,
+          "wer": 0.02666666666666667,
+          "cer": 0.01738122827346466
+        }
+      ]
+    },
+    {
+      "id": "large_gpu_int8",
+      "modelo": "large-v3",
+      "precision": "int8_float16",
+      "glosario": false,
+      "device_pedido": "cuda",
+      "device_leido": "cuda",
+      "n_clips": 5,
+      "fallback_silencioso": false,
+      "carga_s": 5.824,
+      "wer": 0.03190075321222862,
+      "wer_ic95": [
+        0.021602160216021602,
+        0.04277608031427324
+      ],
+      "cer": 0.01500115393491807,
+      "cer_ic95": [
+        0.009834805993084903,
+        0.019314303443996275
+      ],
+      "seg_por_min_audio": 6.047036097162981,
+      "glosario_recall": 1.0,
+      "vram_base_mb": 109,
+      "vram_pico_mb": 2359,
+      "vram_delta_mb": 2250,
+      "gpu_verificada": true,
+      "filas": [
+        {
+          "clip": "t1_01",
+          "texto": "Buenos días, Lucía. Gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas. Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima. ¿Y cuánto tiempo llevas trabajando en análisis de datos? En total llevo 5 años. Empecé haciendo reportes de ventas y poco a poco pasé a modelos predictivos. Interesante. ¿Qué herramientas y tecnologías usas en tu día a día? Uso Python con pandas para limpiar y analizar datos, SQL para consultar las bases y Power BI para los tableros. Últimamente también he trabajado con Docker para empaquetar mis proyectos. Muy bien, ¿cómo describirías tu nivel de inglés? Intermedio. Puedo hablar de documentación técnica sin problema, pero todavía me cuesta hablar con fluidez en reuniones largas. Entendido. Cuéntame un proyecto del que te sientas orgullosa. Claro, rediseñé el reporte semanal de ventas de un cliente de retail. Antes tardaba tres días en armarse a mano y ahora se genera en cuatro horas. Trabajé con un equipo de ocho personas y presentamos los resultados a la gerencia. Excelente. ¿Y cómo manejas los plazos ajustados? Divido el trabajo en entregas pequeñas y aviso con anticipación si algo se complica. Prefiero avisar temprano que llegar tarde con una sorpresa. Cuéntame cómo es un día normal en tu trabajo. Empiezo revisando que los procesos de la noche hayan terminado bien Después atiendo los pedidos de información de las otras áreas Y dejo las tardes más libres para los análisis largos que necesitan concentración ¿Y cómo priorizas cuando varias personas te piden algo al mismo tiempo? Pregunto para qué lo necesitan y cuándo lo van a usar Muchas veces algo que parece urgente puede esperar Y otras cosas que parecen pequeñas son las que más pesan en la decisión de alguien ¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado? Sí, y lo resolvimos sentándonos con los datos adelante. Probamos las dos formas, vimos cuál respondía mejor a la pregunta del cliente y terminamos usando una mezcla de ambas. ¿Por qué quieres cambiar de empleo? Busco más responsabilidad y trabajar en problemas de mayor escala. Siento que ya aprendí lo que podía en mi puesto actual. Hablemos de condiciones. ¿Cuándo podrías incorporarte? Tendría que dar un previo aviso en mi trabajo, así que estaría disponible en 15 días. Perfecto. ¿Y cuál es tu pretensión salarial? Mi pretensión es de 6.500 soles mensuales. Gracias, Lucía. ¿Tienes alguna pregunta para nosotros? Sí, me gustaría saber cómo está conformado el equipo y qué proyectos se priorizarían en los primeros meses. Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo. Gracias a ustedes.",
+          "dur_s": 153.728,
+          "t_s": 15.351,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 6,
+          "w_ref": 439,
+          "c_err": 14,
+          "c_ref": 2588,
+          "wer": 0.01366742596810934,
+          "cer": 0.005409582689335394
+        },
+        {
+          "clip": "t1_02",
+          "texto": "Hola Alejandra, bienvenida. Antes de empezar, para alinear expectativas, ¿cuál es tu pretensión salarial? Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes. Anotado. ¿Y desde cuándo podrías empezar? De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata. Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llevas en desarrollo? Tres años y medio. Comencé como practicante y luego me contrataron de forma fija. ¿Cuál fue tu último puesto? Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea ¿Con qué tecnologías trabajabas? Principalmente Python con Django y PostgreSQL para el servidor También usaba Docker y Git todos los días y algo de AWS para el despliegue ¿Y cómo es tu nivel de inglés? Avanzado, estudié 5 años en un instituto y mantengo reuniones con clientes de otros países sin problema Muy bien. Cuéntame cómo manejas un error en producción. Lo primero es revisar los registros y reproducir el problema en un ambiente de pruebas. Si es crítico, aviso al equipo y se hace una corrección rápida y después escribimos un informe para que no se respita. Me parece un buen enfoque. ¿Cómo trabajas en equipo? Me gusta revisar el código de mis compañeros y que revisen el mío. En Papa Digital hacíamos reuniones cortas todas las mañanas de 15 minutos para coordinar las tareas. ¿Prefieres trabajo remoto o presencial? Me da igual, puedo ir a oficina o trabajar desde casa siempre que haya buena comunicación. ¿Qué esperas aprender de esta posición? Quiero conocer mejor cómo se diseñan sistemas que atienden a muchos usuarios a la vez. En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen. ¿Tienes alguna duda sobre el proceso? Solo seguí una prueba técnica antes de la decisión final. Sí, sería una prueba corta, de un par de horas, la próxima semana. Perfecto, me parece bien. Antes de cerrar, cuéntame cómo recibes los comentarios sobre tu trabajo Los escucho con calma y trato de no defenderme de inmediato Si alguien me señala algo en mi código, primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar ¿Y cuando tú tienes que dar un comentario difícil a un compañero? Lo hablo en privado y empiezo por lo que está bien Después explico el problema con un ejemplo concreto y propongo una alternativa para que no suene como una crítica a la persona ¿Qué haces cuando sientes que un plazo no es realista? Lo digo cuanto antes y con razones. Prefiero proponer una entrega más pequeña y a tiempo que comprometer todo y llegar con algo a medias. Casi siempre el equipo lo agradece. Gracias, Alejandra. Ya tenemos información. Te contactaremos pronto. Muchas gracias.",
+          "dur_s": 159.4026875,
+          "t_s": 15.697,
+          "glos_hits": 6,
+          "glos_total": 6,
+          "w_err": 13,
+          "w_ref": 460,
+          "c_err": 38,
+          "c_ref": 2625,
+          "wer": 0.02826086956521739,
+          "cer": 0.014476190476190476
+        },
+        {
+          "clip": "t1_03",
+          "texto": "Hola, Valeria. Gracias por venir. Para empezar, ¿cuánta experiencia tienes? Buenas tardes. Tengo un año y medio de experiencia, todo en prácticas y en un par de proyectos de la universidad. ¿Qué haces en tu último puesto? Soy practicante de ciencias de datos en Mercado Sur, una cadena de supermercados, ayuda a preparar bases de datos y a probar modelos sencillos de predicción de demanda. Perfecto. ¿Qué herramientas manejas? Excel para casi todo, luego Python y la librería Scikit Learn para los modelos. Para las visualizaciones, usé Tableau. Una consulta. ¿Cómo calificarías tu nivel en inglés? Básico. Entiendo algunas frases escritas, pero hablar todavía me cuesta mucho. Estoy llevando un curso los sábados para mejorar. Está bien. Es una buena iniciativa. ¿Cuándo podrías empezar a trabajar? Termino mis exámenes finales en noviembre, así que podría empezar a partir del primero de diciembre. Entendido. Cuéntame una dificultad que hayas enfrentado. En mi práctica, los datos de las tiendas llegaban con muchos errores, como precios en blanco y fechas mal escritas. Aprendí a validar los datos antes de usarlos y armé una lista de revisión para el equipo de 12 puntos. ¿Y qué fue lo que más disfrutaste de tu práctica? Ver que lo que hacía servía. Un día el jefe de compras usó una de mis tablas para decidir cuándo pedir de un producto y después me contó que se evitó un faltante. Eso me motivó muchísimo a seguir en esta tarea. ¿Cómo te organizas entre la universidad y el trabajo? Tengo un calendario semanal y reservo bloques fijos para estudiar y para trabajar Los fines de semana descanso para no cansarme demasiado Cuéntame cómo aprendes cosas nuevas cuando no conoces el tema Primero busco ejemplos sencillos, los copio para entender cómo funcionan Y luego intento hacer algo parecido por mi cuenta sin mirar Y si me atasco, regreso a revisar Así lo que aprendo se me queda ¿Qué haces cuando un compañero te explica algo? y no lo entiendes del todo. Se lo digo con sinceridad y le pido un ejemplo. Antes me daba vergüenza, pero ahora sé que preguntar a tiempo me ahorra errores y me hace aprender más rápido. ¿Cómo te gustaría que fueran tus primeros días en un trabajo nuevo? Me gustaría conocer al equipo, entender para qué sirve lo que hago y tener a alguien a quien preguntar sin miedo. Con eso me siento segura y empiezo a aportar antes. ¡Qué bien! ¿Y qué esperas ganar mensualmente? Estaba pensando en $1,800 dólares al mes. Anotado. ¿Tienes alguna pregunta? Sí. ¿Habría capacitación durante los primeros meses? Sí. Tenemos un programa de inducción de cuatro semanas. Muchas gracias, Valeria. Gracias a ustedes.",
+          "dur_s": 156.672,
+          "t_s": 15.787,
+          "glos_hits": 4,
+          "glos_total": 4,
+          "w_err": 17,
+          "w_ref": 445,
+          "c_err": 57,
+          "c_ref": 2535,
+          "wer": 0.038202247191011236,
+          "cer": 0.022485207100591716
+        },
+        {
+          "clip": "t1_04",
+          "texto": "Buenos días, Rocío. Háblame de ti y tu trayectoria. Buenos días. Tengo ocho años de experiencias en datos. Mi último puesto fue ingeniería de datos en Andes Logística, donde construía y mantenía los flujos de información de toda la empresa. ¿Con qué tecnologías trabajabas? Mucho Python, Airflow para programas, los procesos, DBT para transformar los datos, y todo corría en AWS con Kubernetes. ¿Y cuántas personas habían en tu equipo? Éramos 14 divididos en 3 tareas, ingestión, transformación y publicación. ¿Por qué dejaste ANDA en logística? La empresa se reestructuró y el área de datos se redujo a la mitad. Fue una decisión de ellos, no mía, pero me dejó con ganas de buscar un proyecto más estable. Entendido. ¿Y cómo es inglés? Fluido. Tengo certificación C1, escribo la documentación técnica en inglés y he dado presentaciones a clientes de Chile y México. Muy bien. ¿Cuándo podrías incorporarte? Me gustaría tomarme un tiempo para descansar, así que estaría lista en un mes. Perfecto. Ahora, ¿qué pretensión salarial tienes? 7.500 soles mensuales. ¿Es negociable? Un poco. Depende de los beneficios y del esquema de trabajo remoto. ¿Qué esquema prefieres? ¿Remoto, presencial o mixto? Me acomodo a un esquema híbrido, dos días en la oficina y tres días de casa. Cuéntame un rato técnico que hayas resuelto. Teníamos un proceso nocturno que tardaba mucho y a veces fallaba a mitad de camino Lo dividí en etapas más pequeñas, agregué reintentos automáticos y avisos cuando algo fallaba Como es el proceso dejó de romperse y el equipo pudo dormir tranquilo ¿Cómo mides que un proceso está funcionando bien? Reviso que los datos lleguen completos y a tiempo Y que los totales cuadren con la fuente original Si algo no coincide lo investigo antes de que alguien más lo note Has liderado equipos antes, ¿cómo reempartes el trabajo cuando alguien está sobrecargado? Primero hablo con la persona para entender qué la está agobiando. A veces el problema es la cantidad de tareas y otras veces es que le tocó algo para lo que no se sentía preparada. Según el caso, redistribuyo o acompaño. ¿Qué haces cuando un integrante nuevo no rinde como esperabas? Reviso primero si le expliqué bien lo que esperaba de su trabajo porque muchas veces el problema es de comunicación. Después acordamos metas pequeñas y nos vemos con frecuencia para ver cómo va. ¿Cómo celebras los logros del equipo? Me gusta reconocer en público lo que cada persona hizo bien con detalles. Decir gracias por el trabajo del equipo suena bonito, pero mencionar qué hizo cada uno es lo que realmente motiva. Está bien. ¿Algo más que quieras agregar? Que me motiva a liderar a otras personas y compartir lo que he aprendido. Quisiera creer ser hacia un rol de jefatura técnica. Muchas gracias, Rocío. A ustedes.",
+          "dur_s": 162.816,
+          "t_s": 16.504,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 23,
+          "w_ref": 463,
+          "c_err": 40,
+          "c_ref": 2662,
+          "wer": 0.04967602591792657,
+          "cer": 0.015026296018031555
+        },
+        {
+          "clip": "t1_05",
+          "texto": "Buenas, Amira. Gracias por venir. Cuéntame cómo llegaste a este rubro. Buenas. Estudié Administración y en la universidad me gustaron los números. Hace dos años entré a trabajar como Análisa de Inteligencia Comercial en Brisa Retail. ¿O sea que ese fue tu último puesto? Sí, Análisa de Inteligencia Comercial, y sigo ahí hasta fin de año. ¿Y qué herramientas usas? Básicamente, SQL para la información, Excel para los cálculos rápidos, Power BI, y también Looker Studio para los tableros que ven los gerentes. ¿Cuál es tu nivel de inglés? Intermedio, más o menos. Entiendo bien cuando escucho, pero al escribir cometo errores. Ok. Hablemos de la parte económica. ¿Cuánto pretendes ganar? Pretendo 5.000, perdón, 5.350 soles al mes. ¿Y cuándo podrías empezar? Mi contrato termina en diciembre, entonces podría incorporarme el 15 de enero. Entiendo. Cuéntame cómo explicas un resultado a personas que no son técnicas. Trato de empezar por la conclusión y usar un gráfico simple. Por ejemplo, el mes pasado mostré que el 10% de los productos generaba la mayor parte de las ventas y con eso el área comercial cambió su plan de promociones. Muy bien, ¿y qué esperas del equipo al que te incorpores? Que haya espacio para preguntar y aprender y que se revisen los análisis entre todos antes de presentarlos. Cuéntame un error que hayas cometido en un análisis. Una vez presenté un promedio sin ver que había datos duplicados, un compañero lo notó antes de la reunión y pudimos corregirlo. Desde entonces revisó los duplicados y los valores raros antes de calcular cualquier cosa ¿Qué te gusta hacer fuera del trabajo? Me gusta correr los fines de semana y cocinar A veces preparo cena para mis amigos y tratamos de probar recetas nuevas Cuéntame cómo te preparas cuando tienes que presentar resultados a gerencia Primero imagino qué preguntas me harían y preparo respuestas cortas Después ensayo la presentación en voz alta con un compañero que me ayuda a ver en dónde me enredo y qué parte sobra ¿Y si alguien cuestiona tus conclusiones en plena reunión? Escucho la objeción completa antes de responder Si tiene razón, lo reconozco y me comprometo a revisar Si no, explico con calma de dónde sale el resultado y ofrezco señalar los datos después ¿Qué es lo que más valoras de un buen jefe o jefa? Que confíe en mí, pero que también esté cerca cuando lo necesito Me gusta que me den libertad para organizarme siempre que sepa claramente qué resultados esperan ¿Y te interesa aprender más de programación? Sí, de hecho estoy aprendiendo Python por mi cuenta, aunque todavía no lo uso en el trabajo Gracias Samira, te avisaremos pronto Gracias, un gusto",
+          "dur_s": 148.736,
+          "t_s": 15.409,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 13,
+          "w_ref": 450,
+          "c_err": 46,
+          "c_ref": 2589,
+          "wer": 0.028888888888888888,
+          "cer": 0.017767477790652762
+        }
+      ]
+    },
+    {
+      "id": "small_gpu_fp16_glos",
+      "modelo": "small",
+      "precision": "float16",
+      "glosario": true,
+      "device_pedido": "cuda",
+      "device_leido": "cuda",
+      "n_clips": 5,
+      "fallback_silencioso": false,
+      "carga_s": 0.496,
+      "wer": 0.07000443066016837,
+      "wer_ic95": [
+        0.058823529411764705,
+        0.08122503328894808
+      ],
+      "cer": 0.028002154011847066,
+      "cer_ic95": [
+        0.0208,
+        0.03534529635671561
+      ],
+      "seg_por_min_audio": 1.9854747463839848,
+      "glosario_recall": 1.0,
+      "vram_base_mb": 109,
+      "vram_pico_mb": 855,
+      "vram_delta_mb": 746,
+      "gpu_verificada": true,
+      "filas": [
+        {
+          "clip": "t1_01",
+          "texto": "Buenos días, Lucía. Gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas. Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima. ¿Y cuánto tiempo llevo trabajando en análisis de datos? En total llevo 5 años, empecé haciendo reportes de ventas y poco a poco pasea modelos predictivos. Interesante. ¿Qué herramientas y tecnologías usas en tu día a día? Uso Python con pandas para limpiar y analizar datos, SQL para consultar las bases y Power BI para los tableros. Últimamente también he trabajado con Docker para empaquetar mis proyectos. Muy bien, ¿cómo describirías tu nivel de inglés? Intermedio, puedo dar documentación técnica sin problema, pero todavía me cuesta hablar con fluidez en reuniones largas. Entendido, cuéntame un proyecto al que te sientas orgullosa. Claro, rediseñé el reporte semanal de ventas de un cliente de Retail, antes tardaba tres días en armarse a mano, y ahora se genera en cuatro horas. Trabajé con un equipo de ocho personas y presentamos los resultados a la gerencia. Excelente, ¿y cómo manejas los plazos ajustados? Debido del trabajo en entregas pequeñas y aviso con anticipación si algo se complica. Prefiero avisarte en prano que llegar tarde con una sorpresa. Cuéntame cómo es un día normal en tu trabajo. Empiezo revisando que los procesos de la noche hayan terminado bien, Después atiendo los pedidos de información de las otras áreas y dejo las tardes más libres para los análisis largos que necesitan concentración. ¿Y cómo priorices cuando varias personas te piden a lo al mismo tiempo? Pregunto para qué lo necesitan y cuándo lo vamos a usar. Muchas veces algo que parece urgente puede esperar y otras cosas que parecen pequeñas son las que más pesan en la decisión de alguien. ¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado? Sí, y lo resolvimos sentándonos con los datos adelante. Probamos las dos formas, mismas cuales respondía mejor a la pregunta del cliente y terminamos usando una mezcla de ambas ¿Por qué quieres cambiar de empleo? Busco más responsabilidad y trabajar en problemas de mayor escala, siento que ya aprendí lo que podía en mi puesto actual Hablemos de condiciones, ¿cuándo podrías incorporarte? Tendría que dar un previo aviso en mi trabajo, así que estaría disponible en 15 días Perfecto, ¿y cuál es tu pretensión salarial? Mi pretensión es 6.500 soles mensuales. Gracias, Lucía. ¿Tienes alguna pregunta para nosotros? Sí, me gustaría saber cómo está conformado el equipo y qué proyecto se priorizarían en los primeros meses. Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo. Gracias a ustedes.",
+          "dur_s": 153.728,
+          "t_s": 5.011,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 22,
+          "w_ref": 439,
+          "c_err": 40,
+          "c_ref": 2588,
+          "wer": 0.05011389521640091,
+          "cer": 0.015455950540958269
+        },
+        {
+          "clip": "t1_02",
+          "texto": "Hola Alejandra, bienvenida. Antes de empezar, para linear expectativas. ¿Cuál es tu pretensión salarial? Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes. Ha notado. ¿Y desde cuándo podrías empezar? De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata. Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llevas en desarrollo? Tres años y medio. Comencé como practicante y luego me contrataron de forma fija. ¿Cuál fue tu último puesto? Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea ¿Con qué tecnologías trabajabas? Principalmente Python con Django y PostgreSQL para el servidor También usaba Docker y Git todos los días y algo de AWS para el despliegue ¿Y cómo es tu nivel de inglés? Avanzado, estudié 5 años en un instituto y mantengo reuniones con clientes de otros países sin problema ¡Muy bien! Cuéntame cómo manejas un error en producción. Lo primero, revisar los registros y reproducir el problema en un ambiente de prueba. Si es crítico, aviso el equipo y se hace una corrección rápida y después escribimos un informe para que no se respita. ¿Me parece un buen enfoque? ¿Cómo trabajas en equipo? Me gusta revisar el código de mis compañeros y que revisen el mío. Mi papa digital hacía morrenes cortas todas las mañanas de 15 minutos para corregir las tareas. ¿Y prefieres trabajo remoto o presencial? Me da igual, puedo ir a oficina o trabajar desde casa, siempre que haya buena comunicación. ¿Qué esperas aprender de esta posición? Quiero conocer mejor cómo se diseña sistemas que tiene a muchos usuarios a la vez. En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen. ¿Tienes alguna duda sobre el proceso? Solo seguí una prueba técnica antes de la decisión final. Sí, sería una prueba corta, de un par de horas, la próxima semana. Perfecto, me parece bien. Antes de cerrar, cuéntame cómo recibes los comentarios sobre tu trabajo. Los escucho con calma y trato de no defenderme de inmediato. Si alguien me señala algo en mi código, primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar. Y cuando tú tienes que dar un comentario difícil, un compañero. Lo hablo en privado y empiezo por lo que está bien. Después explico el problema con un ejemplo concreto y propongo una alternativa para que no suene como una crítica a la persona. ¿Qué haces cuando sientes que un plazo no es realista? Lo digo cuanto antes y con razones, prefiero proponer una entrega más pequeña y a tiempo que comprometar todo y llegar con algo a medias, casi siempre el equipo lo agradece. Gracias Alejandra, ya tenemos información, te contactaremos pronto. Muchas gracias.",
+          "dur_s": 159.4026875,
+          "t_s": 5.202,
+          "glos_hits": 6,
+          "glos_total": 6,
+          "w_err": 27,
+          "w_ref": 460,
+          "c_err": 69,
+          "c_ref": 2625,
+          "wer": 0.058695652173913045,
+          "cer": 0.026285714285714287
+        },
+        {
+          "clip": "t1_03",
+          "texto": "¡Hola, Valeria! Gracias por venir. Para empezar, ¿cuánta experiencia tienes? Buenas tardes. Tengo un año y medio de experiencia todo en prácticas y en un par de proyectos de la universidad. ¿Quién es tu último puesto? Puy practicante de ciencias de datos en mercados sur, una cadena de supermercados, ayuda a preparar base de datos y a probar modelos sencillos de predicción de demanda. ¡Perfecto! ¿Qué herramientas manejas? Excel para casi todo, luego Python y la librería scikit-learn para los modelos. Para la visualización es usé Tableau Una consulta, ¿cómo calificarías tu nivel inglés? Básico, entiendo algunas frases escritas, pero hablar todavía me cuesta mucho, estoy llevando un curso lozado para mejorar Está bien, es una buena iniciativa, ¿cuándo podrías empezar a trabajar? Termino mis exámenes finales en noviembre, así que podría empezar a partir del primero de diciembre Entendido, cuéntame una dificultad que hayas enfrentado En mi práctica, los datos de las tiendas llegaban con muchos errores. Como precios de en blanco y fechas mal escritas, aprendí a validar los datos antes de usarlos y armenar una lista de revisión para el equipo de 12 puntos. ¿Y qué fue lo que más disfrutaste de tu práctica? Ver qué lo que hacía servía. Un día el jefe de compras usó una de mis tablas para decidir cuándo pedir de un producto y después me contó que se evitó un faltante. Eso me motivó muchísimo a seguir en esta tarea. ¿Cómo te organizas entre la universidad y el trabajo? Tengo un calendario semanal y reservo bloques fijos para estudiar y para trabajar. Los fines de semana descansan para no cansarme demasiado. Cuéntame cómo aprendes cosas nuevas cuando no conoces el tema. Primero busco ejemplos sencillos, los copio para entender cómo funcionan y luego intento hacer algo parecido por mi cuenta sin mirar y sin metasco, regreso a revisar. Así lo que aprendo se me queda. ¿Qué es eso cuando un compañero te explica algo y no lo entiendes del todo? Se lo digo con sinceridad y le pido un ejemplo. Antes me daba vergüenza, pero ahora sé que preguntar a tiempo me ahorra errores y me hace aprender más rápido. ¿Cómo te gustaría que fueran tus primeros días en un trabajo nuevo? Me gustaría conocer al equipo, entender para qué sirve lo que hago y tener a alguien a quien preguntar sin miedo. Con eso me siento segura y empiezo a aportar antes. ¿Qué bien? ¿Y qué esperas ganar mensualmente? Estaba pensando en mil ochocientos dólares al mes ¿Ha notado? ¿Tienes alguna pregunta? Sí, habría capacidad, capacitación durante los primeros meses Sí, tenemos un programa de inducción de cuatro semanas Muchas gracias, Valeria Gracias a ustedes",
+          "dur_s": 156.672,
+          "t_s": 5.061,
+          "glos_hits": 4,
+          "glos_total": 4,
+          "w_err": 36,
+          "w_ref": 445,
+          "c_err": 92,
+          "c_ref": 2535,
+          "wer": 0.08089887640449438,
+          "cer": 0.03629191321499014
+        },
+        {
+          "clip": "t1_04",
+          "texto": "Buenos días, Rocío. Hablame de ti y tu trayectoria. Buenos días. Tengo ocho años de experiencia en datos. Mi último puesto fue en ingeniería de datos en Andes Logística, donde construía y mantenía los flujos de información de toda la empresa. ¿Con qué tecnologías trabajabas? Mucho Python, Airflow para programas, los procesos, dbt para transformar las datos, y todo corría en AWS con Kubernetes. ¿Y cuántas personas habían en tu equipo? Éramos catorce divididos en tres tareas, ingestión, transformación y publicación. ¿Por qué dejaste Anda logística? La empresa se reestructuró y el área de datos se arrojo a la mitad. Fue una decisión de ellos, no mía, pero me dejó con ganas de buscar un proyecto más estable. ¿Entendido? ¿Y cómo es inglés? Fluido, tengo certificación C1, escribo la documentación técnica en inglés y he dado presentaciones a clientes de Chile y México. Muy bien, ¿cuándo podrías incorporarte? Me gustaría tomarme un tiempo para descansar, así que estaría lista en un mes. Perfecto, ahora, ¿qué pretensión salar el telnes? 7.500 soles mensuales. ¿Es negociable? Un poco, depende de los beneficios y el esquema de trabajo remoto. ¿Qué esquema prefieres? Remoto, presencial o mixto. Me acomodo un esquema híbrido dos días en la oficina y 13 desde casa. Cuéntame un rato técnico que hayas resuelto. Teníamos un proceso nocturno que tardaba mucho y a veces fallaba a mitad de camino. Lo viví en etapas más pequeñas, agregué reintentos automáticos y avisos cuando algo fallaba. Como es el proceso de juego de romperse y el equipo pudo dormir tranquilo. ¿Cómo mides que un proceso está funcionando bien? Reviso que los datos lleguen completos y a tiempo y que los totales cuadren con la fuente original, si algo no coincide, lo investigo antes de que alguien más lo note. ¿Has liderado equipos antes? ¿Cómo repartes el trabajo cuando alguien está sobrecargado? Primero, hablo con la persona para entender que la está gobeando. A veces el problema es la cantidad de tareas y otra veces es que le toco algo para lo que no se sentía preparada, según el caso, redistribuye o acompaño. ¿Qué haces cuando un integrante nuevo no rinde como esperabas? Reviso primero si le expliqué bien lo que esperaba de su trabajo, porque muchas veces el problema es de comunicación. Después acordamos metas pequeñas y nos vemos con frecuencia para ver cómo va. ¿Cómo celebras los logros del equipo? Me gusta reconocer en público lo que cada persona hizo bien con detalles, decir gracias por el trabajo del equipo suena bonito, pero mencionar que hizo cada uno es lo que realmente motiva. Está bien, algo más que quieras agregar? Que me motiva a liderar a otras personas y compartir lo que he aprendido. Quisiera creer ser hacia un rol de jefatura técnica. Muchas gracias, Rocío. A ustedes.",
+          "dur_s": 162.816,
+          "t_s": 5.377,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 35,
+          "w_ref": 463,
+          "c_err": 62,
+          "c_ref": 2662,
+          "wer": 0.0755939524838013,
+          "cer": 0.02329075882794891
+        },
+        {
+          "clip": "t1_05",
+          "texto": "Buenas, Amira, gracias por venir. Cuéntame cómo llegaste este rubro. Buenas. Estudio de administración en la universidad me gustaron los números. Hace dos años entré a trabajar como analista de inteligencia comercial en Brisa Retail. O sea que se ha fue tu último puesto? Sí, analista de inteligencia comercial y sigo ahí hasta fin de año. ¿Y qué herramientas usas? Básicamente, SQL para la información, Excel para los cálculos rápidos, Power BI y también Looker Studio para los tableros que ven en los gerentes. ¿Cuál es tu nivel de inglés? Intermedio, más o menos, entiendo bien cuando escucho, pero al escribir, cometo errores. Ok, hablemos de la parte económica. ¿Cuánto pretende ganar? Pretendo cinco mil, perdón, cinco mil trescientos cincuenta soles al mes. ¿Y cuándo podrías empezar? Mi contrato termina en diciembre, entonces podría incorporarme el quince de enero. Entiendo. Cuéntame cómo explicas un resultado a personas que no son técnicas. Trata de empezar por la conclusión y usar un gráfico simple. Por ejemplo, el mes pasado mostré que el 10% de los productos generaba la mayor parte de las ventas y comenzó en el área comercial, cambió su plan de promociones. Muy bien. ¿Y qué esperas del equipo al que te incorpores? Que haya espacio para preguntar y aprender y que se revisen los análisis entre todos antes de presentarlos. Cuéntame un error que has cometido en el análisis. Una vez presenté un promedio sin ver que había datos duplicados, un compañero lo notó antes de la reunión y pudimos corregirlo. Desde entonces, revisó los duplicados y los valores raros antes de calcular cualquier cosa. ¿Qué te gusta hacer fuera del trabajo? Me gusta correr la fina de semana y cocinar. A veces preparo cena para mis amigos y tratamos de probar recetas nuevas. Cuéntame cómo te preparas cuando tienes que presentar resultados a gerencia. Primero imagino qué preguntas me harían y preparo respuestas cortas. Después ensayo la presentación en voz alta con un compañero que me ayuda a ver en dónde me arredo y qué parte sobra. Y si alguien cuestionó tus conclusiones en plena reunión. Escucho la objeción completa antes de responder. Si tienes razón, lo reconozco, me comprometo a revisar. Si no, explico con calma de dónde sale el resultado y a fresco señalar los datos después. ¿Qué es lo que más valora es de un buen jefe o jefa? Que confíe en mí, pero que también esté cerca cuando lo necesito. Me gusta que me den libertad para organizarme, siempre que sepa claramente qué resultados esperan. ¿Y te interesa aprender más de programación? Sí, de hecho, sé aprendiendo Python por mi cuenta, Cuentad, aunque todavía no lo uso el trabajo. Gracias, Samira. Te viseremos pronto. Gracias, un gusto.",
+          "dur_s": 148.736,
+          "t_s": 5.205,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 38,
+          "w_ref": 450,
+          "c_err": 101,
+          "c_ref": 2589,
+          "wer": 0.08444444444444445,
+          "cer": 0.03901120123599845
+        }
+      ]
+    },
+    {
+      "id": "large_gpu_fp16_glos",
+      "modelo": "large-v3",
+      "precision": "float16",
+      "glosario": true,
+      "device_pedido": "cuda",
+      "device_leido": "cuda",
+      "n_clips": 5,
+      "fallback_silencioso": false,
+      "carga_s": 2.903,
+      "wer": 0.03278688524590164,
+      "wer_ic95": [
+        0.019213583556747096,
+        0.046133567662565905
+      ],
+      "cer": 0.01661666282021694,
+      "cer_ic95": [
+        0.008908347178904787,
+        0.025829972075705865
+      ],
+      "seg_por_min_audio": 6.200231568969758,
+      "glosario_recall": 1.0,
+      "vram_base_mb": 109,
+      "vram_pico_mb": 4119,
+      "vram_delta_mb": 4010,
+      "gpu_verificada": true,
+      "filas": [
+        {
+          "clip": "t1_01",
+          "texto": "Buenos días, Lucía. Gracias por venir. Cuéntame brevemente quién eres y a qué te dedicas. Buenos días, soy Lucía Paredes y actualmente trabajo como analista de datos en Condor Analytics, una consultora de Lima. ¿Y cuánto tiempo llevas trabajando en análisis de datos? En total llevo 5 años. Empecé haciendo reportes de ventas y poco a poco pasé a modelos predictivos. Interesante. ¿Qué herramientas y tecnologías usas en tu día a día? Uso Python con pandas para limpiar y analizar datos, SQL para consultar las bases y Power BI para los tableros Últimamente también he trabajado con Docker para empaquetar mis proyectos Muy bien, ¿cómo describirías tu nivel de inglés? Intermedio, puedo hablar documentación técnica sin problema, pero todavía me cuesta hablar con fluidez en reuniones largas Entendido, cuéntame un proyecto del que te sientas orgullosa Claro, rediseñé el reporte semanal de ventas de un cliente de retail, antes tardaba 3 días en armarse a mano y ahora se genera en 4 horas, trabajé con un equipo de 8 personas y presentamos los resultados a la gerencia Excelente, ¿y cómo manejas los plazos ajustados? Divido el trabajo en entregas pequeñas y aviso con anticipación si algo se complica, prefiero avisar temprano que llegar tarde con una sorpresa Cuéntame cómo es un día normal en tu trabajo Empiezo revisando que los procesos de la noche hayan terminado bien, después atiendo los pedidos de información de las otras áreas, y dejo las tardes más libres para los análisis largos que necesitan concentración. ¿Y cómo priorizas cuando varias personas te piden algo al mismo tiempo? Pregunto para qué lo necesitan y cuándo lo van a usar. Muchas veces algo que parece urgente puede esperar, y otras cosas que parecen pequeñas son las que más pesan en la decisión de alguien. ¿Recuerdas algún desacuerdo con un compañero sobre cómo medir un resultado? Sí, y lo resolvimos sentándonos con los datos adelante. Probamos las dos formas, vimos cuál respondía mejor a la pregunta del cliente y terminamos usando una mezcla de ambas. ¿Por qué quieres cambiar de empleo? Busco más responsabilidad y trabajar en problemas de mayor escala. Siento que ya aprendí lo que podía en mi puesto actual. Hablemos de condiciones. ¿Cuándo podrías incorporarte? Tendría que dar un previo aviso en mi trabajo, así que estaría disponible en 15 días. Perfecto. ¿Y cuál es tu pretensión salarial? Mi pretensión es de 6.500 soles mensuales. Gracias, Lucía. ¿Tienes alguna pregunta para nosotros? Sí, me gustaría saber cómo está conformado el equipo y qué proyectos se priorizarían en los primeros meses. Te lo contamos en la siguiente etapa. Muchas gracias por tu tiempo. Gracias a ustedes.",
+          "dur_s": 153.728,
+          "t_s": 15.831,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 5,
+          "w_ref": 439,
+          "c_err": 11,
+          "c_ref": 2588,
+          "wer": 0.011389521640091117,
+          "cer": 0.004250386398763524
+        },
+        {
+          "clip": "t1_02",
+          "texto": "Hola Alejandra, bienvenida. Antes de empezar, para alinear expectativas, ¿cuál es tu pretensión salarial? Hola, gracias. Buscaría algo alrededor de 4.800 soles al mes. Anotado. ¿Y desde cuándo podrías empezar? De inmediato. Ya terminé mi contrato anterior la semana pasada, así que tengo disponibilidad inmediata. Perfecto. Cuéntame de tu experiencia. ¿Cuántos años llevas en desarrollo? Tres años y medio. Comencé como practicante y luego me contrataron de forma fija. ¿Cuál fue tu último puesto? Fui desarrollador backend en Pampa Digital, una empresa de pagos en línea ¿Con qué tecnologías trabajabas? Principalmente Python con Django y PostgreSQL para el servidor También usaba Docker y Git todos los días y algo de AWS para el despliegue ¿Y cómo es tu nivel de inglés? Avanzado, estudié 5 años en un instituto y mantengo reuniones con clientes de otros países sin problema Muy bien, cuéntame cómo manejas un error en producción Lo primero es revisar los registros y reproducir el problema en un ambiente de pruebas Si es crítico, aviso al equipo y se hace una corrección rápida y después escribimos un informe para que no se respita Me parece un buen enfoque, ¿cómo trabajas en equipo? Me gusta revisar el código de mis compañeros y que revisen el mío En Papa Digital hacíamos reuniones cortas todas las mañanas de 15 minutos para coordinar las tareas ¿Prefieres trabajo remoto o presencial? Me da igual, puedo ir a oficina o trabajar desde casa siempre que haya buena comunicación. ¿Qué esperas aprender de esta posición? Quiero conocer mejor cómo se diseñan sistemas que atienden a muchos usuarios a la vez. En mi trabajo anterior vimos algo de eso, pero siempre es pequeño y me gustaría trabajar con más volumen. ¿Tienes alguna duda sobre el proceso? Solo seguí una prueba técnica antes de la decisión final. Sí, sería una prueba corta, de un par de horas, la próxima semana. Perfecto, me parece bien. Antes de cerrar, cuéntame cómo recibes los comentarios sobre tu trabajo Los escucho con calma y trato de no defenderme de inmediato Si alguien me señala algo en mi código, primero intento entender qué ve esa persona que yo no vi y después decido qué cambiar ¿Y cuando tú tienes que dar un comentario difícil a un compañero? Lo hablo en privado y empiezo por lo que está bien Después explico el problema con un ejemplo concreto y propongo una alternativa para que no suene como una crítica a la persona ¿Qué haces cuando sientes que un plazo no es realista? Lo digo cuanto antes y con razones. Prefiero proponer una entrega más pequeña y a tiempo que comprometer todo y llegar con algo a medias. Casi siempre el equipo lo agradece. Gracias, Alejandra. Ya tenemos información. Te contactaremos pronto. Muchas gracias.",
+          "dur_s": 159.4026875,
+          "t_s": 16.099,
+          "glos_hits": 6,
+          "glos_total": 6,
+          "w_err": 13,
+          "w_ref": 460,
+          "c_err": 38,
+          "c_ref": 2625,
+          "wer": 0.02826086956521739,
+          "cer": 0.014476190476190476
+        },
+        {
+          "clip": "t1_03",
+          "texto": "Hola Valeria, gracias por venir. Para empezar, ¿cuánta experiencia tienes? Buenas tardes, tengo un año y medio de experiencia, todo en prácticas y en un par de proyectos de la universidad. ¿Qué haces en tu último puesto? Soy practicante de ciencias de datos en Mercado Sur, una cadena de supermercados, ayuda a preparar bases de datos y a probar modelos sencillos de predicción de demanda. Perfecto, ¿qué herramientas manejas? Excel para casi todo, luego Python y la librería Scikit-learn para los modelos. Para las visualizaciones usé Tableau. Una consulta, ¿cómo calificarías tu nivel en inglés? Básico, entiendo algunas frases escritas, pero hablar todavía me cuesta mucho. Estoy llevando un curso los sábados para mejorar. Está bien, es una buena iniciativa. ¿Cuándo podrías empezar a trabajar? Termino mis exámenes finales en noviembre, así que podría empezar a partir del 1 de diciembre. Entendido. Cuéntame una dificultad que hayas enfrentado. En mi práctica, los datos de las tiendas llegaban con muchos errores, como precios en blanco y fechas mal escritas. Aprendí a validar los datos antes de usarlos y armé una lista de revisión para el equipo de 12 puntos. ¿Y qué fue lo que más disfrutaste de tu práctica? Ver que lo que hacía servía. Un día el jefe de compras usó una de mis tablas para decidir cuándo pedir de un producto y después me contó que se evitó un faltante. Eso me motivó muchísimo a seguir en esta tarea. ¿Cómo te organizas entre la universidad y el trabajo? Tengo un calendario semanal y reservo bloques fijos para estudiar y para trabajar. Los fines de semana descanso para no cansarme demasiado. Cuéntame cómo aprendes cosas nuevas cuando no conoces el tema. Primero busco ejemplos sencillos, los copio para entender cómo funcionan y luego intento hacer algo parecido por mi cuenta sin mirar y si me atasco regreso a revisar. Así lo que aprendo se me queda. ¿Qué haces cuando un compañero te explica algo? Se lo digo con sinceridad y le pido un ejemplo. Antes me daba vergüenza, pero ahora sé que preguntar a tiempo me ahorra errores y me hace aprender más rápido. ¿Cómo te gustaría que fueran tus primeros días en un trabajo nuevo? Me gustaría conocer al equipo, entender para qué sirve lo que hago y tener a alguien a quien preguntar sin miedo. Con eso me siento segura y empiezo a aportar antes. ¡Qué bien! ¿Y qué esperas ganar mensualmente? Estaba pensando en $1,800 dólares al mes. Anotado. ¿Tienes alguna pregunta? Sí. ¿Habría capacitación durante los primeros meses? Sí. Tenemos un programa de inducción de cuatro semanas. Muchas gracias, Valeria. Gracias a ustedes.",
+          "dur_s": 156.672,
+          "t_s": 16.226,
+          "glos_hits": 4,
+          "glos_total": 4,
+          "w_err": 23,
+          "w_ref": 445,
+          "c_err": 84,
+          "c_ref": 2535,
+          "wer": 0.051685393258426963,
+          "cer": 0.033136094674556214
+        },
+        {
+          "clip": "t1_04",
+          "texto": "Buenos días Rocío, háblame de ti y tu trayectoria Buenos días, tengo 8 años de experiencia en datos, mi último puesto fue ingeniería de datos en Andes Logística, donde construía y mantenía los flujos de información de toda la empresa ¿Con qué tecnologías trabajabas? Mucho Python, Airflow para programas, los procesos, dbt para transformar los datos, y todo corría en AWS con Kubernetes ¿Y cuántas personas habían en tu equipo? Éramos 14 divididos en 3 tareas, ingestión, transformación y publicación ¿Por qué dejaste ANDA en logística? La empresa se reestructuró y el área de datos se redujo a la mitad Fue una decisión de ellos, no mía, pero me dejó con ganas de buscar un proyecto más estable Entendido, ¿y cómo es inglés? Fluido, tengo certificación C1, escribo la documentación técnica en inglés y he dado presentaciones a clientes de Chile y México Muy bien, ¿cuándo podrías incorporarte? Me gustaría tomarme un tiempo para descansar, así que estaría lista en un mes Perfecto, ahora, ¿qué pretensión salarial tienes? 7500 soles mensuales ¿Es negociable? Un poco, depende de los beneficios y del esquema de trabajo remoto ¿Qué gema prefieres, remoto, presencial o mixto? Me acomodo a un esquema híbrido, dos días en la oficina y tres días de casa Cuéntame un rato técnico que hayas resuelto Teníamos un proceso nocturno que tardaba mucho y a veces fallaba a mitad de camino Lo dividí en etapas más pequeñas, agregué reintentos automáticos y avisos cuando algo fallaba Como es el proceso dejó de romperse y el equipo pudo dormir tranquilo ¿Cómo mides que un proceso está funcionando bien? Reviso que los datos lleguen completos y a tiempo y que los totales cuadren con la fuente original Si algo no coincide lo investigo antes de que alguien más lo note ¿Has liderado equipos antes? ¿Cómo reempartes el trabajo cuando alguien está sobrecargado? Primero hablo con la persona para entender qué la está agobiando. A veces el problema es la cantidad de tareas y otras veces es que le tocó algo para lo que no se sentía preparada. Según el caso, redistribuyo o acompaño. ¿Qué haces cuando un integrante nuevo no rinde como esperabas? Reviso primero si le expliqué bien lo que esperaba de su trabajo porque muchas veces el problema es de comunicación. Después acordamos metas pequeñas y nos vemos con frecuencia para ver cómo va. ¿Cómo celebras los logros del equipo? Me gusta reconocer en público lo que cada persona hizo bien con detalles. Decir gracias por el trabajo del equipo suena bonito, pero mencionar qué hizo cada uno es lo que realmente motiva. Está bien. ¿Algo más que quieras agregar? Que me motiva a liderar a otras personas y compartir lo que he aprendido. Quisiera creer ser hacia un rol de jefatura técnica. Muchas gracias, Rocío. A ustedes.",
+          "dur_s": 162.816,
+          "t_s": 16.758,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 23,
+          "w_ref": 463,
+          "c_err": 43,
+          "c_ref": 2662,
+          "wer": 0.04967602591792657,
+          "cer": 0.016153268219383923
+        },
+        {
+          "clip": "t1_05",
+          "texto": "Buenas Samira, gracias por venir. Cuéntame cómo llegaste a este rubro. Buenas, estudié Administración y en la universidad me gustaron los números. Hace dos años entré a trabajar como analista de inteligencia comercial en Brisa Retail. ¿O sea que ese fue tu último puesto? Sí, analista de inteligencia comercial y sigo ahí hasta fin de año. ¿Y qué herramientas usas? Básicamente SQL para la información, Excel para los cálculos rápidos, Power BI y también Looker Studio para los tableros que ven los gerentes. ¿Cuál es tu nivel de inglés? Intermedio, más o menos, entiendo bien cuando escucho, pero al escribir cometo errores Ok, hablemos de la parte económica, ¿cuánto pretendes ganar? Pretendo 5.000, perdón, 5.350 soles al mes ¿Y cuándo podrías empezar? Mi contrato termina en diciembre, entonces podría incorporarme el 15 de enero Entiendo, cuéntame cómo explicas un resultado a personas que no son técnicas Trato de empezar por la conclusión y usar un gráfico simple Por ejemplo, el mes pasado mostré que el 10% de los productos generaba la mayor parte de las ventas y con eso el área comercial cambió su plan de promociones. Muy bien, ¿y qué esperas del equipo al que te incorpores? Que haya espacio para preguntar y aprender y que se revisen los análisis entre todos antes de presentarlos. Cuéntame un error que hayas cometido en un análisis. Una vez presenté un promedio sin ver que había datos duplicados, un compañero lo notó antes de la reunión y pudimos corregirlo. Desde entonces reviso los duplicados y los valores raros antes de calcular cualquier cosa ¿Qué te gusta hacer fuera del trabajo? Me gusta correr los fines de semana y cocinar A veces preparo cena para mis amigos y tratamos de probar recetas nuevas Cuéntame cómo te preparas cuando tienes que presentar resultados a gerencia Primero imagino qué preguntas me harían y preparo respuestas cortas Después ensayo la presentación en voz alta con un compañero que me ayuda a ver en dónde me enredo y qué parte sobra ¿Y si alguien cuestiona tus conclusiones en plena reunión? Escucho la objeción completa antes de responder, si tiene razón lo reconozco y me comprometo a revisar, si no, explico con calma de dónde sale el resultado y ofrezco señalar los datos después ¿Qué es lo que más valoras de un buen jefe o jefa? Que confíe en mí, pero que también esté cerca cuando lo necesito, me gusta que me den libertad para organizarme siempre que sepa claramente qué resultados esperan ¿Y te interesa aprender más de programación? Sí, de hecho estoy aprendiendo Python por mi cuenta, aunque todavía no lo uso en el trabajo Gracias Samira, te avisaremos pronto Gracias, un gusto",
+          "dur_s": 148.736,
+          "t_s": 15.829,
+          "glos_hits": 5,
+          "glos_total": 5,
+          "w_err": 10,
+          "w_ref": 450,
+          "c_err": 40,
+          "c_ref": 2589,
+          "wer": 0.022222222222222223,
+          "cer": 0.01544998068752414
+        }
+      ]
+    }
+  ],
+  "comparaciones": {
+    "precision": [
+      {
+        "a": "small_gpu_fp16",
+        "b": "small_gpu_int8",
+        "n_clips": 5,
+        "clips": [
+          "t1_01",
+          "t1_02",
+          "t1_03",
+          "t1_04",
+          "t1_05"
+        ],
+        "wer_a": 0.07576428887904298,
+        "wer_b": 0.07842268498006202,
+        "dif_wer_a_menos_b": -0.0026583961010190477,
+        "dif_ic95": [
+          -0.005335704757670076,
+          0.0
+        ],
+        "clips_con_texto_distinto": 5,
+        "spm_a": 1.8810407405407676,
+        "spm_b": 1.9491532134693952,
+        "velocidad_b_sobre_a": 1.0362099934683213,
+        "vram_a_mb": 884,
+        "vram_b_mb": 426,
+        "glos_recall_a": 0.76,
+        "glos_recall_b": 0.76
+      },
+      {
+        "a": "large_gpu_fp16",
+        "b": "large_gpu_int8",
+        "n_clips": 5,
+        "clips": [
+          "t1_01",
+          "t1_02",
+          "t1_03",
+          "t1_04",
+          "t1_05"
+        ],
+        "wer_a": 0.03145768719539211,
+        "wer_b": 0.03190075321222862,
+        "dif_wer_a_menos_b": -0.00044306601683651026,
+        "dif_ic95": [
+          -0.0018083182640144663,
+          0.0008833922261484092
+        ],
+        "clips_con_texto_distinto": 3,
+        "spm_a": 6.098101254431906,
+        "spm_b": 6.047036097162981,
+        "velocidad_b_sobre_a": 0.9916260561872742,
+        "vram_a_mb": 4010,
+        "vram_b_mb": 2250,
+        "glos_recall_a": 0.96,
+        "glos_recall_b": 1.0
+      }
+    ],
+    "dispositivo": [
+      {
+        "a": "small_gpu_int8",
+        "b": "small_cpu_int8",
+        "n_clips": 2,
+        "clips": [
+          "t1_01",
+          "t1_02"
+        ],
+        "wer_a": 0.06562847608453838,
+        "wer_b": 0.06229143492769744,
+        "dif_wer_a_menos_b": 0.003337041156840942,
+        "dif_ic95": [
+          0.0,
+          0.00683371298405467
+        ],
+        "clips_con_texto_distinto": 2,
+        "spm_a": 1.9345277361229565,
+        "spm_b": 22.624930365536272,
+        "velocidad_b_sobre_a": 11.695324881141046,
+        "vram_a_mb": 426,
+        "vram_b_mb": 0,
+        "glos_recall_a": 0.6363636363636364,
+        "glos_recall_b": 0.6363636363636364
+      }
+    ],
+    "glosario": [
+      {
+        "a": "small_gpu_fp16",
+        "b": "small_gpu_fp16_glos",
+        "n_clips": 5,
+        "clips": [
+          "t1_01",
+          "t1_02",
+          "t1_03",
+          "t1_04",
+          "t1_05"
+        ],
+        "wer_a": 0.07576428887904298,
+        "wer_b": 0.07000443066016837,
+        "dif_wer_a_menos_b": 0.005759858218874606,
+        "dif_ic95": [
+          -0.005686789151356078,
+          0.018775145283862316
+        ],
+        "clips_con_texto_distinto": 5,
+        "spm_a": 1.8810407405407676,
+        "spm_b": 1.9854747463839848,
+        "velocidad_b_sobre_a": 1.0555192684519923,
+        "vram_a_mb": 884,
+        "vram_b_mb": 746,
+        "glos_recall_a": 0.76,
+        "glos_recall_b": 1.0
+      },
+      {
+        "a": "large_gpu_fp16",
+        "b": "large_gpu_fp16_glos",
+        "n_clips": 5,
+        "clips": [
+          "t1_01",
+          "t1_02",
+          "t1_03",
+          "t1_04",
+          "t1_05"
+        ],
+        "wer_a": 0.03145768719539211,
+        "wer_b": 0.03278688524590164,
+        "dif_wer_a_menos_b": -0.0013291980505095308,
+        "dif_ic95": [
+          -0.007609668755595343,
+          0.0030701754385964904
+        ],
+        "clips_con_texto_distinto": 4,
+        "spm_a": 6.098101254431906,
+        "spm_b": 6.200231568969758,
+        "velocidad_b_sobre_a": 1.0167478876254517,
+        "vram_a_mb": 4010,
+        "vram_b_mb": 4010,
+        "glos_recall_a": 0.96,
+        "glos_recall_b": 1.0
+      }
+    ],
+    "tamano": [
+      {
+        "a": "small_gpu_fp16",
+        "b": "large_gpu_fp16",
+        "n_clips": 5,
+        "clips": [
+          "t1_01",
+          "t1_02",
+          "t1_03",
+          "t1_04",
+          "t1_05"
+        ],
+        "wer_a": 0.07576428887904298,
+        "wer_b": 0.03145768719539211,
+        "dif_wer_a_menos_b": 0.044306601683650866,
+        "dif_ic95": [
+          0.029616724738675965,
+          0.0595344673231871
+        ],
+        "clips_con_texto_distinto": 5,
+        "spm_a": 1.8810407405407676,
+        "spm_b": 6.098101254431906,
+        "velocidad_b_sobre_a": 3.2418762246897455,
+        "vram_a_mb": 884,
+        "vram_b_mb": 4010,
+        "glos_recall_a": 0.76,
+        "glos_recall_b": 0.96
+      }
+    ]
+  }
+}
