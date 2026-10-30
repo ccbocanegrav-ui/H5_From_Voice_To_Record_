@@ -26,7 +26,7 @@ def _modelo(nombre: str, device: str, compute: str, cfg: dict[str, Any]):
 def process_audio(audio_path: str, schema: str = "t1", config_path: str = "config.yaml", *,
                   use_cache: bool = True, cache_only: bool = False, model_name: str | None = None,
                   device: str | None = None, compute_type: str | None = None,
-                  glosario: bool | None = None) -> dict[str, Any]:
+                  glosario: bool | None = None, metodo: str | None = None) -> dict[str, Any]:
     """Transcribe y extrae un registro estructurado. NUNCA lanza: los errores van en result["error"].
 
     schema: "t1" (entrevista) o "t2" (llamada de venta): mismo motor, distinto esquema de registro.
@@ -92,7 +92,7 @@ def process_audio(audio_path: str, schema: str = "t1", config_path: str = "confi
         except ImportError:
             pass
         else:
-            ex = extraer(schema, res["transcript"], cfg)
+            ex = extraer(schema, res["transcript"], cfg, metodo)
             res["fields"], res["verified"], res["extraction"] = ex["fields"], ex["verified"], "ok"
     except Exception as e:
         res["error"] = f"{type(e).__name__}: {e}"

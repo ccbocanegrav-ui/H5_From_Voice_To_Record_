@@ -55,33 +55,78 @@ benchmark:                       # T1 Fase 2 (scripts/benchmark_asr.py). Corre e
 
 extraction:
   reference_date: "2026-11-02"   # fecha ficticia de las entrevistas: resuelve disponibilidad relativa
-  english_synonyms:              # mapa de sinónimos para nivel_ingles
-    basico: [básico, basico, principiante]
-    intermedio: [intermedio, medio]
-    avanzado: [avanzado, fluido, c1, c2, nativo]
   method: rules                  # rules | llm
-  llm_model: claude-sonnet-5-5
+  llm_model: claude-sonnet-5-5   # se usa solo con method: llm (necesita ANTHROPIC_API_KEY en .env)
   unverified_label: sin_verificar
+  english_synonyms:              # nivel_ingles: palabra que debe aparecer literalmente en la transcripción
+    basico: [básico, basico, principiante]
+    intermedio: [intermedio, b2, b1]
+    avanzado: [avanzado, fluido, c1, c2, nativo]
+  lexicon_tecnologias:           # reglas: qué tecnologías buscar en el texto (el glosario de ASR es otra cosa)
+    [Python, pandas, SQL, Power BI, Docker, Django, PostgreSQL, Git, AWS, Excel, scikit-learn, Tableau,
+     Airflow, dbt, Kubernetes, Looker Studio, Figma, Adobe XD, Illustrator, VBA, SAP, React, JavaScript,
+     TypeScript, Google Analytics, Meta Ads, HubSpot, Canva, Stata, Java, Spark, Hadoop, MySQL, MongoDB,
+     TensorFlow, PyTorch, Jira, Notion, Salesforce, Photoshop, Linux, Azure, GCP]
+  distritos:                     # reglas T2: distritos de Lima para cerrar la dirección de entrega
+    [San Miguel, Magdalena, Surco, Santiago de Surco, Jesús María, Pueblo Libre, Breña, Los Olivos,
+     Cercado de Lima, Lima, Miraflores, San Isidro, Barranco, La Molina, San Borja, Lince, San Martín de Porres,
+     Comas, Independencia, Rímac, Chorrillos, Villa El Salvador, Ate, Callao, Surquillo, San Luis, La Victoria]
   prompts:
     t1: |
-      Extrae del texto de la entrevista un JSON con las claves:
-      anios_experiencia, ultimo_puesto, tecnologias, pretension_salarial,
-      disponibilidad, nivel_ingles. Usa SOLO palabras que aparezcan literalmente
-      en el texto. Si un campo no aparece, devuelve null.
+      Eres un extractor de datos. Del texto de una entrevista de trabajo devuelve SOLO un JSON con estas claves:
+      anios_experiencia (número; 3.5 si dice "tres años y medio"; 0.5 si dice "seis meses"),
+      ultimo_puesto (texto, tal como se dice),
+      tecnologias (lista; incluye SOLO las que la persona USA, no las que está aprendiendo),
+      pretension_salarial (número mensual; si se corrige, el valor final),
+      moneda ("PEN" si dice soles, "USD" si dice dólares),
+      disponibilidad ("inmediata" o fecha ISO AAAA-MM-DD; la fecha de hoy es {fecha_referencia}; resuelve "en quince días", "a fin de mes", "el primero de diciembre" respecto a esa fecha),
+      nivel_ingles ("basico", "intermedio" o "avanzado").
+      Usa SOLO información que aparezca en el texto. Si un campo no aparece, devuelve null. Sin explicaciones.
     t2: |
-      Extrae del texto de la llamada un JSON con las claves:
-      items (producto, tamano, cantidad, precio_unitario), promocion,
-      direccion_entrega, metodo_pago, total_dicho. Registra el pedido FINAL
-      si el cliente se corrige. Usa SOLO palabras que aparezcan literalmente.
+      Eres un extractor de datos. Del texto de una llamada de venta de un restaurante devuelve SOLO un JSON con:
+      items (lista de {producto, tamano, cantidad, precio_unitario}; registra el pedido FINAL si el cliente se corrige),
+      promocion (texto de la promoción aplicada, o null si no se aplica ninguna),
+      direccion_entrega (texto; "recojo en tienda" si recoge el pedido),
+      metodo_pago ("efectivo", "tarjeta", "yape" o "plin"),
+      total_dicho (número: el total que el vendedor DICE en voz alta, aunque esté mal sumado).
+      Usa SOLO información que aparezca en el texto. Si un campo no aparece, devuelve null. Sin explicaciones.
+  t2:
+    dominio: restaurante
+    menu:                        # carta del restaurante inventado (la misma de scripts/guiones_t2.md)
+      - {producto: pollo a la brasa, alias: [pollo a la brasa, pollo], tamanos: {cuarto: 22, medio: 40, entero: 75}}
+      - {producto: lomo saltado, alias: [lomo saltado, lomo], tamanos: {unico: 30}}
+      - {producto: ceviche clásico, alias: [ceviche clásico, ceviche], tamanos: {personal: 28, para dos: 48}}
+      - {producto: arroz con mariscos, alias: [arroz con mariscos], tamanos: {unico: 32}}
+      - {producto: chicha morada, alias: [chicha morada, chicha], tamanos: {vaso: 6, jarra: 16}}
+      - {producto: gaseosa Inca Kola, alias: [gaseosa inca kola, inca kola, gaseosa], tamanos: {1.5 litros: 12}}
+    promos:                      # la regla alimenta el validador aritmético
+      - {id: P1, etiqueta: "descuento de diez soles en pedidos desde ochenta soles",
+         patrones: ["descuento de 10 soles"],
+         regla: {tipo: descuento_fijo, monto: 10, minimo: 80}}
+      - {id: P2, etiqueta: "dos por uno en chicha morada en vaso",
+         patrones: ["2 por 1"],
+         regla: {tipo: n_por_m, producto: chicha morada, tamano: vaso, lleva: 2, paga: 1}}
+    pagos:
+      efectivo: [efectivo]
+      tarjeta: [tarjeta]
+      yape: [yape]
+      plin: [plin]
+    prefijos_calle: [avenida, av, calle, jirón, jr, pasaje, psje, alameda, malecón, urbanización, urb]
+    recojo: [recojo, recoger, recogerlo, recogerla]
+    correcciones: [espera, perdón, perdon, mejor, equivoqué, equivoque, cambio, pensándolo, "en vez de"]
 
 schemas:
   t1: [anios_experiencia, ultimo_puesto, tecnologias, pretension_salarial, disponibilidad, nivel_ingles]
   t2: [items, promocion, direccion_entrega, metodo_pago, total_dicho]
 
-ladder:
-  L1: {codec: libmp3lame, bitrate: 24k, channels: 1}
-  L2: {lowcut_hz: 300, highcut_hz: 3400, sample_rate: 8000}
-  L3: {base: L1, snr_db: 10}     # SNR a justificar y medir; ver README
+ladder:                          # escalera de degradación (T2). Se construye con scripts/ladder.py
+  dir: data/audio_ladder
+  niveles: [L0, L1, L2, L3]
+  L1: {codec: libopus, bitrate: 16k, canales: 1, ext: ogg}                      # nota de voz de WhatsApp (Opus)
+  L2: {lowcut_hz: 300, highcut_hz: 3400, sample_rate: 8000, ext: wav}          # llamada telefónica
+  L3: {base: L1, snr_db: 10, ruido: rosa, semilla: 0, ventana_activa_db: 30}   # ruido ambiente ANTES del códec
+  # SNR 10 dB: voz 3 veces más fuerte que el ruido en amplitud; típico de una calle o un restaurante con gente.
+  # La SNR se mide sobre los tramos con voz (ver scripts/ladder.py) y se guarda en data/audio_ladder/snr.json.
 
 validation:
-  tolerance_soles: 0.5
+  tolerancia_soles: 0.5

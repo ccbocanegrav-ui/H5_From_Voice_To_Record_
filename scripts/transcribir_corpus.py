@@ -28,10 +28,11 @@ def main() -> int:
     ap.add_argument("--device")
     ap.add_argument("--compute")
     ap.add_argument("--glosario", action="store_true")
+    ap.add_argument("--dir", help="carpeta de audios (por defecto paths.audio_dir; para la escalera: data/audio_ladder)")
     a = ap.parse_args()
 
     cfg = load_config(a.config)
-    audio_dir = resolver_ruta(cfg, cfg["paths"]["audio_dir"])
+    audio_dir = resolver_ruta(cfg, a.dir or cfg["paths"]["audio_dir"])
     clips = sorted(p for p in audio_dir.iterdir() if p.stem.startswith(a.task + "_") and p.suffix.lower() in EXTS)
     if not clips:
         print(f"No hay audios {a.task}_* en {audio_dir}")
