@@ -39,7 +39,7 @@ def test_process_audio_no_lanza_y_reporta_error():
 
 def test_cache_only_sin_cache_da_error_claro():
     from engine import process_audio
-    r = process_audio("data/audio/t1_01.m4a", "t1", cache_only=True)
+    r = process_audio("data/audio/t1_99.m4a", "t1", cache_only=True)
     assert r["error"] and "caché" in r["error"]
 
 

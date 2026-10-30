@@ -71,6 +71,8 @@ def extraer_puesto(t: str) -> str | None:
         return 3 * bool(CUE_FUERTE & previos) + 1 * bool(CUE_DEBIL & previos) - 3 * bool(NO_ACTUAL & previos)
 
     i = max(candidatos, key=lambda k: (puntaje(k), -k))      # mayor puntaje; a igualdad, el primero
+    if puntaje(i) <= 0:
+        return None          # ninguna palabra de cargo viene tras "fui/soy/mi último puesto…": mejor "sin dato" que un cargo equivocado
     palabras = [tokens[i]]
     j = i + 1
     while j < len(tokens) and len(palabras) < 5:

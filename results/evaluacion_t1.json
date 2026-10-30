@@ -1,0 +1,148 @@
+{
+  "config_asr": "large-v3__cuda__float16__plano",
+  "metodo": "rules",
+  "resumen": {
+    "L0": {
+      "n_clips": 5,
+      "wer": 0.03145768719539211,
+      "wer_ic": [
+        0.019891500904159132,
+        0.04233958969882148
+      ],
+      "cer": 0.014800052129598862,
+      "campos_ok": 25,
+      "campos_total": 30,
+      "registros_perfectos": 1,
+      "por_campo": {
+        "anios_experiencia": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0,
+          "error_abs_medio": 0.0
+        },
+        "ultimo_puesto": {
+          "n": 5,
+          "aciertos": 2,
+          "exactitud": 0.4,
+          "ic_lo": 0.1176182311592533,
+          "ic_hi": 0.769280067791163,
+          "sin_verificar": 0
+        },
+        "tecnologias": {
+          "n": 5,
+          "aciertos": 4,
+          "exactitud": 0.8,
+          "ic_lo": 0.3755282641185388,
+          "ic_hi": 0.9637768390302125,
+          "sin_verificar": 0
+        },
+        "pretension_salarial": {
+          "n": 5,
+          "aciertos": 4,
+          "exactitud": 0.8,
+          "ic_lo": 0.3755282641185388,
+          "ic_hi": 0.9637768390302125,
+          "sin_verificar": 0,
+          "error_abs_medio": 120.0
+        },
+        "disponibilidad": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "nivel_ingles": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0,
+          "f1_macro": 1.0
+        }
+      }
+    }
+  },
+  "filas": [
+    {
+      "clip": "t1_01",
+      "nivel": "L0",
+      "wer": 0.011389521640091117,
+      "cer": 0.004250386398763524,
+      "w_err": 5,
+      "w_ref": 439,
+      "campos_total": 6,
+      "campos_ok": 6,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0
+    },
+    {
+      "clip": "t1_02",
+      "nivel": "L0",
+      "wer": 0.030434782608695653,
+      "cer": 0.014857142857142857,
+      "w_err": 14,
+      "w_ref": 460,
+      "campos_total": 6,
+      "campos_ok": 5,
+      "campos_mal": [
+        "tecnologias"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0
+    },
+    {
+      "clip": "t1_03",
+      "nivel": "L0",
+      "wer": 0.038202247191011236,
+      "cer": 0.022485207100591716,
+      "w_err": 17,
+      "w_ref": 445,
+      "campos_total": 6,
+      "campos_ok": 4,
+      "campos_mal": [
+        "ultimo_puesto",
+        "pretension_salarial"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0
+    },
+    {
+      "clip": "t1_04",
+      "nivel": "L0",
+      "wer": 0.04967602591792657,
+      "cer": 0.015026296018031555,
+      "w_err": 23,
+      "w_ref": 463,
+      "campos_total": 6,
+      "campos_ok": 5,
+      "campos_mal": [
+        "ultimo_puesto"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0
+    },
+    {
+      "clip": "t1_05",
+      "nivel": "L0",
+      "wer": 0.02666666666666667,
+      "cer": 0.01738122827346466,
+      "w_err": 12,
+      "w_ref": 450,
+      "campos_total": 6,
+      "campos_ok": 5,
+      "campos_mal": [
+        "ultimo_puesto"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0
+    }
+  ],
+  "faltantes": []
+}
