@@ -1,4 +1,4 @@
-# Evaluación T1 — extracción `rules` — ASR `large-v3__cuda__float16__plano`
+# Evaluación T1 — extracción rules — ASR large-v3__cuda__float16__plano
 
 ## Capa de texto y capa de registro por nivel
 

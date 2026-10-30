@@ -1,0 +1,625 @@
+{
+  "config_asr": "large-v3__cuda__float16__plano",
+  "metodo": "rules",
+  "resumen": {
+    "L0": {
+      "n_clips": 5,
+      "wer": 0.05084745762711865,
+      "wer_ic": [
+        0.04224652087475149,
+        0.06127574083375188
+      ],
+      "cer": 0.026511038805622993,
+      "campos_ok": 24,
+      "campos_total": 25,
+      "registros_perfectos": 4,
+      "por_campo": {
+        "items": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "promocion": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "direccion_entrega": {
+          "n": 5,
+          "aciertos": 4,
+          "exactitud": 0.8,
+          "ic_lo": 0.3755282641185388,
+          "ic_hi": 0.9637768390302125,
+          "sin_verificar": 0
+        },
+        "metodo_pago": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "total_dicho": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0,
+          "error_abs_medio": 0.0
+        }
+      },
+      "registros_malos": 1,
+      "atrapados_aritmetica": 1,
+      "atrapados_verificacion": 0,
+      "atrapados_alguna": 1,
+      "perdidos": 0,
+      "diagnosticos": {
+        "ok": 2,
+        "asr": 0,
+        "hablante": 3,
+        "no_calculable": 0
+      }
+    },
+    "L1": {
+      "n_clips": 5,
+      "wer": 0.05732801595214357,
+      "wer_ic": [
+        0.04771371769383698,
+        0.07031642390758412
+      ],
+      "cer": 0.029996339322649133,
+      "campos_ok": 24,
+      "campos_total": 25,
+      "registros_perfectos": 4,
+      "por_campo": {
+        "items": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "promocion": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "direccion_entrega": {
+          "n": 5,
+          "aciertos": 4,
+          "exactitud": 0.8,
+          "ic_lo": 0.3755282641185388,
+          "ic_hi": 0.9637768390302125,
+          "sin_verificar": 0
+        },
+        "metodo_pago": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "total_dicho": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0,
+          "error_abs_medio": 0.0
+        }
+      },
+      "registros_malos": 1,
+      "atrapados_aritmetica": 1,
+      "atrapados_verificacion": 0,
+      "atrapados_alguna": 1,
+      "perdidos": 0,
+      "diagnosticos": {
+        "ok": 2,
+        "asr": 0,
+        "hablante": 3,
+        "no_calculable": 0
+      }
+    },
+    "L2": {
+      "n_clips": 5,
+      "wer": 0.054336989032901295,
+      "wer_ic": [
+        0.04476143630103296,
+        0.0649746192893401
+      ],
+      "cer": 0.02742009259482441,
+      "campos_ok": 22,
+      "campos_total": 25,
+      "registros_perfectos": 2,
+      "por_campo": {
+        "items": {
+          "n": 5,
+          "aciertos": 4,
+          "exactitud": 0.8,
+          "ic_lo": 0.3755282641185388,
+          "ic_hi": 0.9637768390302125,
+          "sin_verificar": 0
+        },
+        "promocion": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "direccion_entrega": {
+          "n": 5,
+          "aciertos": 4,
+          "exactitud": 0.8,
+          "ic_lo": 0.3755282641185388,
+          "ic_hi": 0.9637768390302125,
+          "sin_verificar": 0
+        },
+        "metodo_pago": {
+          "n": 5,
+          "aciertos": 4,
+          "exactitud": 0.8,
+          "ic_lo": 0.3755282641185388,
+          "ic_hi": 0.9637768390302125,
+          "sin_verificar": 0
+        },
+        "total_dicho": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0,
+          "error_abs_medio": 0.0
+        }
+      },
+      "registros_malos": 3,
+      "atrapados_aritmetica": 1,
+      "atrapados_verificacion": 1,
+      "atrapados_alguna": 2,
+      "perdidos": 1,
+      "diagnosticos": {
+        "ok": 2,
+        "asr": 0,
+        "hablante": 3,
+        "no_calculable": 0
+      }
+    },
+    "L3": {
+      "n_clips": 5,
+      "wer": 0.06480558325024925,
+      "wer_ic": [
+        0.05017215937038859,
+        0.07918781725888324
+      ],
+      "cer": 0.03449698782895279,
+      "campos_ok": 24,
+      "campos_total": 25,
+      "registros_perfectos": 4,
+      "por_campo": {
+        "items": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "promocion": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "direccion_entrega": {
+          "n": 5,
+          "aciertos": 4,
+          "exactitud": 0.8,
+          "ic_lo": 0.3755282641185388,
+          "ic_hi": 0.9637768390302125,
+          "sin_verificar": 0
+        },
+        "metodo_pago": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0
+        },
+        "total_dicho": {
+          "n": 5,
+          "aciertos": 5,
+          "exactitud": 1.0,
+          "ic_lo": 0.5655085052479191,
+          "ic_hi": 1.0,
+          "sin_verificar": 0,
+          "error_abs_medio": 0.0
+        }
+      },
+      "registros_malos": 1,
+      "atrapados_aritmetica": 1,
+      "atrapados_verificacion": 0,
+      "atrapados_alguna": 1,
+      "perdidos": 0,
+      "diagnosticos": {
+        "ok": 2,
+        "asr": 0,
+        "hablante": 3,
+        "no_calculable": 0
+      }
+    }
+  },
+  "filas": [
+    {
+      "clip": "t2_01",
+      "nivel": "L0",
+      "wer": 0.03931203931203931,
+      "cer": 0.02269569245020843,
+      "w_err": 16,
+      "w_ref": 407,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "ok",
+      "val_ref_estado": "ok",
+      "diagnostico": "ok",
+      "total_calculado": 76
+    },
+    {
+      "clip": "t2_02",
+      "nivel": "L0",
+      "wer": 0.047979797979797977,
+      "cer": 0.02253267237494367,
+      "w_err": 19,
+      "w_ref": 396,
+      "campos_total": 5,
+      "campos_ok": 4,
+      "campos_mal": [
+        "direccion_entrega"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 86
+    },
+    {
+      "clip": "t2_03",
+      "nivel": "L0",
+      "wer": 0.0535279805352798,
+      "cer": 0.029213483146067417,
+      "w_err": 22,
+      "w_ref": 411,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "ok",
+      "val_ref_estado": "ok",
+      "diagnostico": "ok",
+      "total_calculado": 94
+    },
+    {
+      "clip": "t2_04",
+      "nivel": "L0",
+      "wer": 0.07161125319693094,
+      "cer": 0.03652090341182124,
+      "w_err": 28,
+      "w_ref": 391,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 98
+    },
+    {
+      "clip": "t2_05",
+      "nivel": "L0",
+      "wer": 0.04239401496259352,
+      "cer": 0.021592442645074223,
+      "w_err": 17,
+      "w_ref": 401,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 96
+    },
+    {
+      "clip": "t2_01",
+      "nivel": "L1",
+      "wer": 0.04668304668304668,
+      "cer": 0.02779064381658175,
+      "w_err": 19,
+      "w_ref": 407,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "ok",
+      "val_ref_estado": "ok",
+      "diagnostico": "ok",
+      "total_calculado": 76
+    },
+    {
+      "clip": "t2_02",
+      "nivel": "L1",
+      "wer": 0.050505050505050504,
+      "cer": 0.024785939612438034,
+      "w_err": 20,
+      "w_ref": 396,
+      "campos_total": 5,
+      "campos_ok": 4,
+      "campos_mal": [
+        "direccion_entrega"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 86
+    },
+    {
+      "clip": "t2_03",
+      "nivel": "L1",
+      "wer": 0.06082725060827251,
+      "cer": 0.03191011235955056,
+      "w_err": 25,
+      "w_ref": 411,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "ok",
+      "val_ref_estado": "ok",
+      "diagnostico": "ok",
+      "total_calculado": 94
+    },
+    {
+      "clip": "t2_04",
+      "nivel": "L1",
+      "wer": 0.08184143222506395,
+      "cer": 0.03940413262854397,
+      "w_err": 32,
+      "w_ref": 391,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 98
+    },
+    {
+      "clip": "t2_05",
+      "nivel": "L1",
+      "wer": 0.04738154613466334,
+      "cer": 0.026090868196131354,
+      "w_err": 19,
+      "w_ref": 401,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 96
+    },
+    {
+      "clip": "t2_01",
+      "nivel": "L2",
+      "wer": 0.03931203931203931,
+      "cer": 0.0222325150532654,
+      "w_err": 16,
+      "w_ref": 407,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "ok",
+      "val_ref_estado": "ok",
+      "diagnostico": "ok",
+      "total_calculado": 76
+    },
+    {
+      "clip": "t2_02",
+      "nivel": "L2",
+      "wer": 0.05303030303030303,
+      "cer": 0.02253267237494367,
+      "w_err": 21,
+      "w_ref": 396,
+      "campos_total": 5,
+      "campos_ok": 4,
+      "campos_mal": [
+        "direccion_entrega"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 86
+    },
+    {
+      "clip": "t2_03",
+      "nivel": "L2",
+      "wer": 0.05596107055961071,
+      "cer": 0.03056179775280899,
+      "w_err": 23,
+      "w_ref": 411,
+      "campos_total": 5,
+      "campos_ok": 4,
+      "campos_mal": [
+        "metodo_pago"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0,
+      "val_estado": "ok",
+      "val_ref_estado": "ok",
+      "diagnostico": "ok",
+      "total_calculado": 94
+    },
+    {
+      "clip": "t2_04",
+      "nivel": "L2",
+      "wer": 0.0741687979539642,
+      "cer": 0.03748197981739548,
+      "w_err": 29,
+      "w_ref": 391,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 98
+    },
+    {
+      "clip": "t2_05",
+      "nivel": "L2",
+      "wer": 0.04987531172069826,
+      "cer": 0.024291497975708502,
+      "w_err": 20,
+      "w_ref": 401,
+      "campos_total": 5,
+      "campos_ok": 4,
+      "campos_mal": [
+        "items"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 1,
+      "val_estado": "no_calculable",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": null
+    },
+    {
+      "clip": "t2_01",
+      "nivel": "L3",
+      "wer": 0.04668304668304668,
+      "cer": 0.02779064381658175,
+      "w_err": 19,
+      "w_ref": 407,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "ok",
+      "val_ref_estado": "ok",
+      "diagnostico": "ok",
+      "total_calculado": 76
+    },
+    {
+      "clip": "t2_02",
+      "nivel": "L3",
+      "wer": 0.07828282828282829,
+      "cer": 0.041910770617395225,
+      "w_err": 31,
+      "w_ref": 396,
+      "campos_total": 5,
+      "campos_ok": 4,
+      "campos_mal": [
+        "direccion_entrega"
+      ],
+      "registro_perfecto": false,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 86
+    },
+    {
+      "clip": "t2_03",
+      "nivel": "L3",
+      "wer": 0.06082725060827251,
+      "cer": 0.03146067415730337,
+      "w_err": 25,
+      "w_ref": 411,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "ok",
+      "val_ref_estado": "ok",
+      "diagnostico": "ok",
+      "total_calculado": 94
+    },
+    {
+      "clip": "t2_04",
+      "nivel": "L3",
+      "wer": 0.08951406649616368,
+      "cer": 0.04613166746756367,
+      "w_err": 35,
+      "w_ref": 391,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 98
+    },
+    {
+      "clip": "t2_05",
+      "nivel": "L3",
+      "wer": 0.04987531172069826,
+      "cer": 0.025191183085919926,
+      "w_err": 20,
+      "w_ref": 401,
+      "campos_total": 5,
+      "campos_ok": 5,
+      "campos_mal": [],
+      "registro_perfecto": true,
+      "sin_verificar": 0,
+      "val_estado": "inconsistente",
+      "val_ref_estado": "inconsistente",
+      "diagnostico": "hablante",
+      "total_calculado": 96
+    }
+  ],
+  "faltantes": []
+}

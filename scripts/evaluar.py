@@ -27,7 +27,7 @@ def pct(x: float) -> str:
 
 
 def tabla_md(res: dict[str, dict], schema: str, cfg: dict, metodo: str, conf: str) -> str:
-    L = [f"# Evaluación {schema.upper()} — extracción `{metodo}` — ASR `{conf}`", ""]
+    L = [f"# Evaluación {schema.upper()} — extracción {metodo} — ASR {conf}", ""]
     L += ["## Capa de texto y capa de registro por nivel", "",
           "| Nivel | Clips | WER (IC95) | CER | Campos correctos | Registros perfectos |", "|---|---|---|---|---|---|"]
     for n, r in res.items():
@@ -79,6 +79,33 @@ def curva(res: dict[str, dict], destino: Path) -> None:
     fig.savefig(destino)
 
 
+def barras_campos(r: dict, titulo: str, destino: Path) -> None:
+    """Exactitud por campo con IC de Wilson 95 % (un nivel). Una sola serie: se lee con la etiqueta aciertos/n."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    campos = list(r["por_campo"])
+    acc = [100 * r["por_campo"][c]["exactitud"] for c in campos]
+    lo = [a - 100 * r["por_campo"][c]["ic_lo"] for a, c in zip(acc, campos)]
+    hi = [100 * r["por_campo"][c]["ic_hi"] - a for a, c in zip(acc, campos)]
+    fig, ax = plt.subplots(figsize=(6.4, 3.6), dpi=150)
+    y = range(len(campos))
+    ax.barh(list(y), acc, xerr=[lo, hi], color="#1F6F8B", capsize=3, ecolor="#555555")
+    for i, c in enumerate(campos):
+        d = r["por_campo"][c]
+        ax.text(2, i, f"{d['aciertos']}/{d['n']}", va="center", ha="left", color="white", fontsize=9, fontweight="bold")
+    ax.set_yticks(list(y))
+    ax.set_yticklabels(campos, fontsize=9)
+    ax.invert_yaxis()
+    ax.set_xlim(0, 100)
+    ax.set_xlabel("Exactitud del campo (%), con IC de Wilson 95 %")
+    ax.set_title(titulo, fontsize=10)
+    ax.grid(axis="x", alpha=0.3)
+    fig.tight_layout()
+    fig.savefig(destino)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--task", choices=["t1", "t2"], required=True)
@@ -112,6 +139,8 @@ def main() -> int:
     (out / f"evaluacion_{a.task}.json").write_text(json.dumps({"config_asr": conf, "metodo": metodo, "resumen": res,
                                                                "filas": ligero, "faltantes": faltantes},
                                                               ensure_ascii=False, indent=2, default=str), encoding="utf-8")
+    if "L0" in res:
+        barras_campos(res["L0"], f"{a.task.upper()}: exactitud por campo (L0, método {metodo})", out / f"exactitud_campos_{a.task}.png")
     if a.ladder and len(res) > 1:
         curva(res, out / "curva_degradacion.png")
     print(md)

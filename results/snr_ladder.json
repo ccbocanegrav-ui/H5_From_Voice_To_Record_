@@ -1,0 +1,22 @@
+{
+  "t2_01": {
+    "snr_objetivo_db": 10,
+    "snr_medida_db": 10.0
+  },
+  "t2_02": {
+    "snr_objetivo_db": 10,
+    "snr_medida_db": 10.0
+  },
+  "t2_03": {
+    "snr_objetivo_db": 10,
+    "snr_medida_db": 10.0
+  },
+  "t2_04": {
+    "snr_objetivo_db": 10,
+    "snr_medida_db": 10.0
+  },
+  "t2_05": {
+    "snr_objetivo_db": 10,
+    "snr_medida_db": 10.0
+  }
+}

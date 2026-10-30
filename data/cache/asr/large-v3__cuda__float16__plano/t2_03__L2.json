@@ -1,0 +1,211 @@
+{
+  "clip": "t2_03__L2",
+  "audio": "t2_03__L2.wav",
+  "texto": "Querida María Norte, buenas tardes. Hola, buenas tardes. Quiero un pollo entero a la brasa, un lomo saltado y una gaseosa en cacola de litro y medio. Muy bien. Pollo entero, lomo saltado y gaseosa de litro y medio. No, espera. El pollo entero es mucho para nosotros. Mejor un medio pollo y un cuarto de pollo. El lomo y la gaseosa se quedan. Entendido. Cambia el pedido. Medio pollo, un cuarto de pollo, un lomo saltado y la gaseosa de litro y medio. Correcto. ¿El pollo viene con ensalada? Sí, con papas fritas y ensalada fresca. Y las cremas que usted quiera. Genial. Con ají y mayonesa, por favor. ¿Prefiere que las cremas vayan en recipientes aparte o directamente sobre la ensalada? Aparte, por favor, porque a mi hijo no le gusta el picante y así cada uno se sirve lo que quiere. Entendido. Las enviamos en recipientes pequeños y cerrados para que no se derramen en el camino. Qué bueno. Y también necesito servilletas y cubiertos suficientes porque vienen invitados a la casa. Claro. Incluimos servilletas y cubiertos para todos. Si necesita más, avísenos ahora y le agregamos. Con eso está bien, muchas gracias por la atención Si le gustó la atención, puede dejarnos su opinión en nuestras redes cuando guste, siempre nos ayuda a mejorar Claro, con gusto, siempre recomiendo los lugares que me tratan bien Anotado, los precios son, medio pollo a 40 soles, cuarto de pollo a 22 soles, lo hemos saltado a 30 soles y la base es a 12 soles Hoy hay descuento de 10 soles en los pedidos desde 80 soles, y su pedido califica ¡Qué bueno! ¿Querés agregar alguna entrada o postre? No, gracias. Es para una cena en casa con unos familiares que vienen de visita y con esto alcanza. Perfecto. Que lo disfruten. Gracias. Ojalá llegue caliente porque vivimos un poco lejos. Lo empacamos en bolsas térmicas para que llegue bien caliente. La suma es de 104 soles. Menos 10, 94 soles en total. 94 soles, perfecto. ¿Cuál es su dirección? Calle Las Begonias, 87, en Surco, Casa de Raja, Blanca. Calle Las Begonias, 87, Surco. ¿Cuál será la forma de pago? Voy a pagar por YAP antes de que llegue el pedido Perfecto, le enviaremos el código para el pago por mensaje Repito, medio pollo, cuarto de pollo, lomo saltado y gaseosa Por 94 soles Así es, ¿y cuánto demoran? Aproximadamente 40 minutos Muy bien, muchas gracias Gracias a usted, que tenga buena tarde",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 2.1,
+      "texto": "Querida María Norte, buenas tardes."
+    },
+    {
+      "inicio": 2.82,
+      "fin": 8.96,
+      "texto": "Hola, buenas tardes. Quiero un pollo entero a la brasa, un lomo saltado y una gaseosa en cacola de litro y medio."
+    },
+    {
+      "inicio": 9.22,
+      "fin": 11.66,
+      "texto": "Muy bien. Pollo entero, lomo saltado y gaseosa de litro y medio."
+    },
+    {
+      "inicio": 13.52,
+      "fin": 20.26,
+      "texto": "No, espera. El pollo entero es mucho para nosotros. Mejor un medio pollo y un cuarto de pollo. El lomo y la gaseosa se quedan."
+    },
+    {
+      "inicio": 20.52,
+      "fin": 24.86,
+      "texto": "Entendido. Cambia el pedido. Medio pollo, un cuarto de pollo, un lomo saltado y la gaseosa de litro y medio."
+    },
+    {
+      "inicio": 25.46,
+      "fin": 27.0,
+      "texto": "Correcto. ¿El pollo viene con ensalada?"
+    },
+    {
+      "inicio": 27.0,
+      "fin": 29.96,
+      "texto": "Sí, con papas fritas y ensalada fresca. Y las cremas que usted quiera."
+    },
+    {
+      "inicio": 30.24,
+      "fin": 32.12,
+      "texto": "Genial. Con ají y mayonesa, por favor."
+    },
+    {
+      "inicio": 32.54,
+      "fin": 36.7,
+      "texto": "¿Prefiere que las cremas vayan en recipientes aparte o directamente sobre la ensalada?"
+    },
+    {
+      "inicio": 37.4,
+      "fin": 41.94,
+      "texto": "Aparte, por favor, porque a mi hijo no le gusta el picante y así cada uno se sirve lo que quiere."
+    },
+    {
+      "inicio": 42.54,
+      "fin": 46.62,
+      "texto": "Entendido. Las enviamos en recipientes pequeños y cerrados para que no se derramen en el camino."
+    },
+    {
+      "inicio": 47.28,
+      "fin": 51.82,
+      "texto": "Qué bueno. Y también necesito servilletas y cubiertos suficientes porque vienen invitados a la casa."
+    },
+    {
+      "inicio": 52.26,
+      "fin": 56.42,
+      "texto": "Claro. Incluimos servilletas y cubiertos para todos. Si necesita más, avísenos ahora y le agregamos."
+    },
+    {
+      "inicio": 56.42,
+      "fin": 58.82,
+      "texto": "Con eso está bien, muchas gracias por la atención"
+    },
+    {
+      "inicio": 58.82,
+      "fin": 63.94,
+      "texto": "Si le gustó la atención, puede dejarnos su opinión en nuestras redes cuando guste, siempre nos ayuda a mejorar"
+    },
+    {
+      "inicio": 63.94,
+      "fin": 67.22,
+      "texto": "Claro, con gusto, siempre recomiendo los lugares que me tratan bien"
+    },
+    {
+      "inicio": 67.22,
+      "fin": 75.34,
+      "texto": "Anotado, los precios son, medio pollo a 40 soles, cuarto de pollo a 22 soles, lo hemos saltado a 30 soles y la base es a 12 soles"
+    },
+    {
+      "inicio": 75.34,
+      "fin": 79.2,
+      "texto": "Hoy hay descuento de 10 soles en los pedidos desde 80 soles, y su pedido califica"
+    },
+    {
+      "inicio": 79.2,
+      "fin": 80.24,
+      "texto": "¡Qué bueno!"
+    },
+    {
+      "inicio": 80.66,
+      "fin": 82.18,
+      "texto": "¿Querés agregar alguna entrada o postre?"
+    },
+    {
+      "inicio": 82.18,
+      "fin": 87.26,
+      "texto": "No, gracias. Es para una cena en casa con unos familiares que vienen de visita y con esto alcanza."
+    },
+    {
+      "inicio": 87.64,
+      "fin": 88.96,
+      "texto": "Perfecto. Que lo disfruten."
+    },
+    {
+      "inicio": 89.5,
+      "fin": 92.18,
+      "texto": "Gracias. Ojalá llegue caliente porque vivimos un poco lejos."
+    },
+    {
+      "inicio": 92.48,
+      "fin": 94.94,
+      "texto": "Lo empacamos en bolsas térmicas para que llegue bien caliente."
+    },
+    {
+      "inicio": 95.14,
+      "fin": 96.94,
+      "texto": "La suma es de 104 soles."
+    },
+    {
+      "inicio": 97.16,
+      "fin": 99.26,
+      "texto": "Menos 10, 94 soles en total."
+    },
+    {
+      "inicio": 99.98,
+      "fin": 101.52,
+      "texto": "94 soles, perfecto."
+    },
+    {
+      "inicio": 102.52,
+      "fin": 103.12,
+      "texto": "¿Cuál es su dirección?"
+    },
+    {
+      "inicio": 103.8,
+      "fin": 108.86,
+      "texto": "Calle Las Begonias, 87, en Surco, Casa de Raja, Blanca."
+    },
+    {
+      "inicio": 109.38,
+      "fin": 111.18,
+      "texto": "Calle Las Begonias, 87, Surco."
+    },
+    {
+      "inicio": 111.18,
+      "fin": 112.68,
+      "texto": "¿Cuál será la forma de pago?"
+    },
+    {
+      "inicio": 113.1,
+      "fin": 115.36,
+      "texto": "Voy a pagar por YAP antes de que llegue el pedido"
+    },
+    {
+      "inicio": 115.36,
+      "fin": 118.24,
+      "texto": "Perfecto, le enviaremos el código para el pago por mensaje"
+    },
+    {
+      "inicio": 118.24,
+      "fin": 121.68,
+      "texto": "Repito, medio pollo, cuarto de pollo, lomo saltado y gaseosa"
+    },
+    {
+      "inicio": 121.68,
+      "fin": 122.88,
+      "texto": "Por 94 soles"
+    },
+    {
+      "inicio": 122.88,
+      "fin": 124.82,
+      "texto": "Así es, ¿y cuánto demoran?"
+    },
+    {
+      "inicio": 125.26,
+      "fin": 126.5,
+      "texto": "Aproximadamente 40 minutos"
+    },
+    {
+      "inicio": 126.5,
+      "fin": 128.32,
+      "texto": "Muy bien, muchas gracias"
+    },
+    {
+      "inicio": 128.32,
+      "fin": 130.46,
+      "texto": "Gracias a usted, que tenga buena tarde"
+    }
+  ],
+  "duracion_audio_s": 130.773375,
+  "tiempo_transcripcion_s": 15.716,
+  "modelo": "large-v3",
+  "device_leido": "cuda",
+  "compute_leido": "float16",
+  "compute_pedido": "float16",
+  "glosario": false,
+  "mecanismo_glosario": null,
+  "fecha": "2026-10-30T06:13:10+00:00"
+}

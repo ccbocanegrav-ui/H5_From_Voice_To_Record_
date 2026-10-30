@@ -1,0 +1,246 @@
+{
+  "clip": "t2_05__L3",
+  "audio": "t2_05__L3.ogg",
+  "texto": "Cevichería María Norte, buenas tardes, ¿en qué puedo ayudarle? Buenas tardes, es para el almuerzo en mi oficina, quiero pedir tres ceviches clásicos personales Muy bien, tres ceviches clásicos personales, ¿algo para tomar? Sí, cuatro chichas moradas en vaso Perfecto, recomiendo que hoy tenemos dos por uno en chicha morada en vaso Qué bien, qué conveniente, entonces cuatro vasos Así es, cuatro vasos, los precios son Ceviche mercedual, 28 soles cada uno Y el vaso de chicha, 6 soles De acuerdo, ¿los ceviches vienen con camote y choclo? Sí, con camote, choclo y cancho, como siempre. Perfecto, es la tercera vez que les pido y siempre llega todo muy bien. Muchas gracias por su preferencia, nos alegra saberlo. Sí, siempre llega bien, por eso lo recomendé en mi oficina y varios compañeros se animaron a probar. Muchas gracias por la recomendación, si quieren le pueden enviar nuestro número de contacto para que se lo pase a ellos. Sí, mejor, a veces quieren pedir por su cuenta y no saben a quién llamar. Con gusto. También atendemos pedidos grandes para eventos, si alguna vez lo necesitan, con anticipación. Lo tendré en cuenta, porque en diciembre hacemos una reunión de fin de año en la oficina. ¡Qué bueno! Ojalá podamos atenderlos. Con tiempo le ayudamos a organizar todo. Por cierto, ¿tienen una carta que pueda mostrarles a mis compañeros? Sí, le pueden enviar la carta completa por mensaje, con fotos de cada plato para que lo compartan. Perfecto. ¿Pueden ponerle poco picante a todos? Claro, lo notamos para cocina. ¿Cuántos son para ponerles los cubiertos? Somos tres personas, cada una con su ceviche y las chichas las compartimos Perfecto, le enviamos cubierto para todos ¿Cuál es su dirección de entrega? Pasaje Los Cedros 312, departamento 4B, en Jesús María Pasaje Los Cedros 312, departamento 4B, en Jesús María ¿Y cómo va a pagar? Con tarjeta, por favor ¿Desea boleta o factura? Boleta, por favor Listo, se lo enviamos con el pedido Entendido Tres ceviches, ochenta y cuatro soles, más cuatro chichas, veinticuatro soles El total sería ciento ocho soles Ciento ocho soles, de acuerdo Sí, ciento ocho soles en total Llegarán unos cincuenta minutos aproximadamente ¿Las chichas llegan frías? Sí, las enviamos en una bolsa con hielo para que lleguen bien frías ¿Se puede mandar antes de la una? Tenemos reunión después Haremos lo posible, lo vamos a anotar como prioridad Muchas gracias Gracias a usted, buenas tardes",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 2.78,
+      "texto": "Cevichería María Norte, buenas tardes, ¿en qué puedo ayudarle?"
+    },
+    {
+      "inicio": 3.2,
+      "fin": 7.82,
+      "texto": "Buenas tardes, es para el almuerzo en mi oficina, quiero pedir tres ceviches clásicos personales"
+    },
+    {
+      "inicio": 7.82,
+      "fin": 10.88,
+      "texto": "Muy bien, tres ceviches clásicos personales, ¿algo para tomar?"
+    },
+    {
+      "inicio": 11.46,
+      "fin": 13.96,
+      "texto": "Sí, cuatro chichas moradas en vaso"
+    },
+    {
+      "inicio": 13.96,
+      "fin": 18.1,
+      "texto": "Perfecto, recomiendo que hoy tenemos dos por uno en chicha morada en vaso"
+    },
+    {
+      "inicio": 18.1,
+      "fin": 20.28,
+      "texto": "Qué bien, qué conveniente, entonces cuatro vasos"
+    },
+    {
+      "inicio": 20.28,
+      "fin": 22.88,
+      "texto": "Así es, cuatro vasos, los precios son"
+    },
+    {
+      "inicio": 22.88,
+      "fin": 25.5,
+      "texto": "Ceviche mercedual, 28 soles cada uno"
+    },
+    {
+      "inicio": 25.5,
+      "fin": 27.66,
+      "texto": "Y el vaso de chicha, 6 soles"
+    },
+    {
+      "inicio": 27.66,
+      "fin": 30.1,
+      "texto": "De acuerdo, ¿los ceviches vienen con camote y choclo?"
+    },
+    {
+      "inicio": 30.42,
+      "fin": 33.08,
+      "texto": "Sí, con camote, choclo y cancho, como siempre."
+    },
+    {
+      "inicio": 33.7,
+      "fin": 36.86,
+      "texto": "Perfecto, es la tercera vez que les pido y siempre llega todo muy bien."
+    },
+    {
+      "inicio": 37.06,
+      "fin": 39.54,
+      "texto": "Muchas gracias por su preferencia, nos alegra saberlo."
+    },
+    {
+      "inicio": 40.26,
+      "fin": 44.62,
+      "texto": "Sí, siempre llega bien, por eso lo recomendé en mi oficina y varios compañeros se animaron a probar."
+    },
+    {
+      "inicio": 45.04,
+      "fin": 49.7,
+      "texto": "Muchas gracias por la recomendación, si quieren le pueden enviar nuestro número de contacto para que se lo pase a ellos."
+    },
+    {
+      "inicio": 50.14,
+      "fin": 53.34,
+      "texto": "Sí, mejor, a veces quieren pedir por su cuenta y no saben a quién llamar."
+    },
+    {
+      "inicio": 53.34,
+      "fin": 58.44,
+      "texto": "Con gusto. También atendemos pedidos grandes para eventos, si alguna vez lo necesitan, con anticipación."
+    },
+    {
+      "inicio": 58.84,
+      "fin": 62.48,
+      "texto": "Lo tendré en cuenta, porque en diciembre hacemos una reunión de fin de año en la oficina."
+    },
+    {
+      "inicio": 62.74,
+      "fin": 66.32,
+      "texto": "¡Qué bueno! Ojalá podamos atenderlos. Con tiempo le ayudamos a organizar todo."
+    },
+    {
+      "inicio": 66.86,
+      "fin": 70.24,
+      "texto": "Por cierto, ¿tienen una carta que pueda mostrarles a mis compañeros?"
+    },
+    {
+      "inicio": 70.68,
+      "fin": 74.66,
+      "texto": "Sí, le pueden enviar la carta completa por mensaje, con fotos de cada plato para que lo compartan."
+    },
+    {
+      "inicio": 75.12,
+      "fin": 77.36,
+      "texto": "Perfecto. ¿Pueden ponerle poco picante a todos?"
+    },
+    {
+      "inicio": 77.84,
+      "fin": 81.44,
+      "texto": "Claro, lo notamos para cocina. ¿Cuántos son para ponerles los cubiertos?"
+    },
+    {
+      "inicio": 81.44,
+      "fin": 85.88,
+      "texto": "Somos tres personas, cada una con su ceviche y las chichas las compartimos"
+    },
+    {
+      "inicio": 85.88,
+      "fin": 88.08,
+      "texto": "Perfecto, le enviamos cubierto para todos"
+    },
+    {
+      "inicio": 88.08,
+      "fin": 89.28,
+      "texto": "¿Cuál es su dirección de entrega?"
+    },
+    {
+      "inicio": 89.9,
+      "fin": 94.5,
+      "texto": "Pasaje Los Cedros 312, departamento 4B, en Jesús María"
+    },
+    {
+      "inicio": 94.5,
+      "fin": 98.96,
+      "texto": "Pasaje Los Cedros 312, departamento 4B, en Jesús María"
+    },
+    {
+      "inicio": 98.96,
+      "fin": 100.04,
+      "texto": "¿Y cómo va a pagar?"
+    },
+    {
+      "inicio": 100.68,
+      "fin": 101.74,
+      "texto": "Con tarjeta, por favor"
+    },
+    {
+      "inicio": 101.74,
+      "fin": 102.92,
+      "texto": "¿Desea boleta o factura?"
+    },
+    {
+      "inicio": 103.18,
+      "fin": 103.96,
+      "texto": "Boleta, por favor"
+    },
+    {
+      "inicio": 103.96,
+      "fin": 105.98,
+      "texto": "Listo, se lo enviamos con el pedido"
+    },
+    {
+      "inicio": 105.98,
+      "fin": 106.8,
+      "texto": "Entendido"
+    },
+    {
+      "inicio": 106.8,
+      "fin": 111.78,
+      "texto": "Tres ceviches, ochenta y cuatro soles, más cuatro chichas, veinticuatro soles"
+    },
+    {
+      "inicio": 111.78,
+      "fin": 113.3,
+      "texto": "El total sería ciento ocho soles"
+    },
+    {
+      "inicio": 113.3,
+      "fin": 114.88,
+      "texto": "Ciento ocho soles, de acuerdo"
+    },
+    {
+      "inicio": 114.88,
+      "fin": 116.22,
+      "texto": "Sí, ciento ocho soles en total"
+    },
+    {
+      "inicio": 116.22,
+      "fin": 117.96,
+      "texto": "Llegarán unos cincuenta minutos aproximadamente"
+    },
+    {
+      "inicio": 117.96,
+      "fin": 120.16,
+      "texto": "¿Las chichas llegan frías?"
+    },
+    {
+      "inicio": 120.5,
+      "fin": 123.18,
+      "texto": "Sí, las enviamos en una bolsa con hielo para que lleguen bien frías"
+    },
+    {
+      "inicio": 123.18,
+      "fin": 125.68,
+      "texto": "¿Se puede mandar antes de la una?"
+    },
+    {
+      "inicio": 126.1,
+      "fin": 127.14,
+      "texto": "Tenemos reunión después"
+    },
+    {
+      "inicio": 127.14,
+      "fin": 130.04,
+      "texto": "Haremos lo posible, lo vamos a anotar como prioridad"
+    },
+    {
+      "inicio": 130.04,
+      "fin": 130.9,
+      "texto": "Muchas gracias"
+    },
+    {
+      "inicio": 130.9,
+      "fin": 132.94,
+      "texto": "Gracias a usted, buenas tardes"
+    }
+  ],
+  "duracion_audio_s": 133.376,
+  "tiempo_transcripcion_s": 16.397,
+  "modelo": "large-v3",
+  "device_leido": "cuda",
+  "compute_leido": "float16",
+  "compute_pedido": "float16",
+  "glosario": false,
+  "mecanismo_glosario": null,
+  "fecha": "2026-10-30T06:15:02+00:00"
+}

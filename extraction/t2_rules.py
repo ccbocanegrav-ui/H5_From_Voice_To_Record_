@@ -83,6 +83,8 @@ def extraer_items(t: str, cfg: dict) -> list[dict]:
         prod = menu[idx]
         pre = rx_previo.search(t[:m.start()])
         qty = int(pre.group("q")) if pre.group("q") else None
+        if qty is not None and re.search(r"\bpor\s*$", t[:pre.start("q")]):
+            continue                                                  # "dos por 1 chicha": la promo "2 por 1", no una cantidad
         pre_size = next((w for w in bases_previas if pre.group("s") and re.fullmatch(plural(w), pre.group("s"))), None)
         if qty is None and pre_size not in PRE_CANTIDAD:
             continue                                                  # mención sin cantidad ("el pollo viene con…")
@@ -91,7 +93,7 @@ def extraer_items(t: str, cfg: dict) -> list[dict]:
         if pre_size and pre_size in {norm(k, cfg) for k in prod["tamanos"]}:
             tam = pre_size
         if tam is None:
-            post = " ".join(t[m.end():].split()[:4])
+            post = " ".join(t[m.end():].split()[:6])
             tam = _tamano_en(post, prod["tamanos"], cfg)
         elif tam not in prod["tamanos"]:
             tam = next((k for k in prod["tamanos"] if norm(k, cfg) == tam), None)
