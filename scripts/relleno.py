@@ -1,4 +1,4 @@
-"""Relleno conversacional (SET A) para llevar cada clip a ~3.3-3.7 min.
+"""Relleno conversacional para llevar cada clip a ~3.3-3.7 min.
 
 Alinea el corpus con lo que pide el caso: 4-5 clips de 2-4 min y ~16-20 min de audio por tarea.
 Regla: el relleno NO menciona valores de ningún campo (puestos, años, tecnologías, salarios,

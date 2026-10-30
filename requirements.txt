@@ -2,6 +2,8 @@
 # Instalación conjunta probada: faster-whisper, ctranslate2, jiwer, pyyaml, python-dotenv, numpy, pytest.
 faster-whisper==1.2.1
 ctranslate2==4.8.4
+# av DEBE ser <= 18.x: desde 19.0.0 av.open() rechaza `metadata_errors` y faster-whisper 1.2.1 no puede leer audio.
+av==18.1.0
 jiwer==4.0.0
 streamlit==1.66.1
 pyyaml==6.0.3
