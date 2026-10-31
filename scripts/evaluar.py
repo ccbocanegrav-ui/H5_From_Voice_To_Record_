@@ -1,11 +1,12 @@
 """Evalúa las dos capas (texto y registro) sobre las transcripciones en caché y escribe tablas y curva.
 
     python scripts/evaluar.py --task t1
-    python scripts/evaluar.py --task t2 --ladder          # L0..L3 (requiere la escalera transcrita)
+    python scripts/evaluar.py --task t1 --ladder          # L0..L3 (requiere la escalera transcrita)
+    python scripts/evaluar.py --task t2 --ladder
     python scripts/evaluar.py --task t2 --method llm      # extracción con LLM (necesita ANTHROPIC_API_KEY)
 
 Config de caché por defecto: asr.cache_corpus. Salida: results/evaluacion_<task>.{md,json} y, con --ladder,
-results/curva_degradacion.png.
+results/curva_degradacion_<task>.png.
 """
 from __future__ import annotations
 
@@ -54,7 +55,7 @@ def tabla_md(res: dict[str, dict], schema: str, cfg: dict, metodo: str, conf: st
     return "\n".join(L) + "\n"
 
 
-def curva(res: dict[str, dict], destino: Path) -> None:
+def curva(res: dict[str, dict], destino: Path, tarea: str) -> None:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
@@ -72,7 +73,7 @@ def curva(res: dict[str, dict], destino: Path) -> None:
     ax.set_ylim(0, 105)
     ax.set_ylabel("%")
     ax.set_xlabel("Nivel de degradación (L0 original → L3 ruido a 10 dB)")
-    ax.set_title("T2: la degradación del audio en texto y en registro", fontsize=10)
+    ax.set_title(f"{tarea.upper()}: la degradación del audio en texto y en registro", fontsize=10)
     ax.grid(axis="y", alpha=0.3)
     ax.legend(fontsize=8, loc="center left")
     fig.tight_layout()
@@ -118,7 +119,7 @@ def main() -> int:
     cc = cfg["asr"]["cache_corpus"]
     conf = cache.nombre_config(cc["model"], cc["device"], cc["compute_type"], cc.get("glossary", False))
     metodo = a.method or cfg["extraction"]["method"]
-    niveles = cfg["ladder"]["niveles"] if (a.ladder and a.task == "t2") else ["L0"]
+    niveles = cfg["ladder"]["niveles"] if a.ladder else ["L0"]
     filas, faltantes = evaluar(cfg, a.task, conf, niveles, metodo)
     if not filas:
         print(f"No hay transcripciones en caché para la configuración {conf}. Primero corre transcribir_corpus.py.")
@@ -142,7 +143,7 @@ def main() -> int:
     if "L0" in res:
         barras_campos(res["L0"], f"{a.task.upper()}: exactitud por campo (L0, método {metodo})", out / f"exactitud_campos_{a.task}.png")
     if a.ladder and len(res) > 1:
-        curva(res, out / "curva_degradacion.png")
+        curva(res, out / f"curva_degradacion_{a.task}.png", a.task)
     print(md)
     return 0
 

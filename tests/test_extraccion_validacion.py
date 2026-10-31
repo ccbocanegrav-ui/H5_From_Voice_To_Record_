@@ -101,3 +101,27 @@ def test_snr_medida_y_determinismo():
     m1, snr = ladder.mezclar_snr(voz, 10, 0, 30)
     m2, _ = ladder.mezclar_snr(voz, 10, 0, 30)
     assert abs(snr - 10) < 0.1 and np.array_equal(m1, m2)
+
+
+def test_gemini_rest_sin_red(monkeypatch):
+    """El proveedor gemini llama por REST; se simula la respuesta y se comprueba que pasa por la verificación literal."""
+    import io
+    import urllib.request
+
+    monkeypatch.setenv("GEMINI_API_KEY", "clave-falsa")
+    visto = {}
+
+    class R(io.BytesIO):
+        def __enter__(self): return self
+        def __exit__(self, *a): pass
+
+    def falso(req, timeout=0):
+        visto["clave"] = req.get_header("X-goog-api-key")
+        cuerpo = {"candidates": [{"content": {"parts": [{"text": json.dumps({"pretension_salarial": 9999, "moneda": "PEN"})}]}}]}
+        return R(json.dumps(cuerpo).encode())
+
+    monkeypatch.setattr(urllib.request, "urlopen", falso)
+    cfg = {**CFG, "extraction": {**CFG["extraction"], "llm_provider": "gemini", "llm_model": "gemini-x"}}
+    ex = extraer("t1", "Mi pretensión es de seis mil quinientos soles.", cfg, "llm")
+    assert visto["clave"] == "clave-falsa"
+    assert ex["fields"]["pretension_salarial"] == cfg["extraction"]["unverified_label"]   # 9999 no está en el texto

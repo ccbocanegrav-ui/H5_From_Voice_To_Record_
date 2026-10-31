@@ -1,6 +1,7 @@
-"""Construye la escalera de degradación de T2 a partir de los audios originales (L0).
+"""Construye la escalera de degradación (T1 y T2) a partir de los audios originales (L0).
 
-    python scripts/ladder.py            # lee data/audio/t2_*, escribe data/audio_ladder/t2_XX__L1.ogg ...
+    python scripts/ladder.py              # T1 y T2: lee data/audio/t*_*, escribe data/audio_ladder/t2_XX__L1.ogg ...
+    python scripts/ladder.py --task t1    # solo una tarea
 
   L0  original (no se copia)
   L1  nota de voz tipo WhatsApp: Opus 16 kbps mono
@@ -12,6 +13,7 @@ Requiere ffmpeg en el PATH. Es determinista (semilla en config). data/audio_ladd
 """
 from __future__ import annotations
 
+import argparse
 import json
 import subprocess
 import sys
@@ -83,16 +85,21 @@ def mezclar_snr(voz: np.ndarray, snr_db: float, semilla: int, ventana_db: float)
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--task", choices=["t1", "t2", "all"], default="all")
+    a = ap.parse_args()
+    prefijos = ("t1_", "t2_") if a.task == "all" else (a.task + "_",)
     cfg = load_config("config.yaml")
     lad = cfg["ladder"]
     origen = resolver_ruta(cfg, cfg["paths"]["audio_dir"])
     destino = resolver_ruta(cfg, lad["dir"])
     destino.mkdir(parents=True, exist_ok=True)
-    clips = sorted(p for p in origen.iterdir() if p.stem.startswith("t2_") and p.suffix.lower() in EXTS)
+    clips = sorted(p for p in origen.iterdir() if p.stem.startswith(prefijos) and p.suffix.lower() in EXTS)
     if not clips:
-        print(f"No hay audios t2_* en {origen}")
+        print(f"No hay audios {'/'.join(prefijos)}* en {origen}")
         return 1
-    snr_json: dict[str, dict] = {}
+    f_snr = destino / "snr.json"
+    snr_json: dict[str, dict] = json.loads(f_snr.read_text(encoding="utf-8")) if f_snr.exists() else {}
     for p in clips:
         l1 = destino / f"{p.stem}__L1.{lad['L1']['ext']}"
         _ffmpeg("-i", str(p), "-ac", str(lad["L1"]["canales"]), "-c:a", lad["L1"]["codec"], "-b:a", lad["L1"]["bitrate"], str(l1))
@@ -107,7 +114,7 @@ def main() -> int:
             _ffmpeg("-i", str(tmp), "-ac", "1", "-c:a", lad["L1"]["codec"], "-b:a", lad["L1"]["bitrate"], str(l3))
         snr_json[p.stem] = {"snr_objetivo_db": lad["L3"]["snr_db"], "snr_medida_db": round(medida, 2)}
         print(f"{p.stem}: L1, L2, L3 listos · SNR medida (tramas con voz) = {medida:.2f} dB")
-    (destino / "snr.json").write_text(json.dumps(snr_json, indent=2, ensure_ascii=False), encoding="utf-8")
+    f_snr.write_text(json.dumps(snr_json, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Escalera en {destino}")
     return 0
 

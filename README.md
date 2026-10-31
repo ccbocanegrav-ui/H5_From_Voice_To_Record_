@@ -3,8 +3,7 @@
 Proyecto integrador individual (entrega 30-oct-2026). Audio → transcripción (Whisper) → campos estructurados →
 verificación literal y validación aritmética → métricas en **dos capas** (texto y registro).
 
-- Pipeline (documento visual): https://luminous-trout-e9b.notion.site/Tarea-5-Carla-Bocanegra-1aebc23e911e82ab913001519055ec76?pvs=143 
-
+- Pipeline (documento visual): **[COMPLETAR: enlace público de Notion/Miro]**
 - Video (≤ 8 min): **[COMPLETAR: enlace al video]**
 
 ## Setup
@@ -32,11 +31,13 @@ grep -rEn "streamlit|gradio|tkinter|flask" engine/ || echo "OK: el motor no impo
 ## Reproducir los resultados
 ```bash
 python scripts/benchmark_asr.py --task t1                     # benchmark ASR (GPU: Kaggle/Colab, ver notebooks/)
-python scripts/ladder.py                                      # L1, L2, L3 desde los audios t2_* (escribe data/audio_ladder/)
+python scripts/ladder.py                                      # L1, L2, L3 desde los audios t1_* y t2_* (escribe data/audio_ladder/)
+python scripts/transcribir_corpus.py --task t1 --model large-v3 --device cuda --compute float16
 python scripts/transcribir_corpus.py --task t2 --model large-v3 --device cuda --compute float16
+python scripts/transcribir_corpus.py --task t1 --dir data/audio_ladder --model large-v3 --device cuda --compute float16
 python scripts/transcribir_corpus.py --task t2 --dir data/audio_ladder --model large-v3 --device cuda --compute float16
-python scripts/evaluar.py --task t1
-python scripts/evaluar.py --task t2 --ladder                  # tablas + results/curva_degradacion.png
+python scripts/evaluar.py --task t1 --ladder                  # tablas + results/curva_degradacion_t1.png
+python scripts/evaluar.py --task t2 --ladder                  # tablas + results/curva_degradacion_t2.png
 ```
 Las transcripciones en caché (`data/cache/asr/`) se commitean: con ellas `evaluar.py` y la app corren sin GPU.
 La configuración completa (rutas, modelos, glosarios, esquemas, promociones, escalera) está en `config.yaml`; las credenciales, solo como nombres, en `.env.example`.
@@ -100,7 +101,7 @@ L0 original · L1 Opus 16 kbps mono (nota de voz) · L2 banda 300–3400 Hz a 8 
 | L2 | 5.4 % (4.5–6.5) | 2.7 % | 22/25 | 2/5 | 3 | 2 | 1 |
 | L3 | 6.5 % (5.0–7.9) | 3.4 % | 24/25 | 4/5 | 1 | 1 | 0 |
 
-Curva: `results/curva_degradacion.png`. Tablas completas por campo en `results/evaluacion_t1.md` y `results/evaluacion_t2.md`.
+Curva: `results/curva_degradacion_t2.png` (T1: `results/curva_degradacion_t1.png`). Tablas completas por campo en `results/evaluacion_t1.md` y `results/evaluacion_t2.md`.
 
 ### Lectura
 - **WER y calidad del registro no son lo mismo.** `t2_04` y `t2_03` tienen WER alto (≥ mediana) y registro perfecto en casi todos los niveles; `t2_02` y `t2_05@L2` tienen WER bajo y registro con errores. En T1, `t1_05` tiene WER bajo y el cargo mal escrito por una sola palabra.

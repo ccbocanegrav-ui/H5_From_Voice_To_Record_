@@ -141,12 +141,13 @@ with tab1:
 with tab2:
     st.header("Resultados T1 — entrevistas")
     mostrar_imagen("exactitud_campos_t1.png")
+    mostrar_imagen("curva_degradacion_t1.png")
     st.markdown(leer_md("asr_benchmark_t1.md") or "_Falta results/asr_benchmark_t1.md_")
     st.markdown(leer_md("evaluacion_t1.md") or "_Falta results/evaluacion_t1.md (python scripts/evaluar.py --task t1)_")
 
 with tab3:
     st.header("Resultados T2 — llamadas y escalera de degradación")
-    mostrar_imagen("curva_degradacion.png")
+    mostrar_imagen("curva_degradacion_t2.png")
     mostrar_imagen("exactitud_campos_t2.png")
     st.markdown(leer_md("evaluacion_t2.md") or "_Falta results/evaluacion_t2.md (python scripts/evaluar.py --task t2 --ladder)_")
 

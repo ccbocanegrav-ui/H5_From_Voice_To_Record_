@@ -56,7 +56,8 @@ benchmark:                       # T1 Fase 2 (scripts/benchmark_asr.py). Corre e
 extraction:
   reference_date: "2026-11-02"   # fecha ficticia de las entrevistas: resuelve disponibilidad relativa
   method: rules                  # rules | llm
-  llm_model: claude-sonnet-5-5   # se usa solo con method: llm (necesita ANTHROPIC_API_KEY en .env)
+  llm_provider: gemini           # anthropic | gemini  (solo se usa con method: llm)
+  llm_model: gemini-3.7-flash   # gemini-3.7-flash | claude-sonnet-5-5 ...  Claves en .env: GEMINI_API_KEY / ANTHROPIC_API_KEY
   unverified_label: sin_verificar
   english_synonyms:              # nivel_ingles: palabra que debe aparecer literalmente en la transcripción
     basico: [básico, basico, principiante]
