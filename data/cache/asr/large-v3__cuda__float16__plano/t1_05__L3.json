@@ -1,0 +1,211 @@
+{
+  "clip": "t1_05__L3",
+  "audio": "t1_05__L3.ogg",
+  "texto": "Buenas Samira, gracias por venir. Cuéntame cómo llegaste a este rubro. Buenas, estudié Administración y en la universidad me gustaron los números. Hace dos años entré a trabajar como analista de Inteligencia Comercial en Brisa Retail. ¿O sea que ese fue tu último puesto? Sí, analista de Inteligencia Comercial y sigo ahí hasta fin de año. ¿Y qué herramientas usas? Básicamente SQL para la información, Excel para los cálculos rápidos, Power BI y también Looker Studio para los tableros que vienen los gerentes. ¿Cuál es tu nivel de inglés? Intermedio, más o menos, entiendo bien cuando escucho, pero al escribir cometo errores Ok, hablemos de la parte económica, ¿cuánto pretendes ganar? Pretendo 5.000, perdón, 5.350 soles al mes ¿Y cuándo podrías empezar? Mi contrato termina en diciembre, entonces podría incorporarme el 15 de enero Entiendo, cuéntame cómo explicas un resultado a personas que no son técnicas Trato de empezar por la conclusión y usar un gráfico simple Por ejemplo, el mes pasado mostré que el 10% de los productos generaba la mayor parte de las rentas y con eso el área comercial cambió su plan de promociones. Muy bien, ¿y qué esperas del equipo al que te incorpores? Que haya espacio para preguntar y aprender y que se revisen los análisis entre todos antes de presentarlos. Cuéntame un error que hayas cometido en un análisis. Una vez presenté un promedio sin ver que había datos duplicados, un compañero lo notó antes de la reunión y pudimos corregirlo. Desde entonces reviso los duplicados y los valores raros antes de calcular cualquier cosa ¿Qué te gusta hacer fuera del trabajo? Me gusta correr los fines de semana y cocinar A veces preparo cena para mis amigos y tratamos de probar recetas nuevas Cuéntame cómo te preparas cuando tienes que presentar resultados a gerencia Primero imagino qué preguntas me harían y preparo respuestas cortas Después ensayo la presentación en voz alta con un compañero que me ayuda a ver en dónde me enredo y qué parte sobra ¿Y si alguien cuestiona tus conclusiones en plena reunión? Escucho la objeción completa antes de responder, si tiene razón lo reconozco y me comprometo a revisar Si no, explico con calma de dónde sale el resultado y ofrezco señalar los datos después ¿Qué es lo que más valoras de un buen jefe o jefa? Que confíe en mí, pero que también esté cerca cuando lo necesito Me gusta que me den libertad para organizarme siempre que sepa claramente qué resultados esperan ¿Y te interesa aprender más de programación? Sí, de hecho estoy aprendiendo Python por mi cuenta, aunque todavía no lo uso en el trabajo Gracias Samira, te avisaremos pronto Gracias, un gusto",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 3.48,
+      "texto": "Buenas Samira, gracias por venir. Cuéntame cómo llegaste a este rubro."
+    },
+    {
+      "inicio": 4.02,
+      "fin": 7.58,
+      "texto": "Buenas, estudié Administración y en la universidad me gustaron los números."
+    },
+    {
+      "inicio": 7.82,
+      "fin": 11.9,
+      "texto": "Hace dos años entré a trabajar como analista de Inteligencia Comercial en Brisa Retail."
+    },
+    {
+      "inicio": 12.26,
+      "fin": 13.64,
+      "texto": "¿O sea que ese fue tu último puesto?"
+    },
+    {
+      "inicio": 14.9,
+      "fin": 18.86,
+      "texto": "Sí, analista de Inteligencia Comercial y sigo ahí hasta fin de año."
+    },
+    {
+      "inicio": 19.2,
+      "fin": 20.24,
+      "texto": "¿Y qué herramientas usas?"
+    },
+    {
+      "inicio": 21.24,
+      "fin": 28.66,
+      "texto": "Básicamente SQL para la información, Excel para los cálculos rápidos, Power BI y también Looker Studio para los tableros que vienen los gerentes."
+    },
+    {
+      "inicio": 28.66,
+      "fin": 29.86,
+      "texto": "¿Cuál es tu nivel de inglés?"
+    },
+    {
+      "inicio": 30.0,
+      "fin": 34.86,
+      "texto": "Intermedio, más o menos, entiendo bien cuando escucho, pero al escribir cometo errores"
+    },
+    {
+      "inicio": 34.86,
+      "fin": 38.96,
+      "texto": "Ok, hablemos de la parte económica, ¿cuánto pretendes ganar?"
+    },
+    {
+      "inicio": 39.46,
+      "fin": 44.32,
+      "texto": "Pretendo 5.000, perdón, 5.350 soles al mes"
+    },
+    {
+      "inicio": 44.32,
+      "fin": 45.88,
+      "texto": "¿Y cuándo podrías empezar?"
+    },
+    {
+      "inicio": 46.66,
+      "fin": 50.26,
+      "texto": "Mi contrato termina en diciembre, entonces podría incorporarme el 15 de enero"
+    },
+    {
+      "inicio": 50.26,
+      "fin": 54.88,
+      "texto": "Entiendo, cuéntame cómo explicas un resultado a personas que no son técnicas"
+    },
+    {
+      "inicio": 55.42,
+      "fin": 58.18,
+      "texto": "Trato de empezar por la conclusión y usar un gráfico simple"
+    },
+    {
+      "inicio": 58.18,
+      "fin": 63.52,
+      "texto": "Por ejemplo, el mes pasado mostré que el 10% de los productos generaba la mayor parte de las rentas"
+    },
+    {
+      "inicio": 63.52,
+      "fin": 66.3,
+      "texto": "y con eso el área comercial cambió su plan de promociones."
+    },
+    {
+      "inicio": 67.22,
+      "fin": 69.74,
+      "texto": "Muy bien, ¿y qué esperas del equipo al que te incorpores?"
+    },
+    {
+      "inicio": 70.5,
+      "fin": 76.04,
+      "texto": "Que haya espacio para preguntar y aprender y que se revisen los análisis entre todos antes de presentarlos."
+    },
+    {
+      "inicio": 77.12,
+      "fin": 79.06,
+      "texto": "Cuéntame un error que hayas cometido en un análisis."
+    },
+    {
+      "inicio": 79.8,
+      "fin": 83.12,
+      "texto": "Una vez presenté un promedio sin ver que había datos duplicados,"
+    },
+    {
+      "inicio": 83.28,
+      "fin": 85.98,
+      "texto": "un compañero lo notó antes de la reunión y pudimos corregirlo."
+    },
+    {
+      "inicio": 85.98,
+      "fin": 90.46,
+      "texto": "Desde entonces reviso los duplicados y los valores raros antes de calcular cualquier cosa"
+    },
+    {
+      "inicio": 90.46,
+      "fin": 92.38,
+      "texto": "¿Qué te gusta hacer fuera del trabajo?"
+    },
+    {
+      "inicio": 93.04,
+      "fin": 95.18,
+      "texto": "Me gusta correr los fines de semana y cocinar"
+    },
+    {
+      "inicio": 95.18,
+      "fin": 98.86,
+      "texto": "A veces preparo cena para mis amigos y tratamos de probar recetas nuevas"
+    },
+    {
+      "inicio": 98.86,
+      "fin": 102.5,
+      "texto": "Cuéntame cómo te preparas cuando tienes que presentar resultados a gerencia"
+    },
+    {
+      "inicio": 102.5,
+      "fin": 106.74,
+      "texto": "Primero imagino qué preguntas me harían y preparo respuestas cortas"
+    },
+    {
+      "inicio": 106.74,
+      "fin": 112.76,
+      "texto": "Después ensayo la presentación en voz alta con un compañero que me ayuda a ver en dónde me enredo y qué parte sobra"
+    },
+    {
+      "inicio": 112.76,
+      "fin": 115.22,
+      "texto": "¿Y si alguien cuestiona tus conclusiones en plena reunión?"
+    },
+    {
+      "inicio": 115.22,
+      "fin": 120.92,
+      "texto": "Escucho la objeción completa antes de responder, si tiene razón lo reconozco y me comprometo a revisar"
+    },
+    {
+      "inicio": 120.92,
+      "fin": 125.38,
+      "texto": "Si no, explico con calma de dónde sale el resultado y ofrezco señalar los datos después"
+    },
+    {
+      "inicio": 125.38,
+      "fin": 127.68,
+      "texto": "¿Qué es lo que más valoras de un buen jefe o jefa?"
+    },
+    {
+      "inicio": 128.3,
+      "fin": 132.08,
+      "texto": "Que confíe en mí, pero que también esté cerca cuando lo necesito"
+    },
+    {
+      "inicio": 132.08,
+      "fin": 136.9,
+      "texto": "Me gusta que me den libertad para organizarme siempre que sepa claramente qué resultados esperan"
+    },
+    {
+      "inicio": 136.9,
+      "fin": 138.94,
+      "texto": "¿Y te interesa aprender más de programación?"
+    },
+    {
+      "inicio": 139.4,
+      "fin": 143.1,
+      "texto": "Sí, de hecho estoy aprendiendo Python por mi cuenta, aunque todavía no lo uso en el trabajo"
+    },
+    {
+      "inicio": 143.1,
+      "fin": 145.86,
+      "texto": "Gracias Samira, te avisaremos pronto"
+    },
+    {
+      "inicio": 145.86,
+      "fin": 146.92,
+      "texto": "Gracias, un gusto"
+    }
+  ],
+  "duracion_audio_s": 148.736,
+  "tiempo_transcripcion_s": 15.164,
+  "modelo": "large-v3",
+  "device_leido": "cuda",
+  "compute_leido": "float16",
+  "compute_pedido": "float16",
+  "glosario": false,
+  "mecanismo_glosario": null,
+  "fecha": "2026-10-31T03:51:12+00:00"
+}

@@ -11,6 +11,8 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
+import urllib.error
 import urllib.request
 from typing import Any
 
@@ -48,8 +50,15 @@ def _llamar_gemini(modelo: str, sistema: str, texto: str) -> str:
         f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
         data=json.dumps(cuerpo).encode("utf-8"),
         headers={"Content-Type": "application/json", "x-goog-api-key": clave}, method="POST")
-    with urllib.request.urlopen(req, timeout=90) as r:
-        data = json.loads(r.read().decode("utf-8"))
+    for intento in range(6):                                  # 429/500/503: servidor saturado -> reintentar con espera
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                data = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or intento == 5:
+                raise
+            time.sleep(4 * (intento + 1))
     return "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
 
 

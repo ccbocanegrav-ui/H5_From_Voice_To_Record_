@@ -11,7 +11,7 @@ verificación literal y validación aritmética → métricas en **dos capas** (
 python -m venv .venv
 .venv\Scripts\activate            # Windows PowerShell  (Linux/macOS: source .venv/bin/activate)
 pip install -r requirements.txt
-copy .env.example .env             # Linux/macOS: cp .env.example .env   (solo si usarás el método LLM)
+copy .env.example .env             # Linux/macOS: cp .env.example .env   (solo para el método LLM: GEMINI_API_KEY o ANTHROPIC_API_KEY)
 ```
 Requiere `ffmpeg` en el PATH solo para generar la escalera de degradación (`scripts/ladder.py`). La app y las pruebas no lo necesitan.
 
@@ -24,7 +24,7 @@ Pestañas: Procesar audio · Resultados T1 · Resultados T2 y degradación · C�
 
 ## Pruebas
 ```bash
-pytest -q        # 46 pruebas; no necesitan GPU ni pesos de modelos
+pytest -q        # 47 pruebas; no necesitan GPU ni pesos de modelos
 grep -rEn "streamlit|gradio|tkinter|flask" engine/ || echo "OK: el motor no importa UI"
 ```
 
@@ -80,7 +80,16 @@ Corpus propio: 5 entrevistas (T1) y 5 llamadas (T2) de 2 a 3 min, una sola voz. 
 - Decisión: corpus transcrito con **large-v3 · GPU · float16**; la app usa `small` para audios subidos (corre en CPU) y glosario apagado por defecto.
 
 ### Tabla T1 — entrevistas (extracción por reglas, large-v3 float16)
-WER 3.1 % (IC 2.0–4.2), CER 1.5 %. Campos correctos 25/30; registros perfectos 1/5.
+Escalera de degradación (extracción por reglas):
+
+| Nivel | WER (IC95) | CER | Campos correctos | Registros perfectos |
+|---|---|---|---|---|
+| L0 | 3.1 % (2.0–4.2) | 1.5 % | 25/30 | 1/5 |
+| L1 | 3.2 % (2.3–4.0) | 1.5 % | 27/30 | 2/5 |
+| L2 | 3.1 % (2.1–4.1) | 1.4 % | 26/30 | 2/5 |
+| L3 | 3.5 % (2.4–4.5) | 1.6 % | 28/30 | 3/5 |
+
+Exactitud por campo en L0:
 
 | Campo | Aciertos | Exactitud (Wilson 95 %) | Nota |
 |---|---|---|---|
@@ -105,7 +114,7 @@ Curva: `results/curva_degradacion_t2.png` (T1: `results/curva_degradacion_t1.png
 
 ### Lectura
 - **WER y calidad del registro no son lo mismo.** `t2_04` y `t2_03` tienen WER alto (≥ mediana) y registro perfecto en casi todos los niveles; `t2_02` y `t2_05@L2` tienen WER bajo y registro con errores. En T1, `t1_05` tiene WER bajo y el cargo mal escrito por una sola palabra.
-- **La degradación fue suave para large-v3.** El WER sube de 5.1 % a 6.5 % entre L0 y L3 con intervalos que se traslapan; con 5 clips no se puede afirmar una caída real. L2 (banda telefónica) es el nivel que más campos rompe.
+- **La degradación fue suave para large-v3, en T1 y en T2.** En T1 el WER va de 3.1 % a 3.5 % y los campos correctos no caen (25, 27, 26, 28 de 30): las diferencias vienen de cómo Whisper escribe cada versión del audio, no de la degradación. En T2 el WER sube de 5.1 % a 6.5 % con intervalos que se traslapan; con 5 clips no se puede afirmar una caída real. En T2, L2 (banda telefónica) es el nivel que más campos rompe.
 - **Los errores de registro vienen de cómo Whisper escribe nombres y palabras ambiguas** («Girón» por «Jirón», «Análisa», «JIT», «en cacola»), no de la degradación.
 - **La verificación literal no detecta errores del ASR.** `1,800` (oído mal) sí está en el texto y pasa la verificación; solo protege contra valores que no aparecen en la transcripción.
 - **El validador aritmético detecta errores del hablante** (3 clips con total mal sumado a propósito: `diagnostico` = *hablante*), pero no ve errores de dirección. Un campo vacío tampoco activa ninguna alarma.
@@ -114,7 +123,7 @@ Curva: `results/curva_degradacion_t2.png` (T1: `results/curva_degradacion_t1.png
 ## Declaración de herramientas de IA y MCP
 - **Claude (Anthropic) / Claude Code**: asistente de programación del repositorio (motor, extracción, métricas, validador, escalera, evaluación, app, pruebas, scripts y notebooks), de los guiones de las grabaciones y de la redacción de este README. Las decisiones de diseño y la revisión de resultados son de la autora.
 - **faster-whisper (Whisper `small` y `large-v3`)**: reconocimiento de voz; pesos descargados automáticamente, no incluidos en el repo.
-- **API de Claude (opcional)**: solo si se elige `extraction.method: llm`; **no se evaluó en esta entrega** (ver limitaciones).
+- **API de Gemini (Google)**: se usó para evaluar el método de extracción LLM (`extraction.method: llm`, modelo en `config.yaml`); su salida pasa por la misma verificación literal que las reglas. También hay soporte opcional para la API de Claude.
 - **Servidores MCP**: **[COMPLETAR: lista de servidores MCP usados y qué hizo cada uno; si no se usó ninguno, escribir «ninguno»]**.
 
 ## Datos inventados y consentimiento
@@ -127,7 +136,7 @@ Los audios (`data/audio/`, `data/audio_ladder/`) y los pesos de los modelos no s
 ## Limitaciones
 - **Muestra pequeña:** 5 clips por tarea y una sola voz; los intervalos son anchos y no hay conclusiones estadísticas fuertes.
 - **Reglas calibradas con los mismos guiones:** las reglas se ajustaron mirando la transcripción de referencia; por eso se probaron también sobre un corpus no visto de otra persona (T1 29/30, T2 24/25 campos). Siguen sin cubrir algunas correcciones («tres tallarines» tras un cambio de idea).
-- **Método LLM no evaluado:** el código existe (`extraction/llm.py`) y se ejecuta con `python scripts/evaluar.py --task t1 --method llm`, pero no se corrió para esta entrega; todas las tablas son de reglas.
+- **Extractor LLM (Gemini) frente a reglas:** en T1 ambos dan 25/30 campos correctos (los errores nacen en la transcripción). En T2 el LLM dio 16/25 frente a 24/25 de las reglas, con fallos en `promocion` y `direccion_entrega`; no se analizó la causa (posiblemente el formato del texto que devuelve el modelo frente a la comparación estricta). Resultados en `results/evaluacion_t1_llm.md` y `results/evaluacion_t2_llm.md`.
 - **Benchmark en CPU:** solo 2 clips; el tiempo por minuto es orientativo.
 - **Escalera suave:** con large-v3, Opus 16 kbps, banda telefónica y 10 dB de ruido degradan poco; una escalera más dura podría separar mejor los niveles.
 - **Campos vacíos sin alarma:** una dirección no encontrada queda como «sin dato» y ninguna validación la marca.

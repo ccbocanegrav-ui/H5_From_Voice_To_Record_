@@ -57,7 +57,7 @@ extraction:
   reference_date: "2026-11-02"   # fecha ficticia de las entrevistas: resuelve disponibilidad relativa
   method: rules                  # rules | llm
   llm_provider: gemini           # anthropic | gemini  (solo se usa con method: llm)
-  llm_model: gemini-3.7-flash   # gemini-3.7-flash | claude-sonnet-5-5 ...  Claves en .env: GEMINI_API_KEY / ANTHROPIC_API_KEY
+  llm_model: gemini-3.6-flash   # gemini-3.6-flash | claude-sonnet-5-5 ...  Claves en .env: GEMINI_API_KEY
   unverified_label: sin_verificar
   english_synonyms:              # nivel_ingles: palabra que debe aparecer literalmente en la transcripción
     basico: [básico, basico, principiante]

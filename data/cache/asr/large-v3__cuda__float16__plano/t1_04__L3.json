@@ -1,0 +1,226 @@
+{
+  "clip": "t1_04__L3",
+  "audio": "t1_04__L3.ogg",
+  "texto": "Buenos días, Rocío. Háblame de ti y tu trayectoria. Buenos días. Tengo ocho años de experiencia en datos. Mi último puesto fue ingeniería de datos en Andes Logística, donde construía y mantenía los flujos de información de toda la empresa. ¿Con qué tecnologías trabajabas? Mucho Python, Airflow para programar los procesos, DBT para transformar los datos y todo corría en AWS con Kubernetes. ¿Y cuántas personas habían en tu equipo? Éramos 14 divididos en 3 tareas, ingestión, transformación y publicación. ¿Por qué dejaste ANDA en logística? La empresa se reestructuró y el área de datos se redujo a la mitad. Fue una decisión de ellos, no mía, pero me dejó con ganas de buscar un proyecto más estable. Entendido. ¿Y cómo es inglés? Fluido. Tengo certificación C1, escribo la documentación técnica en inglés y he dado presentaciones a clientes de Chile y México. Muy bien. ¿Cuándo podrías incorporarte? Me gustaría tomarme un tiempo para descansar, así que estaría lista en un mes Perfecto, ahora, ¿qué pretensión salarial tienes? 7.500 soles mensuales ¿Es negociable? Un poco, depende de los beneficios y del esquema de trabajo remoto ¿Qué esquema prefieres, remoto, presencial o mixto? Me acomodo a un esquema híbrido, dos días en la oficina y tres días de casa Cuéntame un reto técnico que hayas resuelto Teníamos un proceso nocturno que tardaba mucho y a veces fallaba a mitad de camino Lo dividí en etapas más pequeñas, agregué reintentos automáticos y avisos cuando algo fallara Como es el proceso de juego de romperse y el equipo pudo dormir tranquilo ¿Cómo mides que un proceso está funcionando bien? Reviso que los datos lleguen completos y a tiempo Y que los totales cuadren con la fuente original Si algo no coincide lo investigo antes de que alguien más lo note ¿Has liderado equipos antes? ¿Cómo repartes el trabajo cuando alguien está sobrecargado? Primero hablo con la persona para entender qué la está moviendo. A veces el problema es la cantidad de tareas y otras veces es que le tocó algo para lo que no se sentía preparada. Según el caso, redistribuyo o acompaño. ¿Qué haces cuando un integrante nuevo no rinde como esperabas? Reviso primero si le expliqué bien lo que esperaba de su trabajo porque muchas veces el problema es de comunicación. Después acordamos metas pequeñas y nos vemos con frecuencia para ver cómo va. ¿Cómo celebras los logros del equipo? Me gusta reconocer en público lo que cada persona hizo bien con detalles. Decir gracias por el trabajo del equipo suena bonito, pero mencionar qué hizo cada uno es lo que realmente motiva. Está bien. ¿Algo más que quieras agregar? Que me motiva a liderar a otras personas y compartir lo que he aprendido. Quisiera creer ser hacia un rol de jefatura técnica. Muchas gracias, Rocío. A ustedes.",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 2.74,
+      "texto": "Buenos días, Rocío. Háblame de ti y tu trayectoria."
+    },
+    {
+      "inicio": 3.34,
+      "fin": 14.02,
+      "texto": "Buenos días. Tengo ocho años de experiencia en datos. Mi último puesto fue ingeniería de datos en Andes Logística, donde construía y mantenía los flujos de información de toda la empresa."
+    },
+    {
+      "inicio": 14.5,
+      "fin": 16.34,
+      "texto": "¿Con qué tecnologías trabajabas?"
+    },
+    {
+      "inicio": 16.82,
+      "fin": 27.08,
+      "texto": "Mucho Python, Airflow para programar los procesos, DBT para transformar los datos y todo corría en AWS con Kubernetes."
+    },
+    {
+      "inicio": 28.0,
+      "fin": 29.44,
+      "texto": "¿Y cuántas personas habían en tu equipo?"
+    },
+    {
+      "inicio": 30.0,
+      "fin": 34.96,
+      "texto": "Éramos 14 divididos en 3 tareas, ingestión, transformación y publicación."
+    },
+    {
+      "inicio": 35.48,
+      "fin": 37.24,
+      "texto": "¿Por qué dejaste ANDA en logística?"
+    },
+    {
+      "inicio": 37.94,
+      "fin": 40.96,
+      "texto": "La empresa se reestructuró y el área de datos se redujo a la mitad."
+    },
+    {
+      "inicio": 41.2,
+      "fin": 45.46,
+      "texto": "Fue una decisión de ellos, no mía, pero me dejó con ganas de buscar un proyecto más estable."
+    },
+    {
+      "inicio": 45.86,
+      "fin": 47.2,
+      "texto": "Entendido. ¿Y cómo es inglés?"
+    },
+    {
+      "inicio": 48.1,
+      "fin": 55.7,
+      "texto": "Fluido. Tengo certificación C1, escribo la documentación técnica en inglés y he dado presentaciones a clientes de Chile y México."
+    },
+    {
+      "inicio": 56.04,
+      "fin": 57.98,
+      "texto": "Muy bien. ¿Cuándo podrías incorporarte?"
+    },
+    {
+      "inicio": 57.98,
+      "fin": 62.04,
+      "texto": "Me gustaría tomarme un tiempo para descansar, así que estaría lista en un mes"
+    },
+    {
+      "inicio": 62.04,
+      "fin": 66.02,
+      "texto": "Perfecto, ahora, ¿qué pretensión salarial tienes?"
+    },
+    {
+      "inicio": 66.78,
+      "fin": 68.66,
+      "texto": "7.500 soles mensuales"
+    },
+    {
+      "inicio": 68.66,
+      "fin": 69.72,
+      "texto": "¿Es negociable?"
+    },
+    {
+      "inicio": 70.46,
+      "fin": 73.64,
+      "texto": "Un poco, depende de los beneficios y del esquema de trabajo remoto"
+    },
+    {
+      "inicio": 73.64,
+      "fin": 77.22,
+      "texto": "¿Qué esquema prefieres, remoto, presencial o mixto?"
+    },
+    {
+      "inicio": 78.02,
+      "fin": 81.68,
+      "texto": "Me acomodo a un esquema híbrido, dos días en la oficina y tres días de casa"
+    },
+    {
+      "inicio": 81.68,
+      "fin": 84.2,
+      "texto": "Cuéntame un reto técnico que hayas resuelto"
+    },
+    {
+      "inicio": 84.2,
+      "fin": 88.86,
+      "texto": "Teníamos un proceso nocturno que tardaba mucho y a veces fallaba a mitad de camino"
+    },
+    {
+      "inicio": 88.86,
+      "fin": 95.52,
+      "texto": "Lo dividí en etapas más pequeñas, agregué reintentos automáticos y avisos cuando algo fallara"
+    },
+    {
+      "inicio": 95.52,
+      "fin": 99.04,
+      "texto": "Como es el proceso de juego de romperse y el equipo pudo dormir tranquilo"
+    },
+    {
+      "inicio": 99.04,
+      "fin": 101.3,
+      "texto": "¿Cómo mides que un proceso está funcionando bien?"
+    },
+    {
+      "inicio": 101.94,
+      "fin": 104.06,
+      "texto": "Reviso que los datos lleguen completos y a tiempo"
+    },
+    {
+      "inicio": 104.06,
+      "fin": 106.58,
+      "texto": "Y que los totales cuadren con la fuente original"
+    },
+    {
+      "inicio": 106.58,
+      "fin": 109.7,
+      "texto": "Si algo no coincide lo investigo antes de que alguien más lo note"
+    },
+    {
+      "inicio": 109.7,
+      "fin": 114.06,
+      "texto": "¿Has liderado equipos antes? ¿Cómo repartes el trabajo cuando alguien está sobrecargado?"
+    },
+    {
+      "inicio": 114.72,
+      "fin": 117.44,
+      "texto": "Primero hablo con la persona para entender qué la está moviendo."
+    },
+    {
+      "inicio": 117.56,
+      "fin": 123.62,
+      "texto": "A veces el problema es la cantidad de tareas y otras veces es que le tocó algo para lo que no se sentía preparada."
+    },
+    {
+      "inicio": 123.92,
+      "fin": 125.88,
+      "texto": "Según el caso, redistribuyo o acompaño."
+    },
+    {
+      "inicio": 126.42,
+      "fin": 129.02,
+      "texto": "¿Qué haces cuando un integrante nuevo no rinde como esperabas?"
+    },
+    {
+      "inicio": 129.68,
+      "fin": 134.72,
+      "texto": "Reviso primero si le expliqué bien lo que esperaba de su trabajo porque muchas veces el problema es de comunicación."
+    },
+    {
+      "inicio": 135.36,
+      "fin": 138.9,
+      "texto": "Después acordamos metas pequeñas y nos vemos con frecuencia para ver cómo va."
+    },
+    {
+      "inicio": 139.1,
+      "fin": 140.86,
+      "texto": "¿Cómo celebras los logros del equipo?"
+    },
+    {
+      "inicio": 141.62,
+      "fin": 144.96,
+      "texto": "Me gusta reconocer en público lo que cada persona hizo bien con detalles."
+    },
+    {
+      "inicio": 145.46,
+      "fin": 150.5,
+      "texto": "Decir gracias por el trabajo del equipo suena bonito, pero mencionar qué hizo cada uno es lo que realmente motiva."
+    },
+    {
+      "inicio": 151.02,
+      "fin": 152.82,
+      "texto": "Está bien. ¿Algo más que quieras agregar?"
+    },
+    {
+      "inicio": 153.48,
+      "fin": 156.72,
+      "texto": "Que me motiva a liderar a otras personas y compartir lo que he aprendido."
+    },
+    {
+      "inicio": 156.92,
+      "fin": 160.18,
+      "texto": "Quisiera creer ser hacia un rol de jefatura técnica."
+    },
+    {
+      "inicio": 160.46,
+      "fin": 161.34,
+      "texto": "Muchas gracias, Rocío."
+    },
+    {
+      "inicio": 161.66,
+      "fin": 162.06,
+      "texto": "A ustedes."
+    }
+  ],
+  "duracion_audio_s": 162.816,
+  "tiempo_transcripcion_s": 16.283,
+  "modelo": "large-v3",
+  "device_leido": "cuda",
+  "compute_leido": "float16",
+  "compute_pedido": "float16",
+  "glosario": false,
+  "mecanismo_glosario": null,
+  "fecha": "2026-10-31T03:50:26+00:00"
+}
