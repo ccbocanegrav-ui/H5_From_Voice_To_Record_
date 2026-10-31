@@ -3,8 +3,8 @@
 Proyecto integrador individual (entrega 30-oct-2026). Audio → transcripción (Whisper) → campos estructurados →
 verificación literal y validación aritmética → métricas en **dos capas** (texto y registro).
 
-- Pipeline (documento visual): **[COMPLETAR: enlace público de Notion/Miro]**
-- Video (≤ 8 min): **[COMPLETAR: enlace al video]**
+- Pipeline (documento visual): https://app.notion.com/p/Tarea-5-Carla-Bocanegra-1aebc23e911e82ab913001519055ec76?source=copy_link
+- Video (≤ 8 min): **pendiente drive**
 
 ## Setup
 ```bash
